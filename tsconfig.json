@@ -2,5 +2,10 @@
   "extends": "astro/tsconfigs/base",
   "compilerOptions": {
     "strictNullChecks": true
-  }
+  },
+  "paths": {
+    "@components/*": ["./src/components/*"],
+    "@utilities/*": ["./src/utilities/*"],
+    "@assets/*": ["./assets/*"],
+  },
 }
