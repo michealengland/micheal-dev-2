@@ -6,6 +6,12 @@ import Hero from '../components/molecules/Hero'
 import Content from '../components/molecules/Content'
 import ContentCTA from '../components/molecules/ContentCTA'
 import MediaContent from '../components/molecules/MediaContent'
+import heroProfile from '../content/assets/mike-in-car-2.jpg'
+import heroImage from '../content/assets/halloween-jam-drift-350z-2000x1000.jpeg'
+import mediaContentImage1 from '../content/assets/anas-alshanti-feXpdV001o4-unsplash.jpg'
+import mediaContentImage2 from '../content/assets/harpal-singh-_zKxPsGOGKg-unsplash.jpg'
+import mediaContentImage3 from '../content/assets/350zduino-1080x720.jpg'
+import contentCTAImage from '../content/assets/prague-library-2000x1000.jpg'
 
 import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 ---
@@ -21,7 +27,8 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 			<Hero
 				title="Hi! I'm Mike England"
 				content="I love to laugh at my own jokes, drift cars, and build projects with React & JavaScript."
-				img="/images/halloween-jam-drift-350z-2000x1000.jpeg"
+				img={heroImage.src}
+				profileImg={heroProfile.src}
 			/>
 			<Content
 				title="About Me"
@@ -30,7 +37,7 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 			/>
 			<MediaContent
 				imgClipRight={true}
-				img="/images/anas-alshanti-feXpdV001o4-unsplash.jpg"
+				img={mediaContentImage1.src}
 				title="Career Skills"
 				content={`
 				<p>In April 2022, I was promoted to a Development Team Lead position, which shifted my focus away from coding on a regular basis. Don't worry; I still love working on personal projects and helping out! Here are some of my current skills:</p>
@@ -46,13 +53,13 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 				`}
 			/>
 			<MediaContent
-				img="/images/harpal-singh-_zKxPsGOGKg-unsplash.jpg"
+				img={mediaContentImage2.src}
 				title="Design Background"
 				content="<p>I believe it's important to remember where you started, and my journey began as a designer. I spent years in the field, creating everything from branding projects to website concepts. To this day, I apply many design disciplines to create, build, and test applications.</p>"
 			/>
 			<MediaContent
 				imgClipRight={true}
-				img="/images/350zduino-1080x720.jpg"
+				img={mediaContentImage3.src}
 				title="Arduino & Drifting"
 				content={'<p>In my free time, I like to find ways to combine my passion for technology with my love for drifting cars. In one of my recent projects, I made an OBDII reader that connects to my <a href="https://github.com/michealengland/350z-drift-elmduino">Nissan 350z using an ESP32 microcontroller and bluetooth</a>.</p>'}
 			/>
@@ -64,7 +71,7 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 			/>
 			<ContentCTA
 				content="Follow me on Twitter! I enjoy sharing code tips and projects that I'm working on."
-				img="/images/prague-library-2000x1000.jpg"
+				img={contentCTAImage.src}
 				label="@mikelikethebike"
 				title="Let's Connect"
 				url="https://twitter.com/mikelikethebike"

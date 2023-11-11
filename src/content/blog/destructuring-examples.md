@@ -10,7 +10,7 @@ heroImage: '/blog-placeholder-3.jpg'
 
 Before going too far, let's talk about what destructuring is. Destructuring is the process of taking data and extracting the data into simpler pieces such as variables.
 
-![350z drifting](../assets/white-350z-drift-ai-image.jpeg)
+![350z drifting](../blog/assets/white-350z-drift-ai-image.jpeg)
 
 ## Destructuring Objects
 
