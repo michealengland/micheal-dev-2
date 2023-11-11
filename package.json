@@ -18,6 +18,8 @@
     "@astrojs/rss": "^3.0.0",
     "@astrojs/sitemap": "^3.0.3",
     "@astrojs/tailwind": "^5.0.2",
+    "@fontsource/fira-code": "^5.0.15",
+    "@fontsource/mulish": "^5.0.15",
     "astro": "^3.5.2",
     "classnames": "^2.3.2",
     "moment": "^2.29.4",
