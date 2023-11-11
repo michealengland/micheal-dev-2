@@ -1,11 +1,12 @@
 import styles from './AuthorBio.module.css'
+import AuthorImage from '../../../content/assets/mike-in-prague-500x500.jpg'
 
 export default function AuthorBio() {
   return (
     <div className={styles.authorBio}>
       <img
         className={styles.avatar}
-        src={''}
+        src={AuthorImage.src}
         alt="Micheal England"
         width={100}
         height={100}
