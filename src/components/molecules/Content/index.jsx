@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types'
-import createMarkup from '@utilities/createMarkup'
-import Heading from '..//atoms/Heading'
+import createMarkup from '../../../utilities/createMarkup'
+import Heading from '../../atoms/Heading'
 import styles from './Content.module.css'
 
 export default function Content({content, title, titleTag='h2'}) {

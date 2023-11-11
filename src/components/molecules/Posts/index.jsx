@@ -2,7 +2,7 @@ import PropTypes from 'prop-types'
 import Heading from '../../atoms/Heading'
 import TextLink from '../../atoms/TextLink'
 import styles from './Posts.module.css'
-import formatBlogDate from '@utilities/formatBlogDate'
+import formatBlogDate from '../../../utilities/formatBlogDate'
 
 // TODO Refactor this component with more strict props.
 // TODO Create snapshot test.

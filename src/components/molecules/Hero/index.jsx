@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types'
 import styles from './Hero.module.css'
-import Avatar from '@assets/mike-in-prague-2-500x500.jpg'
-import Image from 'next/image'
+// import Avatar from '@assets/mike-in-prague-2-500x500.jpg'
+// import Image from '@astrojs/react'
 
 export default function Hero({title, content, img}) {
   const backgroundImage = img && {backgroundImage: `url(${img})`}
@@ -9,11 +9,11 @@ export default function Hero({title, content, img}) {
   return (
     <section className={styles.hero} style={backgroundImage}>
       <div>
-        <Image
+        <img
           alt="Micheal England"
           className={styles.avatar}
           height={512}
-          src={Avatar}
+          // src={Avatar}
           width={512}
         />
         {title && <h1 className={styles.title}>{ title }</h1>}

@@ -1,4 +1,5 @@
-import createMarkup from '@utilities/createMarkup'
+import React from 'react'
+import createMarkup from '../../../utilities/createMarkup'
 import PropTypes from 'prop-types'
 
 export default function Heading({children, className, id, tag}) {

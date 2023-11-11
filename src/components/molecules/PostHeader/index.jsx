@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types'
-import Heading from '..//atoms/Heading'
+import Heading from '../../atoms/Heading'
 import styles from './PostHeader.module.css'
 
 export default function PostHeader({content, title}) {

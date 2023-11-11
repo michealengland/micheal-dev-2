@@ -1,4 +1,3 @@
-import React from 'react'
 import TextLink from '../../atoms/TextLink'
 import Logo from '../../atoms/Logo'
 import styles from './Header.module.css'
