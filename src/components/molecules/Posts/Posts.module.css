@@ -1,0 +1,36 @@
+.posts {
+  @apply text-nuetral-dark;
+
+  & .inner {
+    @apply p-4 max-w-3xl mx-auto;
+
+    & :first-child {
+      @apply mt-0;
+    }
+  }
+
+  & .post {
+    @apply mb-8;
+  }
+
+  & .title {
+    @apply text-primary-purple2 text-2xl md:text-3xl mt-10 mb-0;
+
+    & a {
+      @apply text-primary-purple2 no-underline;
+
+      &:hover,
+      &:focus {
+        @apply underline text-secondary-pink;
+      }
+    }
+  }
+
+  & .date {
+    @apply inline-block mb-4;
+  }
+
+  & .content {
+    @apply text-sm;
+  }
+}

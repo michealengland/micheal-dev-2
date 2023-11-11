@@ -1,6 +1,5 @@
 import createMarkup from '@utilities/createMarkup'
 import PropTypes from 'prop-types'
-import React from 'react'
 
 export default function Heading({children, className, id, tag}) {
   if (typeof children === 'string') {

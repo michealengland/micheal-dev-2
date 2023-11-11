@@ -1,0 +1,47 @@
+.socialLinks {
+  @apply inline-block;
+
+  & ul {
+    @apply flex flex-nowrap flex-row;
+  }
+
+  & li {
+    @apply mr-2 text-tertiary-teal list-none;
+
+    &:last-child {
+      @apply mr-0;
+    }
+  }
+
+  & a {
+    @apply no-underline;
+
+    &:hover .icon,
+    &:focus .icon {
+      @apply underline;
+
+      transform: scale(1.4, 1.4);
+    }
+  }
+
+  & .icon {
+    @apply flex items-center justify-center p-1 fill-current;
+
+    height: 1.5rem;
+    width: 1.5rem;
+    transition: 200ms linear all;
+
+    @screen sm {
+      height: 2rem;
+      width: 2rem;
+    }
+
+    & svg {
+      @apply w-full h-full;
+    }
+  }
+
+  & .label {
+    @apply sr-only;
+  }
+}

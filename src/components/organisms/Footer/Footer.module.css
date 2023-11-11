@@ -1,0 +1,16 @@
+.footer {
+  @apply relative font-sans bg-primary-purple1 text-nuetral-white w-full;
+
+  & .inner {
+    @apply mx-auto max-w-2xl p-2 text-center;
+  }
+
+  & a {
+    @apply text-tertiary-teal underline;
+
+    &:hover,
+    &:focus {
+      @apply text-secondary-pink;
+    }
+  }
+}

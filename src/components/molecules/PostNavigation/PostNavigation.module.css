@@ -1,0 +1,20 @@
+.postNavigation {
+  @apply bg-primary-purple2 text-nuetral-white p-4 text-lg;
+
+  & .inner {
+    @apply flex justify-between max-w-3xl mx-auto;
+  }
+
+  & li {
+    @apply list-none;
+  }
+
+  & a {
+    @apply text-nuetral-white no-underline;
+
+    &:hover,
+    &:focus {
+      @apply text-secondary-pink underline;
+    }
+  }
+}

@@ -1,4 +1,3 @@
-import React from 'react'
 import PropTypes from 'prop-types'
 
 export default function TextLink({children, to, activeClassName, partiallyActive, ...other}) {

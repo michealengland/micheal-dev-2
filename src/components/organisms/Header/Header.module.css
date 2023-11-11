@@ -1,0 +1,56 @@
+.header {
+  @apply font-sans text-nuetral-white bg-primary-purple1 py-2 px-4 sm:py-4 sm:px-8;
+
+  & .inner {
+    @apply flex flex-wrap sm:flex-nowrap items-center max-w-7xl mx-auto;
+  }
+
+  & .logo {
+    @apply inline-block font-normal mr-auto uppercase mb-1;
+
+    flex: 1 0 100%;
+    letter-spacing: 1px;
+
+    @screen sm {
+      flex: 0 1 auto;
+    }
+
+    &:hover,
+    &:focus {
+      @apply opacity-70 transition-all;
+    }
+  }
+
+  & .menu {
+    @apply inline-block text-lg uppercase mr-auto sm:mr-0;
+
+    & ul {
+      @apply flex flex-row m-0 list-none;
+
+      & li {
+        @apply m-0 mr-4 list-none;
+
+        & a {
+          @apply text-nuetral-white;
+
+          &:hover,
+          &:focus {
+            @apply underline text-secondary-pink outline-none;
+          }
+        }
+
+        &:last-child {
+          @apply mr-0;
+        }
+      }
+    }
+  }
+
+  & svg {
+    fill: #fff;
+  }
+
+  & .socialLinks {
+    @apply flex justify-between sm:ml-4;
+  }
+}

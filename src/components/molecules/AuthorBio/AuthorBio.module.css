@@ -1,0 +1,14 @@
+.authorBio {
+  @apply flex items-center max-w-xs mr-auto bg-purple-100 text-primary-purple1 rounded-full my-8;
+
+  & .avatar {
+    @apply rounded-full mb-0 mr-4;
+
+    max-width: 3.125rem;
+    max-height: 3.125rem;
+  }
+
+  & .content {
+    @apply m-0 mr-4;
+  }
+}

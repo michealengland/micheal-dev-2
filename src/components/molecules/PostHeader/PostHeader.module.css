@@ -1,0 +1,13 @@
+.postHeader {
+  & .inner {
+    @apply py-10 pb-4 px-4 max-w-3xl mx-auto font-semibold;
+  }
+
+  & .title {
+    @apply text-primary-purple2 text-4xl md:text-5xl mb-4;
+  }
+
+  & .content {
+    @apply text-primary-purple1 text-lg font-thin;
+  }
+}

@@ -1,0 +1,63 @@
+.cta {
+  @apply relative flex flex-col justify-items-center text-center text-tertiary-teal bg-primary-purple1 items-center m-0 mx-auto p-5;
+
+  &.hasImg {
+    @apply text-nuetral-white md:py-16 lg:py-40 bg-fixed;
+
+    background-size: cover;
+    box-sizing: border-box;
+
+    @screen md {
+      min-height: 26.875rem;
+    }
+
+    &::before {
+      @apply absolute inset-0 z-1 bg-primary-purple2 bg-opacity-80;
+
+      content: '';
+    }
+
+    & .inner {
+      @apply bg-primary-purple2 text-left;
+    }
+
+    & hr {
+      @apply border-0 my-5 mx-0 bg-tertiary-teal rounded-full w-full;
+
+      height: 0.1875rem;
+      max-width: 8.75rem;
+    }
+
+    & .title,
+    & .content {
+      @apply mb-0;
+    }
+
+    & .button {
+      @apply mx-0;
+    }
+  }
+
+  & .inner {
+    @apply relative m-0 mx-auto max-w-2xl py-12 px-5 w-full z-1 lg:px-8;
+  }
+
+  & .title {
+    @apply p-0 text-4xl font-semibold mb-4;
+  }
+
+  & .content {
+    @apply text-lg p-0 mb-4;
+
+    font-size: 1em;
+    line-height: 1.6em;
+  }
+
+  & :last-child {
+    @apply mb-0;
+  }
+
+  & .button {
+    @apply mt-8 mx-auto;
+  }
+}

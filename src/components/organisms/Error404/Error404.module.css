@@ -1,0 +1,17 @@
+.error404 {
+  @apply relative bg-primary-purple1 text-nuetral-white min-h-screen flex justify-center items-center flex-col z-1;
+
+  &::before {
+    @apply absolute z-behind inset-0 bg-primary-purple1 bg-opacity-80;
+
+    content: '';
+  }
+
+  & .title {
+    @apply text-3xl md:text-7xl mb-12 max-w-3xl text-center;
+  }
+
+  & .content {
+    @apply text-xl mb-12;
+  }
+}

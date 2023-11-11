@@ -1,0 +1,11 @@
+.content {
+  @apply font-sans mx-auto max-w-full md:max-w-2xl text-center p-8 md:p-10 lg:p-14;
+
+  & .contentHeading {
+    @apply text-primary-purple2 font-thin text-5xl md:text-6xl lg:text-7xl mb-4;
+  }
+
+  & .text {
+    @apply text-primary-purple1 font-thin text-lg;
+  }
+}

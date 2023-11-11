@@ -1,0 +1,138 @@
+.postContent {
+  @apply text-lg;
+
+  & .inner {
+    @apply p-4 max-w-3xl mx-auto;
+
+    & :first-child {
+      @apply mt-0;
+    }
+  }
+
+  & h1 {
+    @apply text-primary-purple2 text-3xl md:text-5xl mt-10 mb-4;
+  }
+
+  & h2 {
+    @apply text-primary-purple2 text-2xl md:text-4xl mt-10 mb-4;
+  }
+
+  & h3 {
+    @apply text-primary-purple2 text-xl md:text-3xl mt-10 mb-4;
+  }
+
+  & h4 {
+    @apply text-primary-purple2 text-lg md:text-xl;
+  }
+
+  & p {
+    @apply mb-6 leading-8;
+  }
+
+  & ul,
+  & ol,
+  & blockquote,
+  & p {
+    & code {
+      @apply bg-primary-purple1 text-nuetral-white font-mono text-sm rounded-sm px-1 inline-block;
+
+      /* padding: 0.125rem; */
+    }
+  }
+
+  & ul {
+    @apply list-disc pl-5;
+  }
+
+  & ol {
+    @apply list-decimal pl-7;
+  }
+
+  & ul,
+  & ol {
+    @apply leading-relaxed m-0 mb-6;
+
+    & ul,
+    & ol {
+      @apply ml-4;
+    }
+
+    & li {
+      @apply mb-1;
+
+      &:last-child {
+        @apply mb-6;
+      }
+    }
+  }
+
+  & pre {
+    @apply text-lg mb-4 rounded-sm py-4 px-4 font-mono overflow-y-scroll;
+  }
+
+  & blockquote {
+    @apply bg-tertiary-teal bg-opacity-5 px-4 py-4 mb-6 relative font-light;
+
+    &::after {
+      @apply text-tertiary-teal absolute inset-0 h-full w-full;
+
+      --length: 0.2rem;
+      content: '';
+      display: block;
+      background: linear-gradient(
+            to right,
+            currentColor var(--length),
+            transparent var(--length)
+          )
+          0 0,
+        linear-gradient(
+            to right,
+            currentColor var(--length),
+            transparent var(--length)
+          )
+          0 100%,
+        linear-gradient(
+            to left,
+            currentColor var(--length),
+            transparent var(--length)
+          )
+          100% 0,
+        linear-gradient(
+            to left,
+            currentColor var(--length),
+            transparent var(--length)
+          )
+          100% 100%,
+        linear-gradient(
+            to bottom,
+            currentColor var(--length),
+            transparent var(--length)
+          )
+          0 0,
+        linear-gradient(
+            to bottom,
+            currentColor var(--length),
+            transparent var(--length)
+          )
+          100% 0,
+        linear-gradient(
+            to top,
+            currentColor var(--length),
+            transparent var(--length)
+          )
+          0 100%,
+        linear-gradient(
+            to top,
+            currentColor var(--length),
+            transparent var(--length)
+          )
+          100% 100%;
+      background-repeat: no-repeat;
+      background-size: 1rem 1rem;
+    }
+
+    & :last-child {
+      @apply mb-0;
+    }
+  }
+}
