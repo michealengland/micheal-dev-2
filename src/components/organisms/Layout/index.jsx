@@ -1,9 +1,8 @@
-'use client'
-import PropTypes from 'prop-types'
+// import PropTypes from 'prop-types'
 import React from 'react'
 import styles from './Layout.module.css'
-import Header from '@components/organisms/Header'
-import Footer from '@components/organisms/Footer'
+import Header from '../Header'
+import Footer from '../Footer'
 
 const Layout = ({children}) => {
   return (
@@ -19,6 +18,6 @@ const Layout = ({children}) => {
 
 export default Layout
 
-Layout.propTypes = {
-  children: PropTypes.node,
-}
+// Layout.propTypes = {
+//   children: PropTypes.node,
+// }

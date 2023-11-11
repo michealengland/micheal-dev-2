@@ -1,4 +1,4 @@
-import TextLink from '@components/atoms/TextLink'
+import TextLink from '../TextLink'
 import ProptTypes from 'prop-types'
 import styles from './Button.module.css'
 import cn from 'classnames'

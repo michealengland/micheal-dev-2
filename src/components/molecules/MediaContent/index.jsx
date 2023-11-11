@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types'
-import Heading from '@components/atoms/Heading'
+import Heading from '..//atoms/Heading'
 import createMarkup from '@utilities/createMarkup'
 import styles from './MediaContent.module.css'
 import cn from 'classnames'

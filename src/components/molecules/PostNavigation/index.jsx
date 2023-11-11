@@ -1,4 +1,4 @@
-import TextLink from '@components/atoms/TextLink'
+import TextLink from '../../atoms/TextLink'
 import PropTypes from 'prop-types'
 import styles from './PostNavigation.module.css'
 

@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types'
-import Heading from '@components/atoms/Heading'
-import TextLink from '@components/atoms/TextLink'
+import Heading from '../../atoms/Heading'
+import TextLink from '../../atoms/TextLink'
 import styles from './Posts.module.css'
 import formatBlogDate from '@utilities/formatBlogDate'
 

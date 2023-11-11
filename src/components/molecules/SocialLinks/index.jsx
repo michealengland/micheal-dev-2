@@ -1,6 +1,6 @@
 
 import styles from './SocialLinks.module.css'
-import Icon from '@components/atoms/Icon'
+import Icon from '../../atoms/Icon'
 import cn from 'classnames'
 import PropTypes from 'prop-types'
 
