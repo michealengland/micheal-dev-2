@@ -1,6 +1,6 @@
 import React from 'react'
 import TextLink from '../../atoms/TextLink'
-import Logo from '../../atoms/Logo/Logo.astro'
+import Logo from '../../atoms/Logo'
 import styles from './Header.module.css'
 import SocialLinks from '../../molecules/SocialLinks'
 
@@ -9,8 +9,7 @@ export default function Header() {
     <header className={styles.header}>
       <div className={styles.inner}>
         <TextLink className={styles.logo} to={'/'}>
-          {/* <Logo /> */}
-          TEMP LOGO
+          <Logo />
         </TextLink>
         <nav className={styles.menu}>
           <ul>
