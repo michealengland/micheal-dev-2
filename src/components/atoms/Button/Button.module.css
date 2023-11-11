@@ -1,0 +1,64 @@
+/* Locally scoped to this document. */
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.button {
+  @apply inline-block relative bg-primary-purple1 rounded-none text-secondary-pink overflow-hidden p-2 text-center uppercase z-1;
+
+  border: 2px solid #170387;
+  min-width: 150px;
+  text-decoration: none;
+  transition: all 0.7s;
+  width: auto;
+
+  &::before {
+    @apply block absolute bg-secondary-pink bottom-0 z-behind m-0 mx-auto opacity-0;
+
+    border-radius: 45%;
+    content: '';
+    height: 90px;
+    left: -10%;
+    right: 0;
+    top: 80%;
+    width: 70px;
+  }
+
+  &::after {
+    @apply block absolute bg-secondary-pink z-behind opacity-0;
+
+    border-radius: 55%;
+    bottom: 0;
+    content: '';
+    height: 90px;
+    left: 0;
+    margin: 0 auto;
+    right: -20%;
+    top: 80%;
+    width: 85px;
+  }
+
+  &:hover,
+  &:focus {
+    @apply border-secondary-pink text-nuetral-white;
+
+    border-radius: 5em;
+
+    &::before {
+      @apply block opacity-80;
+
+      animation: spin 3s linear infinite;
+    }
+
+    &::after {
+      @apply block opacity-70;
+
+      animation: spin 5s linear infinite;
+    }
+  }
+}
