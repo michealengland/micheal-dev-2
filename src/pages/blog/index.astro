@@ -2,6 +2,7 @@
 import BaseHead from '../../components/BaseHead.astro';
 import Header from '../../components/Header.astro';
 import Layout from '../../components/organisms/Layout'
+import Posts from '../../components/molecules/Posts'
 import { SITE_TITLE, SITE_DESCRIPTION } from '../../consts';
 import { getCollection } from 'astro:content';
 import FormattedDate from '../../components/FormattedDate.astro';
@@ -88,7 +89,8 @@ const posts = (await getCollection('blog')).sort(
 	<body>
 		<Header />
 		<Layout>
-			<section>
+			<Posts posts={posts} />
+			<!-- <section>
 				<ul>
 					{
 						posts.map((post) => (
@@ -104,7 +106,7 @@ const posts = (await getCollection('blog')).sort(
 						))
 					}
 				</ul>
-			</section>
+			</section> -->
 		</Layout>
 	</body>
 </html>

@@ -13,16 +13,22 @@ export default function Posts({posts}) {
       <div className={styles.inner}>
         {!! posts?.length > 0 && posts.map((post, index) => {
           const {
-            date,
-            description,
-            title,
-            url,
+            collection,
+            data: {
+              pubDate: date,
+              description,
+              title,
+              heroImage,
+            }
           } = post
+
+          const url = `/${collection}/${post.slug}/`
 
           return (
             <article className={styles.post} key={index}>
               { url && title &&
                 <Heading className={styles.title} tag="h2">
+                  <img width={720} height={360} src={heroImage} alt="" />
                   <TextLink to={`${url}`}>
                     {title}
                   </TextLink>
