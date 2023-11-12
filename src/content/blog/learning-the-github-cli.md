@@ -1,6 +1,6 @@
 ---
 title: Learning the GitHub CLI
-date: 2021-08-16T12:00:00Z
+# date: 2021-08-16T12:00:00Z
 description: Here are some of commands I found helpful while getting started. I ended up using a combination of these commands in multiple custom aliases.
 pubDate: 'August 16 2021'
 heroImage: '/blog-placeholder-3.jpg'
@@ -80,7 +80,7 @@ Aliases can be added using `gh alias set name 'command'`. Also you can edit the 
 
 _Note: The `$1` represents a variable, ex: `gh co 123 // checkout branch from pr #123`_
 
-```
+```shell
 # Checkout a PR branch based on PR id.
 co:    pr checkout $1
 
