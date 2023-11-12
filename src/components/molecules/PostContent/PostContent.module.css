@@ -71,65 +71,7 @@
   }
 
   & blockquote {
-    @apply bg-tertiary-teal bg-opacity-5 px-4 py-4 mb-6 relative font-light;
-
-    &::after {
-      @apply text-tertiary-teal absolute inset-0 h-full w-full;
-
-      --length: 0.2rem;
-      content: '';
-      display: block;
-      background: linear-gradient(
-            to right,
-            currentColor var(--length),
-            transparent var(--length)
-          )
-          0 0,
-        linear-gradient(
-            to right,
-            currentColor var(--length),
-            transparent var(--length)
-          )
-          0 100%,
-        linear-gradient(
-            to left,
-            currentColor var(--length),
-            transparent var(--length)
-          )
-          100% 0,
-        linear-gradient(
-            to left,
-            currentColor var(--length),
-            transparent var(--length)
-          )
-          100% 100%,
-        linear-gradient(
-            to bottom,
-            currentColor var(--length),
-            transparent var(--length)
-          )
-          0 0,
-        linear-gradient(
-            to bottom,
-            currentColor var(--length),
-            transparent var(--length)
-          )
-          100% 0,
-        linear-gradient(
-            to top,
-            currentColor var(--length),
-            transparent var(--length)
-          )
-          0 100%,
-        linear-gradient(
-            to top,
-            currentColor var(--length),
-            transparent var(--length)
-          )
-          100% 100%;
-      background-repeat: no-repeat;
-      background-size: 1rem 1rem;
-    }
+    @apply py-4 px-2 italic border-tertiary-teal text-white bg-gradient-to-r from-primary-purple2 to-primary-purple my-8 shadow-md block relative;
 
     & :last-child {
       @apply mb-0;
