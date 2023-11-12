@@ -1,8 +1,9 @@
 ---
 title: ES6 Destructure Examples
-date: 2019-12-01T22:15:03.284Z
+# date: 2019-12-01T22:15:03.284Z
 description: Here are some simple examples of what destructuring looks like in JavaScript.
-pubDate: 'Jul 08 2022'
+pubDate: 'Dec 01 2019'
+lastUpdated: 'Nov 12 2023'
 heroImage: '/blog-placeholder-3.jpg'
 ---
 

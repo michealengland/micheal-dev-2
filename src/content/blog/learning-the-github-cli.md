@@ -2,7 +2,7 @@
 title: Learning the GitHub CLI
 date: 2021-08-16T12:00:00Z
 description: Here are some of commands I found helpful while getting started. I ended up using a combination of these commands in multiple custom aliases.
-pubDate: 'Jul 08 2022'
+pubDate: 'August 16 2021'
 heroImage: '/blog-placeholder-3.jpg'
 ---
 

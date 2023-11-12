@@ -1,8 +1,8 @@
 ---
 title: Making Small and Manageable Pull Requests
-date: 2022-07-13T12:00:00Z
+# date: 2022-07-13T12:00:00Z
 description: Earlier in my career, I struggled with this concept. Oftentimes, I felt that for a feature to be "ready for review", it must have all of the necessary parts fully worked out and 100% complete.
-pubDate: 'Jul 08 2022'
+pubDate: 'Jul 13 2022'
 heroImage: '/blog-placeholder-3.jpg'
 ---
 

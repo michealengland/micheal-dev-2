@@ -1,8 +1,8 @@
 ---
 title: Writing Better Pull Requests
-date: 2021-12-01T17:00:00Z
+# date: 2021-12-01T17:00:00Z
 description: Learn how to become more thoughtful about the code writing and the merging process by making the review process easier.
-pubDate: 'Jul 08 2022'
+pubDate: Dec 21 2021
 heroImage: '/blog-placeholder-3.jpg'
 ---
 
