@@ -14,32 +14,17 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
 <html lang="en">
 	<head>
 		<BaseHead title={title} description={description} />
-		<style>
-			.hero-image {
-				@apply bg-primary-purple1/10;
-				width: 100%;
-			}
-			.hero-image img {
-				display: block;
-				margin: 0 auto;
-				box-shadow: var(--box-shadow);
-			}
-		</style>
 	</head>
-
 	<body>
 		<Header />
 		<Layout>
 			<article>
-				<div class="hero-image">
-					{heroImage && <img width={1020} height={510} src={heroImage} alt="" />}
-				</div>
 				<PostHeader
 					title={title}
 					date={pubDate}
 					lastUpdated={updatedDate}
+					heroImage={heroImage}
 				/>
-				<hr />
 				<slot />
 			</article>
 		</Layout>

@@ -1,10 +1,22 @@
 .postHeader {
+  & .hero {
+    @apply bg-primary-purple1/10 w-full;
+
+    & img {
+      @apply block mx-auto;
+    }
+  }
+
   & .inner {
     @apply py-10 pb-4 px-4 max-w-3xl mx-auto font-semibold;
   }
 
   & .title {
     @apply text-primary-purple2 text-4xl md:text-5xl mb-4;
+  }
+
+  & .divider {
+    @apply mt-6 border-b-2 border-tertiary-teal w-24;
   }
 
   & .content {
