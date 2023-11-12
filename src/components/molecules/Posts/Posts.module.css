@@ -1,5 +1,5 @@
 .posts {
-  @apply text-nuetral-dark;
+  @apply text-nuetral-dark bg-nuetral-white;
 
   & .inner {
     @apply p-4 max-w-3xl mx-auto;
@@ -11,13 +11,17 @@
 
   & .post {
     @apply mb-8;
+
+    & img {
+      @apply w-full rounded shadow-md mb-2;
+    }
   }
 
   & .title {
-    @apply text-primary-purple2 text-2xl md:text-3xl mt-10 mb-0;
+    @apply text-primary-purple1 text-2xl md:text-4xl lg:text-5xl mt-10 mb-0;
 
     & a {
-      @apply text-primary-purple2 no-underline;
+      @apply text-inherit ease-in duration-150;
 
       &:hover,
       &:focus {
@@ -27,10 +31,12 @@
   }
 
   & .date {
-    @apply inline-block mb-4;
+    @apply inline-block mb-4 font-semibold text-primary-purple1 bg-tertiary-teal mt-2 rounded;
+
+    padding: 2px 4px;
   }
 
   & .content {
-    @apply text-sm;
+    @apply text-base;
   }
 }
