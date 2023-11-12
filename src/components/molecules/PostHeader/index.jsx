@@ -38,8 +38,8 @@ export default function PostHeader({date, title, lastUpdated, heroImage}) {
 
 PostHeader.propTypes = {
   title: PropTypes.string,
-  date: PropTypes.dateTime,
-  lastUpdated: PropTypes.dateTime,
+  date: PropTypes.Date,
+  lastUpdated: PropTypes.Date,
   heroImage: PropTypes.string,
 }
 
