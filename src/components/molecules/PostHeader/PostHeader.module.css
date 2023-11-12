@@ -1,6 +1,6 @@
 .postHeader {
   & .hero {
-    @apply bg-primary-purple1/10 w-full;
+    @apply bg-white w-full md:-mb-20;
 
     & img {
       @apply block mx-auto;
@@ -8,15 +8,17 @@
   }
 
   & .inner {
-    @apply py-10 pb-4 px-4 max-w-3xl mx-auto font-semibold;
+    @apply relative bg-white py-4 pb-4 px-4 max-w-3xl mx-auto font-semibold rounded shadow-md;
+  }
+
+  & .date {
+    @apply inline-block font-semibold text-primary-purple1 bg-tertiary-teal mt-2 rounded;
+
+    padding: 2px 4px;
   }
 
   & .title {
     @apply text-primary-purple2 text-4xl md:text-5xl mb-4;
-  }
-
-  & .divider {
-    @apply mt-6 border-b-2 border-tertiary-teal w-24;
   }
 
   & .content {
