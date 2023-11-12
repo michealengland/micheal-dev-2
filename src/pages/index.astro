@@ -1,6 +1,5 @@
 ---
 import BaseHead from '../components/BaseHead.astro';
-import Header from '../components/Header.astro';
 import Layout from '../components/organisms/Layout'
 import Hero from '../components/molecules/Hero'
 import Content from '../components/molecules/Content'
@@ -22,7 +21,6 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
 	</head>
 	<body>
-		<Header title={SITE_TITLE} />
 		<Layout>
 			<Hero
 				title="Hi! I'm Mike England"

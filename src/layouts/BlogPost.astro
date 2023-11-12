@@ -1,7 +1,6 @@
 ---
 import type { CollectionEntry } from 'astro:content';
 import BaseHead from '../components/BaseHead.astro';
-import Header from '../components/Header.astro';
 import Layout from '../components/organisms/Layout'
 import PostHeader from '../components/molecules/PostHeader'
 
@@ -16,7 +15,6 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
 		<BaseHead title={title} description={description} />
 	</head>
 	<body>
-		<Header />
 		<Layout>
 			<article>
 				<PostHeader
