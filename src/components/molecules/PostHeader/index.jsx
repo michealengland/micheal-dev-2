@@ -27,8 +27,8 @@ export default function PostHeader({date, title, lastUpdated, heroImage}) {
         { formattedDate &&
           <p className={styles.date}>Published: <time datetime={date} itemprop="dateModified">{formattedDate}</time></p>
         }
-        { formattedDate && (
-          <p className={styles.date}>Last Modified: <time datetime={lastUpdated} itemprop="dateModified">{formattedDate}</time></p>
+        { formattedLastUpdated && (
+          <p className={styles.date}>Last Modified: <time datetime={lastUpdated} itemprop="dateModified">{formattedLastUpdated}</time></p>
         ) }
         <hr className={styles.divider} />
       </div>

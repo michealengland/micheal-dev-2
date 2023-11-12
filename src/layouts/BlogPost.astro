@@ -6,7 +6,7 @@ import PostHeader from '../components/molecules/PostHeader'
 
 type Props = CollectionEntry<'blog'>['data'];
 
-const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
+const { title, description, pubDate, lastUpdated, heroImage } = Astro.props;
 
 ---
 
@@ -20,7 +20,7 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
 				<PostHeader
 					title={title}
 					date={pubDate}
-					lastUpdated={updatedDate}
+					lastUpdated={lastUpdated}
 					heroImage={heroImage}
 				/>
 				<slot />
