@@ -1,14 +1,14 @@
 import PropTypes from 'prop-types'
 import styles from './Hero.module.css'
 
-export default function Hero({title, content, img, profileImg}) {
+export default function Hero({title, content, img, imgAlt="", profileImg}) {
   const backgroundImage = img && {backgroundImage: `url(${img})`}
 
   return (
     <section className={styles.hero} style={backgroundImage}>
       <div>
         <img
-          alt="Micheal England"
+          alt={imgAlt}
           className={styles.avatar}
           height={512}
           src={profileImg}
@@ -24,5 +24,6 @@ export default function Hero({title, content, img, profileImg}) {
 Hero.propTypes = {
   content: PropTypes.string,
   img: PropTypes.any,
+  imgAlt: PropTypes.string,
   title: PropTypes.string,
 }
