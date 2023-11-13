@@ -9,6 +9,10 @@ import formatBlogDate from '../../../utilities/formatBlogDate'
 
 export default function Posts({posts}) {
   return (
+    <>
+    <header className={styles.blogHeading}>
+      <h1>Micheal England Development Blog</h1>
+    </header>
     <section className={styles.posts}>
       <div className={styles.inner}>
         {!! posts?.length > 0 && posts.map((post, index) => {
@@ -41,6 +45,7 @@ export default function Posts({posts}) {
         })}
       </div>
     </section>
+    </>
   )
 }
 
