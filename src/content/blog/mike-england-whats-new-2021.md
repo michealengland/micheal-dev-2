@@ -34,7 +34,7 @@ I often ponder the question "Where do you see yourself in five years?" and unfor
 
 ## Working towards my goals
 
-So far 2021 is off to a good start, I recently overhauling [micheal.dev](https://micheal.dev) so that I have a better platform to showcase my knowledge and experiences. Next, I turbo-charged my [Github profile](https://github.com/michealengland) with some of details about my side projects that I'm working on.
+So far 2021 is off to a good start, I recently overhauling [micheal.dev](https://micheal.dev) so that I have a better platform to showcase my knowledge and experiences. Next, I turbo-charged my [GitHub profile](https://github.com/michealengland) with some of details about my side projects that I'm working on.
 
 ### What's Next
 

@@ -8,12 +8,12 @@ export default function SocialLinks({className}) {
   const socialAccounts = [
     {
       icon: 'github',
-      label: 'Github',
+      label: 'GitHub',
       url: 'https://github.com/michealengland'
     },
     {
       icon: 'linkedin',
-      label: 'Linkedin',
+      label: 'LinkedIn',
       url: 'https://www.linkedin.com/in/michealengland/'
     },
     {
