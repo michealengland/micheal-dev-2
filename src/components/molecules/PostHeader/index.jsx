@@ -3,7 +3,7 @@ import Heading from '../../atoms/Heading'
 import styles from './PostHeader.module.css'
 import formatBlogDate from '../../../utilities/formatBlogDate'
 
-export default function PostHeader({date, title, lastUpdated, heroImage}) {
+export default function PostHeader({date, title, lastUpdated, heroImage, heroAlt=""}) {
   const formattedDate = date ? formatBlogDate(date) : null
   const formattedLastUpdated = lastUpdated ? formatBlogDate(lastUpdated) : null
 
@@ -11,7 +11,7 @@ export default function PostHeader({date, title, lastUpdated, heroImage}) {
     <header className={styles.postHeader}>
       { heroImage && (
         <div className={styles.hero}>
-          {heroImage && <img width={1020} height={510} src={heroImage} alt="" />}
+          {heroImage && <img width={1020} height={510} src={heroImage} alt={heroAlt} />}
         </div>
       ) }
       <div className={styles.inner}>
@@ -32,6 +32,7 @@ PostHeader.propTypes = {
   date: PropTypes.any,
   lastUpdated: PropTypes.any,
   heroImage: PropTypes.string,
+  heroAlt: PropTypes.string,
 }
 
 

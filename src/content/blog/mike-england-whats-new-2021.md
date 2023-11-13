@@ -4,6 +4,7 @@ title: Mike England, What's new in 2021
 description: My thoughts and career goals for 2021.
 pubDate: 'Apr 06 2021'
 heroImage: '/robo-friends-celebrating-a-new-year-960x480.jpeg'
+heroAlt: 'Robot friends celebrating the upcoming year.'
 ---
 
 # What's new in 2021

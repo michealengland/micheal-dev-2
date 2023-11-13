@@ -23,6 +23,7 @@ export default function Posts({posts}) {
               description,
               title,
               heroImage,
+              heroAlt
             }
           } = post
 
@@ -32,7 +33,7 @@ export default function Posts({posts}) {
             <article className={styles.post} key={index}>
               { url && title &&
                 <Heading className={styles.title} tag="h2">
-                  <img width={720} height={360} src={heroImage} alt="" />
+                  <img width={720} height={360} src={heroImage} alt={heroAlt} />
                   <TextLink to={`${url}`}>
                     {title}
                   </TextLink>

@@ -5,6 +5,7 @@ description: Here are some simple examples of what destructuring looks like in J
 pubDate: 'Dec 01 2019'
 lastUpdated: 'Nov 12 2023'
 heroImage: '/robot-trex-cooking-breakfast-960x480.jpeg'
+heroAlt: 'Robot T-rex cooking breakfast.'
 ---
 
 ## Simple Examples of Destructuring in Javascript
