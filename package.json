@@ -22,7 +22,6 @@
     "@fontsource/mulish": "^5.0.15",
     "astro": "^3.5.2",
     "classnames": "^2.3.2",
-    "moment": "^2.29.4",
     "prop-types": "^15.8.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
