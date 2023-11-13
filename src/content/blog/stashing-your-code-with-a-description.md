@@ -3,7 +3,7 @@ title: Adding a Description to git stash
 # date: 2020-01-14T04:02:57
 description: Saving code for later use with `git stash` is one of my favorite features of git. Here's how it works.
 pubDate: 'Jan 14 2020'
-heroImage: '/blog-placeholder-3.jpg'
+heroImage: '/robot-turtle-on-book-island.jpeg'
 ---
 
 # Using git stash

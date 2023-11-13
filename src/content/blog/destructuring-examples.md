@@ -4,7 +4,7 @@ title: ES6 Destructure Examples
 description: Here are some simple examples of what destructuring looks like in JavaScript.
 pubDate: 'Dec 01 2019'
 lastUpdated: 'Nov 12 2023'
-heroImage: '/blog-placeholder-3.jpg'
+heroImage: '/robot-trex-cooking-breakfast-960x480.jpeg'
 ---
 
 ## Simple Examples of Destructuring in Javascript

@@ -3,7 +3,7 @@ title: Writing Better Pull Requests
 # date: 2021-12-01T17:00:00Z
 description: Learn how to become more thoughtful about the code writing and the merging process by making the review process easier.
 pubDate: Dec 21 2021
-heroImage: '/blog-placeholder-3.jpg'
+heroImage: '/robot-cat-sleeping-on-laptop-960x480.jpeg'
 ---
 
 Over the last year, I've become more thoughtful about the code I write and how quickly it gets merged. Wanting to improve on this process, I re-evaluated some of my soft skills such as how I write pull requests. Instead of focusing on how fast I could write, I worked towards making the review process easier. The goal of a PR is to introduce a change and this is my guide to making a good first impression.

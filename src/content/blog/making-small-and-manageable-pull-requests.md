@@ -3,7 +3,7 @@ title: Making Small and Manageable Pull Requests
 # date: 2022-07-13T12:00:00Z
 description: Earlier in my career, I struggled with this concept. Oftentimes, I felt that for a feature to be "ready for review", it must have all of the necessary parts fully worked out and 100% complete.
 pubDate: 'Jul 13 2022'
-heroImage: '/blog-placeholder-3.jpg'
+heroImage: '/robo-and-cat-coding.jpeg'
 ---
 
 In a previous article, I shared some thoughts about [Writing Better Pull Requests](https://micheal.dev/blog/writing-better-pull-requests). Continuing on that topic, I want to share some ideas on how to handle PRs that are difficult, complex, or too large to easily review. In my experience, these types of PRs can be bottlenecks in the development process that can introduce unwanted side-effects.
