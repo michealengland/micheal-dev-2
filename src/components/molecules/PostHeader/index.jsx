@@ -28,7 +28,7 @@ export default function PostHeader({date, title, lastUpdated, heroImage}) {
           <p className={styles.date}><time dateTime={date} itemProp="dateModified">{formattedDate}</time></p>
         }
         { formattedLastUpdated && (
-          <p className={styles.date}>Updated <time dateTime={lastUpdated} itemProp="dateModified">{formattedLastUpdated}</time></p>
+          <p className={styles.lastUpdated}>Updated: <time dateTime={lastUpdated} itemProp="dateModified">{formattedLastUpdated}</time></p>
         ) }
       </div>
     </header>

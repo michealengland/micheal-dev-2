@@ -17,6 +17,10 @@
     padding: 2px 4px;
   }
 
+  & .lastUpdated {
+    @apply sm:block md:inline-block md:ml-2 py-2 italic font-thin text-sm;
+  }
+
   & .title {
     @apply text-primary-purple2 text-4xl md:text-5xl mb-4;
   }
