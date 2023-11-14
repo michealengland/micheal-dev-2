@@ -1,0 +1,36 @@
+---
+import {
+	AUTHOR_NAME,
+	AUTHOR_ALT_NAME,
+	AUTHOR_POSITION,
+	SITE_DESCRIPTION,
+	SITE_URL,
+	SOCIAL_LINKEDIN,
+	SOCIAL_GITHUB,
+	SOCIAL_TWITTER
+} from '../consts';
+
+const htmlSchemaMarkup = `<script type="application/ld+json">
+{
+	"@context": "http://schema.org",
+	"@type": "Person",
+	"name": "${AUTHOR_NAME}",
+	"alternateName": "${AUTHOR_ALT_NAME}",
+	"url": "${SITE_URL}",
+	"description": "${SITE_DESCRIPTION}",
+	"sameAs": [
+		"${SOCIAL_LINKEDIN}",
+		"${SOCIAL_GITHUB}",
+		"${SOCIAL_TWITTER}"
+	],
+	"jobTitle": "${AUTHOR_POSITION}",
+	"worksFor": {
+		"@type": "Organization",
+		"name": "Independent"
+	}
+}
+</script>`
+
+---
+
+<Fragment set:html={htmlSchemaMarkup} />
