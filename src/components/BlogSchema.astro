@@ -1,0 +1,42 @@
+---
+import {
+	AUTHOR_NAME,
+	PUBLISHER_NAME,
+	SITE_LOGO,
+	SITE_URL
+} from '../consts';
+
+const {content, heroUrl, lastUpdated, pubDate, title, slug} = Astro.props;
+
+// Note "articleBody": "${content}" has been left off due to challenges
+// importing this data as non-markdown content.
+// ALL CHANGES HERE REQUIRE REVALIDATION
+// SEE https://validator.schema.org/
+const htmlSchemaMarkup = `<script type="application/ld+json">
+	{
+		"@context": "http://schema.org",
+		"@type": "BlogPosting",
+		"headline": "${title}",
+		${heroUrl ? `"image": "${SITE_URL + heroUrl}",` : "" }
+		"author": {
+			"@type": "Person",
+			"name": "${AUTHOR_NAME}"
+		},
+		"publisher": {
+			"@type": "Organization",
+			"name": "${PUBLISHER_NAME}",
+			"logo": {
+				"@type": "ImageObject",
+				"url": "${SITE_LOGO}"
+			}
+		},
+		"url": "${SITE_URL}/blog/${slug}/",
+		"datePublished": "${pubDate}",
+		${lastUpdated ? `"dateModified": "${lastUpdated}",` : "" }
+		${content ? `"articleBody": "${content}"` : "" }
+		"mainEntityOfPage": "True"
+	}
+</script>`
+---
+
+<Fragment set:html={htmlSchemaMarkup} />

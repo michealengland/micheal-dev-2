@@ -1,18 +1,34 @@
 ---
 import type { CollectionEntry } from 'astro:content';
 import BaseHead from '../components/BaseHead.astro';
+import BlogSchema from '../components/BlogSchema.astro'
 import Layout from '../components/organisms/Layout'
 import PostHeader from '../components/molecules/PostHeader'
 
 type Props = CollectionEntry<'blog'>['data'];
 
-const { title, description, pubDate, lastUpdated, heroImage, heroAlt } = Astro.props;
-
+const {
+	title,
+	description,
+	pubDate,
+	lastUpdated,
+	heroImage,
+	heroAlt,
+	slug
+} = Astro.props;
 ---
 
 <html lang="en">
 	<head>
 		<BaseHead title={title} description={description} />
+		<BlogSchema
+			content=""
+			heroUrl={heroImage}
+			lastUpdated={lastUpdated}
+			pubDate={pubDate}
+			slug={slug}
+			title={title}
+		/>
 	</head>
 	<body>
 		<!-- Google Tag Manager (noscript) -->
@@ -20,7 +36,7 @@ const { title, description, pubDate, lastUpdated, heroImage, heroAlt } = Astro.p
 			height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 		<!-- End Google Tag Manager (noscript) -->
 		<Layout>
-			<article>
+			<article itemtype="https://schema.org/Article">
 				<PostHeader
 					title={title}
 					date={pubDate}
