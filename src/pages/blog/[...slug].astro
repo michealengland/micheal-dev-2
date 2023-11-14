@@ -6,11 +6,12 @@ import AuthorBio from '../../components/molecules/AuthorBio'
 
 export async function getStaticPaths() {
 	const posts = (await getCollection('blog'));
+	const isProd = import.meta.env.PROD;
 
 	return posts.reduce((filteredPosts, post) => {
 		const {isDraft} = post.data;
 
-		if (isDraft !== true) {
+		if (isProd && isDraft !== true) {
 			// Apply transformation (map) and add to accumulator
 			filteredPosts.push({
 				params: { slug: post.slug },
