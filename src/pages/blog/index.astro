@@ -5,8 +5,11 @@ import Posts from '../../components/molecules/Posts'
 import { SITE_TITLE, SITE_DESCRIPTION } from '../../consts';
 import { getCollection } from 'astro:content';
 
-const posts = (await getCollection('blog')).sort(
-	(a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
+// Filter out posts that are marked as drafts from being published.
+const posts = (await getCollection('blog'))
+	.filter((post) => post.data.isDraft !== true)
+	.sort(
+		(a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
 );
 ---
 

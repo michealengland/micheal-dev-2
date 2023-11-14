@@ -5,11 +5,22 @@ import PostContent from '../../components/molecules/PostContent'
 import AuthorBio from '../../components/molecules/AuthorBio'
 
 export async function getStaticPaths() {
-	const posts = await getCollection('blog');
-	return posts.map((post) => ({
-		params: { slug: post.slug },
-		props: post,
-	}));
+	const posts = (await getCollection('blog'));
+
+	return posts.reduce((filteredPosts, post) => {
+		const {isDraft} = post.data;
+
+		if (isDraft !== true) {
+			// Apply transformation (map) and add to accumulator
+			filteredPosts.push({
+				params: { slug: post.slug },
+				props: post,
+			});
+		}
+
+		return filteredPosts;
+
+	}, []);
 }
 type Props = CollectionEntry<'blog'>;
 
