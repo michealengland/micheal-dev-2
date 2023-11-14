@@ -5,14 +5,14 @@ import PostContent from '../../components/molecules/PostContent'
 import AuthorBio from '../../components/molecules/AuthorBio'
 
 export async function getStaticPaths() {
-	const posts = (await getCollection('blog'));
 	const isProd = import.meta.env.PROD;
 
-	return posts.reduce((filteredPosts, post) => {
+	return (await getCollection('blog')).reduce((filteredPosts, post) => {
 		const {isDraft} = post.data;
 
-		if (isProd && isDraft !== true) {
-			// Apply transformation (map) and add to accumulator
+		// IS not production.
+		// OR is production and not a draft post.
+		if (! isProd || isProd && !isDraft) {
 			filteredPosts.push({
 				params: { slug: post.slug },
 				props: post,
@@ -20,9 +20,9 @@ export async function getStaticPaths() {
 		}
 
 		return filteredPosts;
-
 	}, []);
 }
+
 type Props = CollectionEntry<'blog'>;
 
 const post = Astro.props;
