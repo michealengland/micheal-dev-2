@@ -21,9 +21,11 @@ export default function Posts({posts}) {
             data: {
               pubDate: date,
               description,
+              isDraft,
               title,
               heroImage,
               heroAlt
+
             }
           } = post
 
@@ -34,6 +36,7 @@ export default function Posts({posts}) {
               { url && title &&
                 <Heading className={styles.title} tag="h2">
                   <img width={720} height={360} src={heroImage} alt={heroAlt} />
+                  {isDraft ? <span className={styles.draftLabel}>DRAFT:</span> : ''}
                   <TextLink to={`${url}`}>
                     {title}
                   </TextLink>

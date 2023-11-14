@@ -26,7 +26,11 @@
   }
 
   & .title {
-    @apply text-primary-purple1 text-2xl md:text-4xl lg:text-5xl mt-10 mb-0;
+    @apply relative text-primary-purple1 text-2xl md:text-4xl lg:text-5xl mt-10 mb-0;
+
+    & .draftLabel {
+      @apply absolute inline-block md:block text-white text-sm bg-secondary-pink px-1 rounded -mt-7 ml-0;
+    }
 
     & a {
       @apply text-inherit ease-in duration-150;
