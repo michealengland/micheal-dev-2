@@ -5,23 +5,16 @@ import Posts from '../../components/molecules/Posts'
 import { SITE_TITLE, SITE_DESCRIPTION } from '../../consts';
 import { getCollection } from 'astro:content';
 
-// Filter out posts that are marked as drafts from being published.
 const isProd = import.meta.env.PROD;
 
-const posts = (await getCollection('blog'))
+// Filter out posts that are marked as drafts from being published on production.
+const filterDraftPosts = (posts=[{data: {isDraft: false}}], isProd:boolean) => (
+	! isProd ? posts :
+	posts.filter((post) => post.data.isDraft !== true)
+)
 
-if (isProd) {
-	posts
-		.filter((post) => post.data.isDraft !== true)
-		.sort(
-			(a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
-	);
-} else {
-	posts.sort(
-		(a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
-	);
-}
-
+const posts = filterDraftPosts((await getCollection('blog')), isProd)
+	.sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf())
 ---
 
 <!doctype html>
