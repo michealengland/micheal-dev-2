@@ -2,8 +2,8 @@
 title: Creating and Managing GitHub CLI Aliases
 description: "example"
 pubDate: 'Nov 19 2023'
-heroImage: '/blog-place-holder-cover-960x480.jpeg'
-heroAlt: 'Example alt text'
+heroImage: '/ghcli-5-cute-octopus-in-glasses-writing-book-960x480.jpg'
+heroAlt: 'Cute octopus in glasses writing ideas in notebook'
 isDraft: true
 ---
 

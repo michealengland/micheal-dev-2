@@ -2,8 +2,8 @@
 title: Building Custom GitHub CLI Commands
 description: "Easily get up and running and authenticed on the GitHub CLI."
 pubDate: 'Nov 18 2023'
-heroImage: '/blog-place-holder-cover-960x480.jpeg'
-heroAlt: 'Example alt text'
+heroImage: '/ghcli-4-cute-octopus-putting-together-models-960x480.jpg'
+heroAlt: 'Cute octopus put together model airplain with glue'
 isDraft: true
 ---
 

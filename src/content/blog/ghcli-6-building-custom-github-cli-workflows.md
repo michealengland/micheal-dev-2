@@ -2,8 +2,8 @@
 title: Building Custom Workflows with the GitHub CLI
 description: "example"
 pubDate: 'Nov 20 2023'
-heroImage: '/blog-place-holder-cover-960x480.jpeg'
-heroAlt: 'Example alt text'
+heroImage: '/ghcli-6-cute-octopus-organizing-workflow-960x480.jpg'
+heroAlt: 'Cute octopus organizing ideas into efficient workflows'
 isDraft: true
 ---
 

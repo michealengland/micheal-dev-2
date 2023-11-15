@@ -2,8 +2,8 @@
 title: Installing and Authorizing the GitHub CLI
 description: "Easily get up and running and authenticed on the GitHub CLI."
 pubDate: 'Nov 15 2023'
-heroImage: '/blog-place-holder-cover-960x480.jpeg'
-heroAlt: 'Example alt text'
+heroImage: '/ghcli-1-cute-octopus-uploading-data-960x480.jpg'
+heroAlt: 'Cute octopus uploading data repository'
 isDraft: true
 ---
 

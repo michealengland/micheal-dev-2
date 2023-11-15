@@ -2,8 +2,8 @@
 title: Setting a Custom Editor for the GitHub CLI
 description: "example"
 pubDate: 'Nov 21 2023'
-heroImage: '/blog-place-holder-cover-960x480.jpeg'
-heroAlt: 'Example alt text'
+heroImage: '/ghcli-7-cute-octopus-using-computer-960x480.jpg'
+heroAlt: 'Cute octopus excitedly using the computer'
 isDraft: true
 ---
 

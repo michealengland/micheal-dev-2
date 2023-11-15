@@ -2,8 +2,8 @@
 title: Initializing a Repository with the GitHub CLI
 description: "Easily get up and running and authenticed on the GitHub CLI."
 pubDate: 'Nov 16 2023'
-heroImage: '/blog-place-holder-cover-960x480.jpeg'
-heroAlt: 'Example alt text'
+heroImage: '/ghcli-2-cute-octopus-learning-command-line-interface-960x480.jpg'
+heroAlt: 'Cute octopus interacting with command line interface'
 isDraft: true
 ---
 
