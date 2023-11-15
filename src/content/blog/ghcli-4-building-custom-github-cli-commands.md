@@ -18,26 +18,26 @@ A good first step is to identify the [top-level command](https://cli.github.com/
 Start with `gh pr create`. You'll encounter an interactive shell UI that asks a few questions:
 
 First, select the repository. Simply hit Enter on your desired option.
-![Entering `gh pr` in the terminal](./assets/ghcli-4-gh-pr-create.png)
+![Entering `gh pr` in the terminal](./assets/ghcli-4-gh-pr-create.jpg)
 
 Next, you'll be prompted to provide a title for your PR.
-![Interactive UI for creating a PR title](./assets/ghcli-4-gh-pr-create-title.png)
+![Interactive UI for creating a PR title](./assets/ghcli-4-gh-pr-create-title.jpg)
 
 After entering the title, you're given the option to write a description. Pressing the "e" key opens your editor to write the PR description. Alternatively, hitting Enter skips this step and moves directly to pushing the PR.
 
-![Interactive UI for creating a PR description](./assets/ghcli-4-gh-pr-create-body.png)
+![Interactive UI for creating a PR description](./assets/ghcli-4-gh-pr-create-body.jpg)
 
 As shown below, I have my editor set up to open a new document in VS Code. Editing, saving, and closing this document will save your draft. Don't worry if yours uses doesn't look like mine, I'll cover more of this later on.
 
-![Using code --wait as a PR editing tool.](./assets/ghcli-4-gh-pr-create-editor.png)
+![Using code --wait as a PR editing tool.](./assets/ghcli-4-gh-pr-create-editor.jpg)
 
 After closing the temporary document, the terminal will display the "What's Next" section. Here, you can finalize your PR, such as submitting it as a draft.
 
-![Submitting your PR as a draft interactive UI](./assets/ghcli-4-gh-pr-submit-as-draft.png)
+![Submitting your PR as a draft interactive UI](./assets/ghcli-4-gh-pr-submit-as-draft.jpg)
 
 You'll then see a confirmation with details about your newly created draft PR.
 
-![Confirmation displayed once the PR has been submitted](./assets/ghcli-4-gh-pr-create-confirmation.png)
+![Confirmation displayed once the PR has been submitted](./assets/ghcli-4-gh-pr-create-confirmation.jpg)
 
 We can further interact with the PR using the `gh pr view` command, adding the PR number.
 
@@ -56,7 +56,7 @@ When uncertain about how to execute a specific task in the GitHub CLI, the websi
 
 Below is an image showing the [filtered search](https://github.com/cli/cli/issues?q=is%3Aissue+is%3Aopen+auth+token) based on our scenario.
 ![[Screenshot 2023-11-09 at 4.07.09 PM.png]]
-![Initial run of `gh search issues` command showing 3906 results](./assets/ghcli-4-gh-search-issues.png)
+![Initial run of `gh search issues` command showing 3906 results](./assets/ghcli-4-gh-search-issues.jpg)
 
 ### Try:
 Let's break down the process to put together an initial command.

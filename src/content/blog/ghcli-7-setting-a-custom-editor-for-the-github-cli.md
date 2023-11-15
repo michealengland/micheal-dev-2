@@ -18,7 +18,7 @@ Write your PR directly in the shell with Vim.
 gh config set editor vim
 ```
 
-![Editing commits with Vim](./assets/ghcli-7-commit-editor.png)
+![Editing commits with Vim](./assets/ghcli-7-commit-editor.jpg)
 
 ## Code Wait
 This option opens a temporary document in your default code editor. Changes must be saved, and once the document is closed, you can proceed with uploading the PR to GitHub.
@@ -31,7 +31,7 @@ _Note: The `--wait` flag tells the UI to wait for the editor before proceeding._
 gh config set editor "code --wait"
 ```
 
-![Editing commits with VS Code using code --wait](./assets/ghcli-7-commi-code-wait.png)
+![Editing commits with VS Code using code --wait](./assets/ghcli-7-commi-code-wait.jpg)
 
 ## SSH
 Change your protocol to SSH or HTTPS.
@@ -48,7 +48,7 @@ gh config set prompt enabled
 
 By default, this option is enabled when the GitHub CLI is installed, allowing users to utilize interactive prompts.
 
-![GH CLI interactive prompts allow the interactive UI within terminal](./assets/ghcli-7-interactive-prompts.png)
+![GH CLI interactive prompts allow the interactive UI within terminal](./assets/ghcli-7-interactive-prompts.jpg)
 
 Disable:
 ```shell
@@ -57,7 +57,7 @@ gh config set prompt disabled
 
 Disabling the prompt requires additional flags for commands that the interactive UI would normally set up.
 
-![Disable the GH CLI interactive prompts allows for fast updates with preconfigured commands](./assets/ghcli-7-interactive-prompts-disabled.png)
+![Disable the GH CLI interactive prompts allows for fast updates with preconfigured commands](./assets/ghcli-7-interactive-prompts-disabled.jpg)
 
 ## Custom Configuration
 It’s worth mentioning that you can configure your default editor to work with other applications on your machine. However, compatibility and functionality might vary. Here's how I configured my editor to use Nota MD:

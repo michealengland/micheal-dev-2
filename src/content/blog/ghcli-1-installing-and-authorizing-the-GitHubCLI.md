@@ -70,7 +70,7 @@ Select the "Browser" option, and you'll be given a one-time code to use in your 
 ```shell
 ? How would you like to authenticate GitHub CLI? Login with a web browser
 ```
-![Giving access to GitHub CLI.](./assets/ghcli-1-access-auth.png)
+![Giving access to GitHub CLI.](./assets/ghcli-1-access-auth.jpg)
 
 After hitting "Authorize," your terminal should update, confirming the successful authentication:
 
@@ -117,11 +117,11 @@ After selecting the "Login with a web browser" option, a one-time code will disp
 ? How would you like to authenticate GitHub CLI? Login with a web browser
 ```
 
-![Activating your device with the authorization code in the terminal](./assets/ghcli-1-device-activation.png)
+![Activating your device with the authorization code in the terminal](./assets/ghcli-1-device-activation.jpg)
 
 Once you've entered the code from the terminal and clicked "Continue," an authorization page will appear.
 
-![Giving access to GitHub CLI.](./assets/ghcli-1-access-auth.png)
+![Giving access to GitHub CLI.](./assets/ghcli-1-access-auth.jpg)
 
 Click "Authorize" to complete the authentication process.
 
