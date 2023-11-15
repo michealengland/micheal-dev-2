@@ -5,6 +5,7 @@ import Hero from '../components/molecules/Hero'
 import Content from '../components/molecules/Content'
 import ContentCTA from '../components/molecules/ContentCTA'
 import MediaContent from '../components/molecules/MediaContent'
+import twitterCard from '../content/assets/mike-in-prague-800x418.jpg'
 import heroProfile from '../content/assets/mike-in-car-2.jpg'
 import heroImage from '../content/assets/halloween-jam-drift-350z-2000x1000.jpeg'
 import mediaContentImage1 from '../content/assets/anas-alshanti-feXpdV001o4-unsplash.jpg'
@@ -19,7 +20,12 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 <!doctype html>
 <html lang="en">
 	<head>
-		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+		<BaseHead
+			title={SITE_TITLE}
+			description={SITE_DESCRIPTION}
+			image={twitterCard.src}
+			imageAlt="Mike England standing in front of a beautiful Prague cityscape background during a work meetup."
+		/>
 		<PageSchema />
 	</head>
 	<body>
