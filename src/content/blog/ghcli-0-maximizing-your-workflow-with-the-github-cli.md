@@ -2,7 +2,7 @@
 title: Maximizing your workflow with the GitHub CLI Intro
 description: "The GitHub CLI can be invaluable for many types of roles. If you use GitHub in any capacity, you have a good reason to explore this tool."
 pubDate: 'Nov 14 2023'
-heroImage: 'blog-place-holder-cover-960x480.jpeg'
+heroImage: '/blog-place-holder-cover-960x480.jpeg'
 heroAlt: 'Example alt text'
 isDraft: true
 ---

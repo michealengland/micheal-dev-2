@@ -2,7 +2,7 @@
 title: Learn the GitHub CLI Command Basics
 description: "Easily get up and running and authenticed on the GitHub CLI."
 pubDate: 'Nov 17 2023'
-heroImage: 'blog-place-holder-cover-960x480.jpeg'
+heroImage: '/blog-place-holder-cover-960x480.jpeg'
 heroAlt: 'Example alt text'
 isDraft: true
 ---
