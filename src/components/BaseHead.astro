@@ -6,16 +6,20 @@ import '@fontsource/mulish/300.css'
 import '@fontsource/mulish/400.css'
 import '@fontsource/mulish/600.css'
 import '@fontsource/mulish/700.css'
+import {
+	SOCIAL_TWITTER_HANDLE,
+} from '../consts';
 
 interface Props {
 	title: string;
 	description: string;
 	image?: string;
+	imageAlt?: string;
 }
 
 const canonicalURL = new URL(Astro.url.pathname, Astro.site);
 
-const { title, description, image = '/robot-cat-sleeping-on-laptop-960x480.jpeg' } = Astro.props;
+const { title, description, image = '/robot-cat-sleeping-on-laptop-960x480.jpeg', imageAlt="" } = Astro.props;
 ---
 
 <!-- Global Metadata -->
@@ -44,10 +48,12 @@ const { title, description, image = '/robot-cat-sleeping-on-laptop-960x480.jpeg'
 <meta property="og:image" content={new URL(image, Astro.url)} />
 
 <!-- Twitter -->
+<meta name="twitter:site" content={SOCIAL_TWITTER_HANDLE}>
+<meta name="twitter:creator" content={SOCIAL_TWITTER_HANDLE} />
 <meta property="twitter:card" content="summary_large_image" />
-<meta property="twitter:url" content={Astro.url} />
 <meta property="twitter:title" content={title} />
 <meta property="twitter:description" content={description} />
 <meta property="twitter:image" content={new URL(image, Astro.url)} />
+<meta name="twitter:image:alt" content={imageAlt}>
 
 <script src="https://beamanalytics.b-cdn.net/beam.min.js" data-token="d1d9b469-4f48-4840-8611-02fbe1311451" async></script>
