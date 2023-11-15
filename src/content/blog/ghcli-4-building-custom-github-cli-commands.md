@@ -55,8 +55,8 @@ Next, let’s explore a more advanced command that involves using variables and 
 When uncertain about how to execute a specific task in the GitHub CLI, the website can be a useful resource for visualizing ideas.
 
 Below is an image showing the [filtered search](https://github.com/cli/cli/issues?q=is%3Aissue+is%3Aopen+auth+token) based on our scenario.
-![[Screenshot 2023-11-09 at 4.07.09 PM.png]]
-![Initial run of `gh search issues` command showing 3906 results](./assets/ghcli-4-gh-search-issues.jpg)
+
+![Using the filtered search within the browser to visualize what the command should do](./assets/ghcli-4-search-in-browser-example.jpg)
 
 ### Try:
 Let's break down the process to put together an initial command.
@@ -65,13 +65,14 @@ Let's break down the process to put together an initial command.
 2. According to the [documentation on searching issues](https://cli.github.com/manual/gh_search_issues), we can use `--owner=cli` and `--repo=cli` flags to specify our search.
 3. Our initial command is `gh search --owner=cli --repo=cli`.
 
-<!-- ![[Screenshot 2023-11-09 at 3.55.00 PM.png]] -->
+![Initial run of `gh search issues` command showing 3906 results](./assets/ghcli-4-gh-search-issues.jpg)
 
 Now, let’s refine the search with additional flags from the documentation.
 
 First, we’ll add the "help wanted" label using `--label`. Since the label consists of two words, we enclose it in quotes: `--label="help wanted"`. The command `gh search issues --owner=cli --repo=cli --label="help wanted"` gives us a more focused list of issues.
 
-![[Screenshot 2023-11-09 at 4.11.07 PM.png]]
+![Refined search results using help wanted label flag](./assets/ghcli-4-search-issues-refined-with-label.jpg)
+
 Lastly, let's refine this one more time by adding our phrase into the search. According to the documentation, our structure should look like this `gh search issues [<query>] [flags]`. So let's try it out `gh search issues auth token --owner=cli --repo=cli --label="help wanted"`
 
 Finally, let's refine the search further by including the phrase "auth token". Based on the [documentation](https://cli.github.com/manual/gh_search_issues), our command format is `gh search issues [<query>] [flags]`. Let’s try `gh search issues auth token --owner=cli --repo=cli --label="help wanted"`.

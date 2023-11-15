@@ -11,7 +11,6 @@ Now that we have a functioning repository from the previous lesson, we're ready 
 
 The primary alias for interacting with the GitHub CLI is `gh`. Executing `gh` alone will display a high-level overview of all available commands, as shown in the screenshot below.
 
-![[Screenshot 2023-11-09 at 8.38.41 PM.png]]
 ![example stuff](./assets/ghcli-3-gh-base-command.jpg)
 
 Scrolling down, there’s a useful guide that shows an overview on the command syntax:
