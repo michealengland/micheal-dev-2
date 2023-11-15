@@ -4,6 +4,7 @@ import Layout from '../../components/organisms/Layout'
 import Posts from '../../components/molecules/Posts'
 import { SITE_TITLE, SITE_DESCRIPTION } from '../../consts';
 import { getCollection } from 'astro:content';
+import twitterCard from '../../content/assets/mike-in-prague-800x418.jpg'
 
 const isProd = import.meta.env.PROD;
 
@@ -20,7 +21,12 @@ const posts = filterDraftPosts((await getCollection('blog')), isProd)
 <!doctype html>
 <html lang="en">
 	<head>
-		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+		<BaseHead
+			title={SITE_TITLE}
+			description={SITE_DESCRIPTION}
+			image={twitterCard.src}
+			imageAlt="Mike England standing in front of a beautiful Prague cityscape background during a work meetup."
+		/>
 	</head>
 	<body>
 		<Layout>
