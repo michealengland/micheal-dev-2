@@ -76,6 +76,6 @@ Lastly, let's refine this one more time by adding our phrase into the search. Ac
 
 Finally, let's refine the search further by including the phrase "auth token". Based on the [documentation](https://cli.github.com/manual/gh_search_issues), our command format is `gh search issues [<query>] [flags]`. Let’s try `gh search issues auth token --owner=cli --repo=cli --label="help wanted"`.
 
-![Running the full command to see an accurate listing of issues that match our search criteria](./assets/ghcli-4-gh-search-issues-fully-refined.png)
+![Running the full command to see an accurate listing of issues that match our search criteria](./assets/ghcli-4-gh-search-issues-fully-refined.jpg)
 
 In this guide, we explored practical applications of the GitHub CLI, focusing on creating a new Pull Request (PR) and searching within an external repository. Now, we're ready to examine how we can store commands for reuse using aliases.
