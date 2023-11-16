@@ -8,7 +8,8 @@ body {
   @apply bg-primary-purple1 font-sans m-0 p-0;
 }
 
-main p a {
+main p a,
+main li a {
   box-shadow: 0 1px 0 0;
 
   &:hover,
