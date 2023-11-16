@@ -9,7 +9,7 @@ heroAlt: Cute octopus writing notes
 In my professional journey, there came a moment when I shifted my focus from proficiency in coding to prioritizing workflow efficiency. This change in perspective led me to closely examine how I spent my time on routine tasks, such as pulling down code, reviewing and drafting pull requests (PRs). I soon realized that these tasks, while minor, consumed a significant portion of my day. This change in thought steered me towards exploring solutions that could streamline these processes and enhance productivity.
 
 ## Why You Should Use the GitHub CLI in Your Workflow
-For anyone interested in learning the [GitHub CLI](https://cli.github.com/) I have great news, you can do pretty quickly. Here are some of the things I learned when I first started:
+For anyone interested in learning the [GitHub CLI](https://cli.github.com/) I have great news, you can get started pretty quickly. Here are some of the things I learned when I first started:
 
 - Learning the ropes is quite straightforward; you don't need to invest hundreds of hours. Start with the basics and gradually build up your expertise.
 - The rewards are immediate. You can integrate new techniques into your workflow right away and notice the difference.
