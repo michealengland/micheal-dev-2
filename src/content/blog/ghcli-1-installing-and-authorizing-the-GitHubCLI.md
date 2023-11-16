@@ -1,10 +1,9 @@
 ---
 title: Installing and Authorizing the GitHub CLI
-description: "Easily get up and running and authenticed on the GitHub CLI."
-pubDate: 'Nov 15 2023'
+description: 'Unlock the full potential of GitHub CLI with easy-to-follow steps on setup, authentication, and efficient use of SSH and HTTPS. Elevate your coding efficiency today.'
+pubDate: 'Nov 16 2023'
 heroImage: '/ghcli-1-cute-octopus-uploading-data-960x480.jpg'
 heroAlt: 'Cute octopus uploading data repository'
-isDraft: true
 ---
 
 Before proceeding, you should start with installation based on your device. Checkout the [official instructions](https://github.com/cli/cli#installation) to get started.
@@ -98,7 +97,7 @@ Upload your SSH public key to your GitHub account?  [Use arrows to move, type to
   SSH
 ```
 
-Once you choose `HTTPS`, you'll encounter another question about how you wish to proceed with authentication. Selecting `Y` or typing `Yes` will automatically choose the `Paste an authentication token` option at the next prompt. Conversely, using `N` or `No` will default to the `Login with a web browser` option.
+When you select the HTTPS option, the CLI will prompt you with a choice about your preferred authentication method. Selecting `Y` or typing `Yes` will automatically choose the `Paste an authentication token` option at the next prompt. Conversely, using `N` or `No` will default to the `Login with a web browser` option.
 
 For the purposes of this guide, we'll authenticate using the browser. If you already possess an authentication token, you can use that method as well; the steps are quite similar.
 
@@ -137,3 +136,6 @@ github.com
 ```
 
 _ℹ️  If you encounter authorization issues and need to restart the process, you can delete or rename your current `.ssh` config directory and begin again at any time. The location of this directory may vary depending on your machine._
+
+## Takeaways
+Now that we have the GH CLI authorized you're ready to begin using it. In the next blog to be released in this series, we'll discuss initializing a repo.
