@@ -1,13 +1,12 @@
 ---
 title: Learn the GitHub CLI Command Basics
 description: "Dive into GitHub CLI: Master command syntax and streamline your development process. Our guide breaks down CLI commands, making them easy to learn and apply."
-pubDate: 'Nov 17 2023'
+pubDate: 'Nov 21 2023'
 heroImage: '/ghcli-3-cute-octopus-playing-with-blocks-960x480.jpg'
 heroAlt: 'Cute octopus playing with building block toys'
-isDraft: true
 ---
 
-Now that we have a functioning repository from the [previous lesson](/blog/ghcli-2-initializing-a-repo-with-the-github-cli), we're ready to dive headfirst into the GitHub CLI's commands. The best approach is to first familiarize ourselves with the command structure. At the core of the CLI, all commands follow a basic pattern.
+Now that we have a functioning repository from the [previous lesson](/blog/ghcli-2-initializing-a-repo-with-the-github-cli/), we're ready to dive headfirst into the GitHub CLI's commands. The best approach is to first familiarize ourselves with the command structure. At the core of the CLI, all commands follow a basic pattern.
 
 ```shell
 gh <command> <subcommand> --flags
