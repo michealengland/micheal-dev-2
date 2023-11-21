@@ -2,6 +2,7 @@
 title: Installing and Authorizing the GitHub CLI
 description: 'Unlock the full potential of GitHub CLI with easy-to-follow steps on setup, authentication, and efficient use of SSH and HTTPS. Elevate your coding efficiency today.'
 pubDate: 'Nov 16 2023'
+lastUpdated: 'Nov 21 23'
 heroImage: '/ghcli-1-cute-octopus-uploading-data-960x480.jpg'
 heroAlt: 'Cute octopus uploading data repository'
 ---
@@ -138,4 +139,4 @@ github.com
 _ℹ️  If you encounter authorization issues and need to restart the process, you can delete or rename your current `.ssh` config directory and begin again at any time. The location of this directory may vary depending on your machine._
 
 ## Takeaways
-Now that we have the GH CLI authorized you're ready to begin using it. In the next blog to be released in this series, we'll discuss initializing a repo.
+Now that we have the GH CLI authorized you're ready to begin using it. In the next blog to be released in this series, we'll discuss [initializing a repo](/blog/ghcli-2-initializing-a-repo-with-the-github-cli/).
