@@ -1,13 +1,13 @@
 ---
 title: Building Custom Workflows with the GitHub CLI
-description: "example"
+description: "Step up your GitHub game: Our guide delves into creating effective CLI aliases to simplify repetitive tasks, enhancing your workflow and saving time every day."
 pubDate: 'Nov 20 2023'
 heroImage: '/ghcli-6-cute-octopus-organizing-workflow-960x480.jpg'
 heroAlt: 'Cute octopus organizing ideas into efficient workflows'
 isDraft: true
 ---
 
-Now that you understand the fundamentals of the GitHub CLI and how to create aliases, it's time for workflow hacking. Aliases are so powerful that they can sometimes overshadow other parts of the CLI. Here are some guidelines to enhance your workflow, using my own aliases as examples.
+In this lesson, we'll cover how you can start recognize patterns that could be optomized with the GitHub CLI. Now that you understand the [fundamentals of the GitHub CLI](/blog/ghcli-3-deconstructing-and-building-commands/) and how to [create aliases](/blog/ghcli-5-creating-and-managing-github-cli-aliases/), it's time for workflow hacking. Aliases are so powerful that they can sometimes overshadow other parts of the CLI. Here are some guidelines to enhance your workflow, using my own aliases as examples.
 
 ## Guidelines
 Reflect on how you use GitHub regularly:
@@ -59,5 +59,8 @@ Here's a list of the custom aliases I use frequently:
 | sic | `issue list --search "is:closed is:issue $1"` | Search closed issues |
 | spr | `pr list --search "is:pr is:open $1"` | Search open PRs |
 | sprc | `pr list --search "is:pr is:closed $1"` | Search closed PRs |
-| v | `pr view $1` | View PR in the current in shell |
+| v | `pr view $1` | View PR in the current shell |
 | vw | `pr view $1 -w` | View PR in the browser |
+
+### Takeaways
+I really hope this blog series has greatly improved your confidence with the GitHub CLI. The natural next steps after learning a tool are to put it into practice. In the next lesson, we'll discuss setting a custom editor. In the meantime, try creating your own aliases and use them on a daily basis.
