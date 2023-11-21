@@ -1,13 +1,13 @@
 ---
 title: Building Custom GitHub CLI Commands
-description: "Easily get up and running and authenticed on the GitHub CLI."
+description: "Unlock GitHub CLI's potential with our in-depth tutorial. Learn to manage PRs, search repos, and streamline your development process with expert tips."
 pubDate: 'Nov 18 2023'
 heroImage: '/ghcli-4-cute-octopus-putting-together-models-960x480.jpg'
 heroAlt: 'Cute octopus put together model airplain with glue'
 isDraft: true
 ---
 
-When I first started learning the GitHub CLI, I found that creating some commands was straightforward, while others required a bit of trial and error. Let's walk through a few examples.
+When I first started learning the GitHub CLI, I found that creating some commands was straightforward, while others required a bit of trial and error. Let's walk through a few examples to help make your future workflow hacking easier. In the previous lesson, we discussed [command building basics](/blog/ghcli-3-deconstructing-and-building-commands/) and in this lesson we'll add onto those skills.
 
 ## Creating a New PR
 
@@ -27,7 +27,7 @@ After entering the title, you're given the option to write a description. Pressi
 
 ![Interactive UI for creating a PR description](./assets/ghcli-4-gh-pr-create-body.jpg)
 
-As shown below, I have my editor set up to open a new document in VS Code. Editing, saving, and closing this document will save your draft. Don't worry if yours uses doesn't look like mine, I'll cover more of this later on.
+As shown below, I have my editor set up to open a new document in VS Code. Editing, saving, and closing this document will save your draft. Don’t worry if yours doesn’t look like mine; I’ll cover more on this later.
 
 ![Using code --wait as a PR editing tool.](./assets/ghcli-4-gh-pr-create-editor.jpg)
 
@@ -44,7 +44,7 @@ We can further interact with the PR using the `gh pr view` command, adding the P
 - View PR in the terminal: `gh pr view 73`
 - View PR in the default web browser (using the `-w` flag): `gh pr view 73 -w`
 
-> [!note] Try experimenting with additional flags
+> Try experimenting with additional flags
 > As shown in the Aliases chapter, we can further refine the command by taking advantage of the flags shown within the documentation, for example `pr create --draft --assignee @me`.
 
 ## Searching an External Repo with the GitHub CLI
