@@ -1,17 +1,18 @@
 ---
 title: Setting a Custom Editor for the GitHub CLI
-description: "example"
+description: "Elevate your GitHub CLI skills with expert tips on editor configurations and interactive prompts. Discover how to tailor the CLI to your workflow for maximum efficiency."
 pubDate: 'Nov 21 2023'
 heroImage: '/ghcli-7-cute-octopus-using-computer-960x480.jpg'
 heroAlt: 'Cute octopus excitedly using the computer'
 isDraft: true
 ---
 
-In the GitHub CLI, there's a special rule that allows you to choose how documents are edited. For example, users wanting to write a pull request on their machine can specify `code --wait` to write PRs directly in their default code editor.
+In previous articles we discussed everything from [initializing a repo](/blog/ghcli-2-initializing-a-repo-with-the-github-cli/) to [building custom workflows within the GitHub CLI](/blog/ghcli-6-building-custom-github-cli-workflows/). Next we're ready to take the GH CLI to the next level by utilizing a special rule that allows you to choose how documents are edited. For example, users wanting to write a pull request on their machine can specify `code --wait` to write PRs directly in their default code editor.
 
 This lesson will explore this feature. It should be noted that while this feature works with some external apps, results may vary.
 
 Below are some examples from the [GitHub CLI manual](https://cli.github.com/manual/gh_config_set):
+
 ## Vim
 Write your PR directly in the shell with Vim.
 ```shell
@@ -60,7 +61,7 @@ Disabling the prompt requires additional flags for commands that the interactive
 ![Disable the GH CLI interactive prompts allows for fast updates with preconfigured commands](./assets/ghcli-7-interactive-prompts-disabled.jpg)
 
 ## Custom Configuration
-It’s worth mentioning that you can configure your default editor to work with other applications on your machine. However, compatibility and functionality might vary. Here's how I configured my editor to use Nota MD:
+It’s worth mentioning that you can configure your default editor to work with other applications on your machine. However, compatibility and functionality might vary. Here's how I configured my editor to use Nota MD to write my PRs:
 
 First, I installed the [Nota CLI](https://docs.nota.md/command-line-interface) to make it executable from the command line. Then, I verified that using `nota` in the command line successfully opened the application.
 
@@ -79,3 +80,6 @@ gh pr create --draft --assignee @me
 One downside I've encountered with this setup is the need to fully close the Nota application after using it. This requirement can be a bit frustrating, especially since I frequently use Nota for note-taking purposes. While other applications might integrate more seamlessly with the GitHub CLI.
 
 ![Using Nota as an editor with the GitHub CLI.](./assets/ghcli-7-nota-editor.png)
+
+### Takeaways
+Thank you for taking the time to read this blog series. I really hope that this blog has inspired you to dive deeper into workflow optimizing. Taking advantage of [aliases](/blog/ghcli-5-creating-and-managing-github-cli-aliases/), [complex commands](/blog/ghcli-4-building-custom-github-cli-commands/), and utilizing your editor to help your write better and faster PRs will help you save a large amount of time. In the future I hope to write more about some of the really complex areas within the GitHub CLI.
