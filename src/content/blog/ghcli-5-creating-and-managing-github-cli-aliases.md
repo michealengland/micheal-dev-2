@@ -1,21 +1,23 @@
 ---
 title: Creating and Managing GitHub CLI Aliases
-description: "example"
-pubDate: 'Nov 19 2023'
+description: "Discover the power of aliases in the GitHub CLI. Our step-by-step tutorial shows you how to set up, modify, and use aliases to optimize your development process."
+pubDate: 'Nov 23 2023'
 heroImage: '/ghcli-5-cute-octopus-in-glasses-writing-book-960x480.jpg'
 heroAlt: 'Cute octopus in glasses writing ideas in notebook'
 isDraft: true
 ---
 
-Without a doubt, aliases are one of the most incredible features of working with the GitHub CLI. An alias is a custom shortcut that references a full command which makes it easy to reuse complex commands.
+When I first began exploring the GitHub CLI, I quickly realized that while some commands were straightforward, others demanded trial and error. To simplify your learning curve, let's walk through a few examples. Building on our previous discussion about the [basics of command building](/blog/ghcli-4-building-custom-github-cli-commands/), this lesson aims to further enhance those skills, making your workflow hacking even more efficient.
 
 Here are the main alias commands you need in order to get started.
+
 ### 1. Creating and Updating Aliases
-Define a new alias with `set` subcommand. This works passing in an alias name and a command within the quotes.
+Define a new alias with `set` subcommand. This works by passing in an alias name and a command within the quotes.
 
 ```shell
 gh alias set alias-name 'command without gh'
 ```
+
 #### Try:
 Let's create a simple alias for creating draft PRs. In this example we'll do the following actions from the command line:
 - Create a PR and set it as a draft.
@@ -82,6 +84,7 @@ gh alias delete create-draft-pr
 ```
 
 Once an aliases is deleted, you'll see prompt confirming that.
+
 ```shell
 ❯ ~ gh alias delete create-draft-pr
 ✓ Deleted alias create-draft-pr; was pr create --draft --assignee @me
@@ -89,11 +92,13 @@ Once an aliases is deleted, you'll see prompt confirming that.
 
 ## Using variables in aliases
 An important feature of the GitHub CLI is the ability to use variables in your commands. Variables are denoted by `$1`, `$2`, etc.
+
 ### Variable Rules:
 - Variables are represented by a `$` followed by a numerical identifier, starting at 1 such as `$1`.
-- When using multiple variables, increment the variable number for each one such as `$1 $2 $3` and so forth.
+- Increment the variable number for each additional variable, such as `$1`, `$2`, `$3`, and so on.
 - Use single quotes to wrap the alias and double quotes around variables, as per the [GitHub CLI documentation](https://cli.github.com/manual/gh_alias_set).
 - Ensure the order of your values matches the order of the variables in the alias.
+
 ## Try:
 Convert the command seen below into an alias, replacing dynamic values with variables:
 
@@ -118,5 +123,6 @@ Execute the alias like so and verify you get the correct results.
 ```shell
 gh srp "auth token" cli cli "help wanted"
 ```
+
 ## Start Planning Your Aliases!
 You're now ready to begin workflow hacking with the GitHub CLI. The next lesson will delve into creating your own workflow hacks to save time throughout your week.
