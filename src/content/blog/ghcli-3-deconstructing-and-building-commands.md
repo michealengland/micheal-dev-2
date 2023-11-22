@@ -34,4 +34,4 @@ Let's deconstruct a straightforward command like `gh pr view 123 --web`. This co
 - `--web` is a flag that can be used with the `view` subcommand to open the item in the browser instead of displaying it in the terminal.
 
 ## Learning About Commands
-In upcoming lessons, we'll explore how to craft more complex commands. Remember, two invaluable resources are at your disposal: the [GitHub CLI manual](https://cli.github.com/manual), which offers the most current information, and the `--help` flag which is an excellent quick-reference for command details.
+In upcoming lessons, we'll explore how to [craft more complex commands](/blog/ghcli-3-deconstructing-and-building-commands/). Remember, two invaluable resources are at your disposal: the [GitHub CLI manual](https://cli.github.com/manual), which offers the most current information, and the `--help` flag which is an excellent quick-reference for command details.

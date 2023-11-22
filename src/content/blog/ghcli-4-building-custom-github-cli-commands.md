@@ -1,10 +1,9 @@
 ---
 title: Building Custom GitHub CLI Commands
 description: "Unlock GitHub CLI's potential with our in-depth tutorial. Learn to manage PRs, search repos, and streamline your development process with expert tips."
-pubDate: 'Nov 18 2023'
+pubDate: 'Nov 22 2023'
 heroImage: '/ghcli-4-cute-octopus-putting-together-models-960x480.jpg'
 heroAlt: 'Cute octopus put together model airplain with glue'
-isDraft: true
 ---
 
 When I first started learning the GitHub CLI, I found that creating some commands was straightforward, while others required a bit of trial and error. Let's walk through a few examples to help make your future workflow hacking easier. In the previous lesson, we discussed [command building basics](/blog/ghcli-3-deconstructing-and-building-commands/) and in this lesson we'll add onto those skills.
