@@ -1,6 +1,6 @@
 .hero {
   @apply relative flex flex-col items-center justify-center font-sans bg-primary-purple1 text-nuetral-white
-  text-center h-auto max-h-full max-w-full z-1 p-4 md:py-4 md:px-6 md:bg-fixed bg-center;
+  text-center h-auto max-h-full max-w-full z-1 p-4 md:py-4 md:px-6 bg-center;
 
   background-size: cover;
   clip-path: polygon(0 0, 100% 0, 100% 88%, 50% 100%, 0 88%, 0% 25%);
