@@ -1,7 +1,7 @@
 ---
 title: Building Custom Workflows with the GitHub CLI
 description: "Step up your GitHub game: Our guide delves into creating effective CLI aliases to simplify repetitive tasks, enhancing your workflow and saving time every day."
-pubDate: 'Nov 20 2023'
+pubDate: 'Nov 29 2023'
 heroImage: '/ghcli-6-cute-octopus-organizing-workflow-960x480.jpg'
 heroAlt: 'Cute octopus organizing ideas into efficient workflows'
 isDraft: true

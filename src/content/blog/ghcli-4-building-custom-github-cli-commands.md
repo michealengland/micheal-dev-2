@@ -2,6 +2,7 @@
 title: Building Custom GitHub CLI Commands
 description: "Unlock GitHub CLI's potential with our in-depth tutorial. Learn to manage PRs, search repos, and streamline your development process with expert tips."
 pubDate: 'Nov 22 2023'
+lastUpdated: 'Nov 28 2023'
 heroImage: '/ghcli-4-cute-octopus-putting-together-models-960x480.jpg'
 heroAlt: 'Cute octopus put together model airplain with glue'
 ---
@@ -78,4 +79,4 @@ Finally, let's refine the search further by including the phrase "auth token". B
 
 ![Running the full command to see an accurate listing of issues that match our search criteria](./assets/ghcli-4-gh-search-issues-fully-refined.jpg)
 
-In this guide, we explored practical applications of the GitHub CLI, focusing on creating a new Pull Request (PR) and searching within an external repository. Now, we're ready to examine how we can store commands for reuse using aliases.
+In this guide, we explored practical applications of the GitHub CLI, focusing on creating a new Pull Request (PR) and searching within an external repository. Now, we're ready to examine how we can store commands for reuse [using aliases](/blog/ghcli-5-creating-and-managing-github-cli-aliases/).
