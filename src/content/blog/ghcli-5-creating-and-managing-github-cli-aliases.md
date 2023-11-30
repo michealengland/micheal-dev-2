@@ -124,4 +124,4 @@ gh srp "auth token" cli cli "help wanted"
 ```
 
 ## Start Planning Your Aliases!
-You're now ready to begin workflow hacking with the GitHub CLI. The next lesson will delve into creating your own workflow hacks to save time throughout your week.
+You're now ready to begin [workflow hacking with the GitHub CLI](/blog/ghcli-6-building-custom-github-cli-workflows/). The next lesson will delve into creating your own workflow hacks to save time throughout your week.
