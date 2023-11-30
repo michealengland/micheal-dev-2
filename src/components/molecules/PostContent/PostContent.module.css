@@ -77,4 +77,36 @@
       @apply mb-0;
     }
   }
+
+  & table {
+    @apply overflow-scroll relative text-xs md:text-sm;
+
+    thead {
+      @apply bg-primary-purple2 text-white text-left;
+
+      th {
+        @apply p-1 md:p-2 font-bold;
+      }
+    }
+
+    tbody {
+      @apply bg-primary-purple1 text-white p-1 md:p-2;
+    }
+
+    tr {
+      @apply border-primary-purple2 border-b;
+    }
+
+    tr td:first-child {
+      @apply text-secondary-pink font-bold;
+    }
+
+    tr td:nth-child(2) {
+      @apply text-tertiary-teal font-bold;
+    }
+
+    td {
+      @apply p-2;
+    }
+  }
 }
