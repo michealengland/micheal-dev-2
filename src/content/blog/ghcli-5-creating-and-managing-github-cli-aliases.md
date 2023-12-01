@@ -2,6 +2,7 @@
 title: Creating and Managing GitHub CLI Aliases
 description: "Discover the power of aliases in the GitHub CLI. Our step-by-step tutorial shows you how to set up, modify, and use aliases to optimize your development process."
 pubDate: 'Nov 28 2023'
+lastUpdated: 'Dec 1 2023'
 heroImage: '/ghcli-5-cute-octopus-in-glasses-writing-book-960x480.jpg'
 heroAlt: 'Cute octopus in glasses writing ideas in notebook'
 ---
