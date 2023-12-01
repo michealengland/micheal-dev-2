@@ -108,13 +108,13 @@ gh search issues auth token --owner=cli --repo=cli --label="help wanted"
 Correct:
 
 ```shell
-gh alias set srp 'search issues $1 token --owner="$2" --repo="$3" --label="$4"'
+gh alias set srp 'search issues $1 --owner="$2" --repo="$3" --label="$4"'
 ```
 
 Incorrect (due to lack of proper quotations):
 
 ```shell
-gh alias set srp 'search issues $1 token --owner=$2 --repo=$3 --label=$4'
+gh alias set srp 'search issues $1 --owner=$2 --repo=$3 --label=$4'
 ```
 
 Execute the alias like so and verify you get the correct results.
