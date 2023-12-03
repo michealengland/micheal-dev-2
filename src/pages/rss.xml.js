@@ -4,6 +4,14 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 
 const isProd = import.meta.env.PROD;
 
+/**
+ * View RSS feed by going to /rss.xml.
+ *
+ * Example: https://micheal.dev/rss.xml
+ *
+ * @param {*} context
+ * @returns
+ */
 export async function GET(context) {
 	// Filter out posts that are marked as drafts from being published on production.
 	const filterDraftPosts = (posts=[{data: {isDraft: false}}], isProd) => (
