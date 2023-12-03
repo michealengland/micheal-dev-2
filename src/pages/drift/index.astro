@@ -2,8 +2,8 @@
 import BaseHead from '../../components/BaseHead.astro';
 import Layout from '../../components/organisms/Layout'
 import Posts from '../../components/molecules/Posts'
-import { SITE_TITLE, SITE_DESCRIPTION } from '../../consts';
 import { getCollection } from 'astro:content';
+import twitterCard from '../../content/assets/mike-england-wall-ride-350z-800x418.jpeg'
 
 const posts = (await getCollection('drift')).sort(
 	(a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
@@ -13,7 +13,12 @@ const posts = (await getCollection('drift')).sort(
 <!doctype html>
 <html lang="en">
 	<head>
-		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+		<BaseHead
+			title="Mike England Drift Journey"
+			description="Join my adventure from watching 'Hyperdrive' to hitting the drift track. Insights on beginner cars and the thrill of drift racing."
+			image={twitterCard.src}
+			imageAlt="Mike England drifting white 350z at Kilkare Raceway along the banked wall."
+		/>
 	</head>
 	<body>
 		<Layout>
