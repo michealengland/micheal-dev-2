@@ -15,6 +15,9 @@ export default function Header() {
             <li>
               <TextLink to={'/blog'}>Blog</TextLink>
             </li>
+            <li>
+              <TextLink to={'/drift'}>Drift</TextLink>
+            </li>
           </ul>
         </nav>
         <SocialLinks className={styles.socialLinks} />

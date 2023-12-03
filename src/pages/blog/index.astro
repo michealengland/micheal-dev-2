@@ -30,7 +30,10 @@ const posts = filterDraftPosts((await getCollection('blog')), isProd)
 	</head>
 	<body>
 		<Layout>
-			<Posts posts={posts} />
+			<Posts
+				title="Micheal England Development Blog"
+				posts={posts}
+			/>
 		</Layout>
 	</body>
 </html>
