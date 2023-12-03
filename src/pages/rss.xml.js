@@ -12,7 +12,12 @@ export async function GET(context) {
 	)
 
 	// const posts = await getCollection('blog');
-	const posts = filterDraftPosts((await getCollection('blog')), isProd)
+	const blogPosts = filterDraftPosts((await getCollection('blog')), isProd)
+	const driftPosts = filterDraftPosts((await getCollection('drift')), isProd)
+	const posts = [
+		...blogPosts,
+		...driftPosts,
+	].sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf())
 
 	return rss({
 		title: SITE_TITLE,
@@ -20,7 +25,7 @@ export async function GET(context) {
 		site: context.site,
 		items: posts.map((post) => ({
 			...post.data,
-			link: `/blog/${post.slug}/`,
+			link: `/${post.collection}/${post.slug}/`,
 		})),
 	});
 }
