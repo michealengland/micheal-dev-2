@@ -1,0 +1,30 @@
+---
+import type { CollectionEntry } from 'astro:content';
+import BaseHead from '../components/BaseHead.astro';
+import Layout from '../components/organisms/Layout'
+import PostHeader from '../components/molecules/PostHeader'
+
+type Props = CollectionEntry<'drift'>['data'];
+
+const { title, description, pubDate, lastUpdated, heroImage } = Astro.props;
+
+---
+
+<html lang="en">
+	<head>
+		<BaseHead title={title} description={description} />
+	</head>
+	<body>
+		<Layout>
+			<article>
+				<PostHeader
+					title={title}
+					date={pubDate}
+					lastUpdated={lastUpdated}
+					heroImage={heroImage}
+				/>
+				<slot />
+			</article>
+		</Layout>
+	</body>
+</html>
