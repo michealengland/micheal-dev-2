@@ -7,11 +7,11 @@ import formatBlogDate from '../../../utilities/formatBlogDate'
 // TODO Refactor this component with more strict props.
 // TODO Create snapshot test.
 
-export default function Posts({posts}) {
+export default function Posts({title, posts}) {
   return (
     <>
     <header className={styles.blogHeading}>
-      <h1>Micheal England Development Blog</h1>
+      {title && <h1>{title}</h1>}
     </header>
     <section className={styles.posts}>
       <div className={styles.inner}>
