@@ -1,10 +1,9 @@
 ---
 title: Setting a Custom Editor for the GitHub CLI
 description: "Elevate your GitHub CLI skills with expert tips on editor configurations and interactive prompts. Discover how to tailor the CLI to your workflow for maximum efficiency."
-pubDate: 'Dec 01 2023'
+pubDate: 'Dec 05 2023'
 heroImage: '/ghcli-7-cute-octopus-using-computer-960x480.jpg'
 heroAlt: 'Cute octopus excitedly using the computer'
-isDraft: true
 ---
 
 In previous articles we discussed everything from [initializing a repo](/blog/ghcli-2-initializing-a-repo-with-the-github-cli/) to [building custom workflows within the GitHub CLI](/blog/ghcli-6-building-custom-github-cli-workflows/). Next we're ready to take the GH CLI to the next level by utilizing a special rule that allows you to choose how documents are edited. For example, users wanting to write a pull request on their machine can specify `code --wait` to write PRs directly in their default code editor.
@@ -22,7 +21,7 @@ gh config set editor vim
 ![Editing commits with Vim](./assets/ghcli-7-commit-editor.jpg)
 
 ## Code Wait
-This option opens a temporary document in your default code editor. Changes must be saved, and once the document is closed, you can proceed with uploading the PR to GitHub.
+This option opens a temporary document in VS Code. Changes must be saved, and once the document is closed, you can proceed with uploading the PR to GitHub.
 
 I prefer this option as it allows me to use markdown plugins within VS Code.
 
@@ -31,6 +30,8 @@ _Note: The `--wait` flag tells the UI to wait for the editor before proceeding._
 ```shell
 gh config set editor "code --wait"
 ```
+
+For more details using `code --wait` with VS Code, checkout the [official docs](https://code.visualstudio.com/docs/sourcecontrol/overview#_vs-code-as-git-editor).
 
 ![Editing commits with VS Code using code --wait](./assets/ghcli-7-commi-code-wait.jpg)
 

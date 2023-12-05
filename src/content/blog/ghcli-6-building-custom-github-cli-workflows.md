@@ -62,4 +62,4 @@ Here's a list of the custom aliases I use frequently:
 | vw | `pr view $1 -w` | View PR in the browser |
 
 ### Takeaways
-I really hope this blog series has greatly improved your confidence with the GitHub CLI. The natural next steps after learning a tool are to put it into practice. In the next lesson, we'll discuss setting a custom editor. In the meantime, try creating your own aliases and use them on a daily basis.
+I really hope this blog series has greatly improved your confidence with the GitHub CLI. The natural next steps after learning a tool are to put it into practice. In the next lesson, we'll discuss [setting a custom editor](/blog/ghcli-7-setting-a-custom-editor-for-the-github-cli/). In the meantime, try creating your own aliases and use them on a daily basis.
