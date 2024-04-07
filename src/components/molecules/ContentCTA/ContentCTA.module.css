@@ -2,7 +2,7 @@
   @apply relative flex flex-col justify-items-center text-center text-tertiary-teal bg-primary-purple1 items-center m-0 mx-auto p-5;
 
   &.hasImg {
-    @apply text-nuetral-white md:py-16 lg:py-40 bg-fixed;
+    @apply text-nuetral-white md:py-16 lg:py-40 lg:bg-fixed;
 
     background-size: cover;
     box-sizing: border-box;
