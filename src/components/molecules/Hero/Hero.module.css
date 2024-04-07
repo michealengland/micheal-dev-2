@@ -12,7 +12,7 @@
   }
 
   &::before {
-    @apply absolute z-behind inset-0 bg-primary-purple1 bg-opacity-80;
+    @apply absolute z-behind inset-0 bg-gradient-to-b from-primary-purple1 to-primary-purple2 opacity-70;
 
     content: '';
   }

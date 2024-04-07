@@ -10,10 +10,10 @@
   }
 
   & ul {
-    @apply leading-relaxed list-disc list-inside m-0;
+    @apply leading-relaxed list-disc list-inside m-0 mb-4;
 
     & li {
-      @apply mb-1;
+      @apply mb-1 list-outside;
 
       &:last-child {
         @apply mb-0;
