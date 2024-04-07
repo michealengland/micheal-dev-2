@@ -2,7 +2,7 @@
   @apply relative flex flex-col justify-items-center text-center text-tertiary-teal bg-primary-purple1 items-center m-0 mx-auto p-5;
 
   &.hasImg {
-    @apply text-nuetral-white md:py-16 lg:py-40 bg-fixed;
+    @apply text-nuetral-white md:py-16 lg:py-40 lg:bg-fixed;
 
     background-size: cover;
     box-sizing: border-box;
@@ -12,7 +12,7 @@
     }
 
     &::before {
-      @apply absolute inset-0 z-1 bg-primary-purple2 bg-opacity-80;
+      @apply absolute inset-0 z-1 bg-gradient-to-t from-primary-purple2 to-rose-500 opacity-60;
 
       content: '';
     }

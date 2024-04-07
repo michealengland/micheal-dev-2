@@ -31,7 +31,7 @@
 
   @screen sm {
     &::after {
-      @apply block absolute inset-x-0 inset-y-auto bg-nuetral-white opacity-0 mx-auto w-1;
+      @apply block absolute inset-x-0 inset-y-auto bg-tertiary-teal opacity-0 mx-auto w-1;
 
       content: '';
       height: 2.75rem;
