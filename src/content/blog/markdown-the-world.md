@@ -5,7 +5,6 @@ description: Explore the benefits of Markdown for efficient writing and note-tak
 pubDate: 'Apr 08 2024'
 heroImage: '/sara-Skcr6X_aLjU-unsplash-960x480.jpeg'
 heroAlt: 'Meticulously organized wall of books.'
-isDraft: true
 ---
 
 In 2020, I began writing everything in Markdown. It's been four years since I embarked on that adventure, and I'd like to share some of the biggest reasons why I highly recommend Markdown and truly believe that it's a writing language that enhances productivity and accessibility.
