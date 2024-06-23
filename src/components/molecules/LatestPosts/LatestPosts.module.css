@@ -1,0 +1,38 @@
+.latestPosts {
+	/* @apply bg-primary-purple1 items-center m-0 mx-auto p-5; */
+	@apply py-12 p-4  bg-slate-100;
+
+	.heading {
+		@apply text-4xl text-primary-purple1 mb-8 text-center font-light;
+	}
+
+	.inner {
+		@apply md:grid grid-cols-3 gap-8 border-green-400;
+	}
+
+	article {
+		@apply mb-4 flex flex-col;
+	}
+
+	.title {
+		@apply text-xl text-inherit mt-2;
+	}
+
+	img {
+		@apply rounded block shadow mb-2;
+	}
+
+	a {
+		@apply text-primary-purple2;
+
+		&:hover,
+		&:focus {
+			@apply text-primary-purple1;
+
+			img {
+				@apply shadow-xl;
+			}
+
+		}
+	}
+}

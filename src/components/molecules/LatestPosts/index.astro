@@ -1,0 +1,38 @@
+---
+
+import PostDate from '../../atoms/PostDate/PostDate.astro'
+import style from './LatestPosts.module.css';
+
+const posts = await Astro.glob('../../../content/blog/*.md');
+
+export interface Props {
+  title: string;
+}
+
+const { title = ""} = Astro.props;
+
+posts.sort((a, b) => {
+	const dateA = new Date(a.frontmatter.pubDate);
+	const dateB = new Date(b.frontmatter.pubDate);
+	return dateB - dateA;
+});
+
+---
+<section class={style.latestPosts}>
+	<h2 class={style.heading}>{ title }</h2>
+	<div class={style.inner}>
+	{posts.slice(0, 3).map((post) => (
+		<article role="listitem" tabindex="0">
+			<a href={post.url}>
+				<img src={`.//public/${post.frontmatter.heroImage}`} alt={post.frontmatter.heroAlt} />
+				<PostDate
+					dateTimestamp={post.frontmatter.pubDate}
+					lastUpdatedTimestamp={post.frontmatter.lastUpdated}
+					displayLastUpdated={false}
+				/>
+				<h3 class={style.title}>{post.frontmatter.title}</h3>
+			</a>
+		</article>
+	))}
+	</div>
+</section>
