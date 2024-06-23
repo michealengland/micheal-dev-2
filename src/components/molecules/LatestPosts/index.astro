@@ -6,7 +6,7 @@ import style from './LatestPosts.module.css';
 const posts = await Astro.glob('../../../content/blog/*.md');
 
 export interface Props {
-  title: string;
+  title?: string;
 }
 
 const { title = ""} = Astro.props;
@@ -19,7 +19,7 @@ posts.sort((a, b) => {
 
 ---
 <section class={style.latestPosts}>
-	<h2 class={style.heading}>{ title }</h2>
+	{ title && ( <h2 class={style.heading}>{ title }</h2> ) }
 	<div class={style.inner}>
 	{posts.slice(0, 3).map((post) => (
 		<article role="listitem" tabindex="0">
