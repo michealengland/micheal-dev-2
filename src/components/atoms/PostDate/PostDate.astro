@@ -1,0 +1,26 @@
+---
+import formatBlogDate from '../../../utilities/formatBlogDate';
+import styles from './PostDate.module.css';
+
+export interface Props {
+	dateTimestamp: string;
+	displayLastUpdated: boolean;
+	lastUpdatedTimestamp: string;
+}
+
+const {
+	dateTimestamp,
+	displayLastUpdated = true,
+	lastUpdatedTimestamp
+} = Astro.props;
+
+const formattedDate = dateTimestamp ? formatBlogDate(dateTimestamp) : null
+const formattedLastUpdated = lastUpdatedTimestamp ? formatBlogDate(lastUpdatedTimestamp) : null
+---
+
+{ formattedDate &&
+	<p class={styles.postDate}><time datetime={dateTimestamp} itemprop="dateModified">{formattedDate}</time></p>
+}
+{ displayLastUpdated && formattedLastUpdated && (
+	<p class={styles.lastUpdated}>Updated: <time datetime={lastUpdatedTimestamp} itemprop="dateModified">{formattedLastUpdated}</time></p>
+) }

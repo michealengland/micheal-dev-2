@@ -1,0 +1,9 @@
+.postDate {
+	@apply inline-block font-semibold text-primary-purple1 bg-tertiary-teal mt-2 rounded;
+
+	padding: 2px 4px;
+}
+
+.lastUpdated {
+	@apply sm:block md:inline-block md:ml-2 py-2 italic font-thin text-sm;
+}
