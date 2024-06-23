@@ -24,7 +24,7 @@ posts.sort((a, b) => {
 	{posts.slice(0, 3).map((post) => (
 		<article role="listitem" tabindex="0">
 			<a href={post.url}>
-				<img src={`.//public/${post.frontmatter.heroImage}`} alt={post.frontmatter.heroAlt} />
+				<img src={ post.frontmatter.heroImage } alt={post.frontmatter.heroAlt} />
 				<PostDate
 					dateTimestamp={post.frontmatter.pubDate}
 					lastUpdatedTimestamp={post.frontmatter.lastUpdated}
