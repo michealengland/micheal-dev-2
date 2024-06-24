@@ -5,7 +5,8 @@
  * @return Formatted date.
  */
 export default function formatBlogDate(date) {
-  return date.toLocaleDateString('en-us', {
+  const dateObject = new Date(date)
+  return dateObject.toLocaleDateString('en-us', {
     year: 'numeric',
     month: 'long',
     day: 'numeric',

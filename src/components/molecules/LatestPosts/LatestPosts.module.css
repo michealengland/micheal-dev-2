@@ -1,0 +1,47 @@
+@keyframes bg-scrolling-reverse {
+	100% { background-position: 1.05em 1.05em; }
+  }
+
+
+.latestPosts {
+	@apply py-12 p-4;
+
+	background: linear-gradient(45deg, #020041 10%, transparent 10%), linear-gradient(135deg, transparent 90%, #2c12be 90%);
+	background-size: 1.05em 1.05em;
+	background-color: #020041;
+	animation: bg-scrolling-reverse 4s linear infinite;
+
+	.heading {
+		@apply text-4xl mb-8 text-center font-light text-white;
+	}
+
+	.inner {
+		@apply mx-auto md:grid grid-cols-3 gap-8 border-green-400 max-w-5xl justify-center;
+	}
+
+	article {
+		@apply mb-4 flex flex-col;
+	}
+
+	.title {
+		@apply text-base font-bold text-inherit mt-2;
+	}
+
+	img {
+		@apply rounded block shadow mb-2;
+	}
+
+	a {
+		@apply text-white;
+
+		&:hover,
+		&:focus {
+			@apply text-tertiary-teal;
+
+			img {
+				@apply shadow-xl;
+			}
+
+		}
+	}
+}

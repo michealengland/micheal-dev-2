@@ -1,0 +1,40 @@
+---
+import { getCollection } from 'astro:content';
+import PostDate from '../../atoms/PostDate/PostDate.astro'
+import style from './LatestPosts.module.css';
+
+export interface Props {
+  title?: string;
+}
+
+const { title = "" } = Astro.props;
+const isProd = import.meta.env.PROD;
+
+// Filter out posts that are marked as drafts from being published on production.
+const filterDraftPosts = (posts=[{data: {isDraft: false}}], isProd:boolean) => (
+	! isProd ? posts :
+	posts.filter((post) => post.data.isDraft !== true)
+)
+
+const posts = filterDraftPosts((await getCollection('blog')), isProd)
+	.sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf())
+
+---
+<section class={style.latestPosts}>
+	{ title && ( <h2 class={style.heading}>{ title }</h2> ) }
+	<div class={style.inner}>
+	{posts.slice(0, 3).map(({ slug, data }) => (
+		<article role="listitem" tabindex="0">
+			<a href={ `/blog/${slug}` }>
+				<img src={ data.heroImage } alt={ data.heroAlt } />
+				<PostDate
+					dateTimestamp={ data.pubDate }
+					lastUpdatedTimestamp={ data.lastUpdated }
+					displayLastUpdated={false}
+				/>
+				<h3 class={style.title}>{ data.title }</h3>
+			</a>
+		</article>
+	))}
+	</div>
+</section>

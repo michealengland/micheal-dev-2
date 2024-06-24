@@ -1,18 +1,21 @@
 ---
+// Components.
 import BaseHead from '../components/BaseHead.astro';
-import Layout from '../components/organisms/Layout'
-import Hero from '../components/molecules/Hero'
 import Content from '../components/molecules/Content'
 import ContentCTA from '../components/molecules/ContentCTA'
+import Hero from '../components/molecules/Hero'
+import LatestPosts from '../components/molecules/LatestPosts/index.astro'
+import Layout from '../components/organisms/Layout'
 import MediaContent from '../components/molecules/MediaContent'
-import twitterCard from '../content/assets/mike-in-prague-800x418.jpg'
+
+// Images.
+import contentCTAImage from '../content/assets/spacex-uj3hvdfQujI-unsplash-2000x1000.jpeg'
 import heroProfile from '../content/assets/mike-in-prague-500x500.jpg'
-import heroImage from '../content/assets/shot-by-cerqueira-0o_GEzyargo-unsplash-2000x1000.jpeg'
 import mediaContentImage1 from '../content/assets/anas-alshanti-feXpdV001o4-unsplash.jpg'
 import mediaContentImage2 from '../content/assets/harpal-singh-_zKxPsGOGKg-unsplash.jpg'
 import mediaContentImage3 from '../content/assets/350zduino-1080x720.jpg'
-import contentCTAImage from '../content/assets/spacex-uj3hvdfQujI-unsplash-2000x1000.jpeg'
 import PageSchema from '../components/PageSchema.astro'
+import twitterCard from '../content/assets/mike-in-prague-800x418.jpg'
 
 import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 ---
@@ -32,8 +35,6 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 		<Layout>
 			<Hero
 				title="Mike England"
-				img={heroImage.src}
-				imgAlt="White 350z with bronze rims drifting in the city during a rainy night."
 				profileImg={heroProfile.src}
 				content="JavaScript & React developer with a passion for crafting exceptional digital experiences."
 			/>
@@ -42,6 +43,7 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 				titleTag="h2"
 				content="With a background in design and development, I've consistently improved processes, enhanced product quality, and pursued continuous learning to stay ahead in the ever-evolving tech landscape."
 			/>
+			<LatestPosts title="Recent Posts" />
 			<MediaContent
 				imgClipRight={true}
 				img={mediaContentImage1.src}

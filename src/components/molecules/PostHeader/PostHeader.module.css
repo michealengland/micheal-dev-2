@@ -11,16 +11,6 @@
     @apply relative bg-white py-4 pb-4 px-4 max-w-3xl mx-auto font-semibold rounded shadow-md;
   }
 
-  & .date {
-    @apply inline-block font-semibold text-primary-purple1 bg-tertiary-teal mt-2 rounded;
-
-    padding: 2px 4px;
-  }
-
-  & .lastUpdated {
-    @apply sm:block md:inline-block md:ml-2 py-2 italic font-thin text-sm;
-  }
-
   & .title {
     @apply text-primary-purple2 text-4xl md:text-5xl mb-4;
   }
