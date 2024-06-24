@@ -21,7 +21,7 @@ const { date, title, lastUpdated, heroImage, heroAlt = "" } = Astro.props;
     </div>
   )}
   <div class={styles.inner}>
-    <Heading class={styles.title} tag="h1">{title}</Heading>
+    <Heading className={styles.title} tag="h1">{title}</Heading>
     <PostDate
       dateTimestamp={date}
       lastUpdatedTimestamp={lastUpdated}
