@@ -1,13 +1,22 @@
+@keyframes bg-scrolling-reverse {
+	100% { background-position: 1.05em 1.05em; }
+  }
+
+
 .latestPosts {
-	/* @apply bg-primary-purple1 items-center m-0 mx-auto p-5; */
-	@apply py-12 p-4  bg-slate-100;
+	@apply py-12 p-4;
+
+	background: linear-gradient(45deg, #020041 10%, transparent 10%), linear-gradient(135deg, transparent 90%, #2c12be 90%);
+	background-size: 1.05em 1.05em;
+	background-color: #020041;
+	animation: bg-scrolling-reverse 4s linear infinite;
 
 	.heading {
-		@apply text-4xl text-primary-purple1 mb-8 text-center font-light;
+		@apply text-4xl mb-8 text-center font-light text-white;
 	}
 
 	.inner {
-		@apply md:grid grid-cols-3 gap-8 border-green-400;
+		@apply mx-auto md:grid grid-cols-3 gap-8 border-green-400 max-w-5xl justify-center;
 	}
 
 	article {
@@ -15,7 +24,7 @@
 	}
 
 	.title {
-		@apply text-xl text-inherit mt-2;
+		@apply text-base font-bold text-inherit mt-2;
 	}
 
 	img {
@@ -23,11 +32,11 @@
 	}
 
 	a {
-		@apply text-primary-purple2;
+		@apply text-white;
 
 		&:hover,
 		&:focus {
-			@apply text-primary-purple1;
+			@apply text-tertiary-teal;
 
 			img {
 				@apply shadow-xl;
