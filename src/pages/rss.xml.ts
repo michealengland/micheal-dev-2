@@ -13,19 +13,11 @@ const isProd = import.meta.env.PROD;
  * @returns
  */
 export async function GET(context) {
-	// Filter out posts that are marked as drafts from being published on production.
-	const filterDraftPosts = (posts=[{data: {isDraft: false}}], isProd) => (
-		! isProd ? posts :
-		posts.filter((post) => post.data.isDraft !== true)
-	)
-
-	// const posts = await getCollection('blog');
-	const blogPosts = filterDraftPosts((await getCollection('blog')), isProd)
-	const driftPosts = filterDraftPosts((await getCollection('drift')), isProd)
 	const posts = [
-		...blogPosts,
-		...driftPosts,
-	].sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf())
+		...(await getCollection('blog')),
+		...(await getCollection('drift')),
+	].filter(post => !isProd || !post.data.isDraft)
+	 .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf())
 
 	return rss({
 		title: SITE_TITLE,

@@ -1,23 +1,20 @@
 ---
-import { type CollectionEntry, getCollection } from 'astro:content';
+import { getCollection } from 'astro:content';
 import DriftPost from '../../layouts/DriftPost.astro';
 import PostContent from '../../components/molecules/PostContent'
 import AuthorBio from '../../components/molecules/AuthorBio'
 
 export async function getStaticPaths() {
-	const posts = await getCollection('drift');
-	return posts.map((post) => ({
-		params: { slug: post.slug },
-		props: post,
-	}));
+	const isProd = import.meta.env.PROD;
+	const posts = (await getCollection('drift')).filter(post => !isProd || !post.data.isDraft);
+	return posts.map(post => ({ params: { slug: post.slug }, props: post }));
 }
-type Props = CollectionEntry<'drift'>;
 
 const post = Astro.props;
 const { Content } = await post.render();
 ---
 
-<DriftPost {...post.data}>
+<DriftPost {...post}>
 	<PostContent>
 		<Content />
 		<AuthorBio />

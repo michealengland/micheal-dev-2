@@ -2,6 +2,11 @@ import TextLink from '../../atoms/TextLink'
 import Logo from '../../atoms/Logo'
 import styles from './Header.module.css'
 import SocialLinks from '../../molecules/SocialLinks'
+import {
+  SOCIAL_GITHUB,
+  SOCIAL_LINKEDIN,
+  SOCIAL_TWITTER,
+} from '../../../consts'
 
 export default function Header() {
   return (
@@ -20,7 +25,28 @@ export default function Header() {
             </li>
           </ul>
         </nav>
-        <SocialLinks className={styles.socialLinks} />
+        <SocialLinks
+          className={styles.socialLinks}
+          socialAccountItems={
+            [
+              {
+                icon: 'github',
+                label: 'GitHub',
+                url: SOCIAL_GITHUB
+              },
+              {
+                icon: 'linkedin',
+                label: 'LinkedIn',
+                url: SOCIAL_LINKEDIN
+              },
+              {
+                icon: 'twitter',
+                label: 'Twitter',
+                url: SOCIAL_TWITTER
+              }
+            ]
+          }
+        />
       </div>
     </header>
   )

@@ -1,8 +1,16 @@
-import PropTypes from 'prop-types'
 import Heading from '../../atoms/Heading'
 import createMarkup from '../../../utilities/createMarkup'
 import styles from './MediaContent.module.css'
 import cn from 'classnames'
+
+interface MediaContentProps {
+  content?: string,
+  img?: string,
+  imgAlt?: string,
+  imgClipRight?: boolean,
+  title?: string,
+  titleTag?: 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6'
+}
 
 export default function MediaContent({
   content,
@@ -11,7 +19,7 @@ export default function MediaContent({
   imgClipRight=false,
   title,
   titleTag='h2'
-}) {
+}: MediaContentProps) {
   const imageClipClass = imgClipRight ? styles.clipRight : styles.clipLeft
 
   return (
@@ -19,7 +27,7 @@ export default function MediaContent({
       {(title || content) &&
         <div className={styles.content}>
           {title && <Heading className={styles.title} tag={titleTag}>{title}</Heading>}
-          {content && <div dangerouslySetInnerHTML={ createMarkup(content) } />}
+          {content && <div dangerouslySetInnerHTML={ createMarkup(content as any) } />}
         </div>
       }
       {img &&
@@ -29,13 +37,4 @@ export default function MediaContent({
       }
     </section>
   )
-}
-
-MediaContent.propTypes = {
-  content: PropTypes.string,
-  img: PropTypes.string,
-  imgAlt: PropTypes.string,
-  imgClipRight: PropTypes.bool,
-  title: PropTypes.string,
-  titleTag: PropTypes.oneOf(['h1', 'h2', 'h3', 'h4', 'h5', 'h6'])
 }

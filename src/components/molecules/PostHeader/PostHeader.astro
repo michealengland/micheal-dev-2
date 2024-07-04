@@ -4,14 +4,14 @@ import PostDate from '../../atoms/PostDate/PostDate.astro';
 import styles from './PostHeader.module.css';
 
 export interface Props {
-  title: string;
-  date: string;
-  lastUpdated: string;
-  heroImage?: string;
+  pubDate: Date;
   heroAlt?: string;
+  heroImage?: string;
+  lastUpdated: Date | undefined;
+  title: string;
 }
 
-const { date, title, lastUpdated, heroImage, heroAlt = "" } = Astro.props;
+const { pubDate, title, lastUpdated, heroImage, heroAlt='' } = Astro.props;
 ---
 
 <header class={styles.postHeader}>
@@ -23,8 +23,8 @@ const { date, title, lastUpdated, heroImage, heroAlt = "" } = Astro.props;
   <div class={styles.inner}>
     <Heading className={styles.title} tag="h1">{title}</Heading>
     <PostDate
-      dateTimestamp={date}
-      lastUpdatedTimestamp={lastUpdated}
+      lastUpdated={lastUpdated}
+      pubDate={pubDate}
     />
   </div>
 </header>

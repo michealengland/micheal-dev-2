@@ -1,6 +1,10 @@
-import PropTypes from 'prop-types'
+interface IconProps {
+  ariaHidden?: boolean,
+  className?: string | null,
+  icon: 'github' | 'linkedin' | 'twitter'
+}
 
-export default function Icon({ariaHidden, className, icon}) {
+export default function Icon({ariaHidden=true, className, icon}: IconProps) {
   let element = null
 
   switch (icon) {
@@ -23,14 +27,4 @@ export default function Icon({ariaHidden, className, icon}) {
   return (
     <span className={className} aria-hidden={ariaHidden}>{ element }</span>
   )
-}
-
-Icon.propTypes = {
-  ariaHidden: PropTypes.bool,
-  className: PropTypes.string,
-  icon: PropTypes.oneOf(['github', 'linkedin', 'twitter']),
-}
-
-Icon.defaultProps = {
-  ariaHidden: true,
 }
