@@ -8,5 +8,5 @@
     "@components/*": ["./src/components/*"],
     "@utilities/*": ["./src/utilities/*"],
     "@assets/*": ["./assets/*"],
-  },
+  }
 }
