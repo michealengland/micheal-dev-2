@@ -4,7 +4,7 @@ import styles from './Posts.module.css'
 import formatBlogDate from '../../../utilities/formatBlogDate'
 
 interface PostProps {
-  collection: string,
+  collection?: string,
   slug?: string,
   data: {
     pubDate?: string,
