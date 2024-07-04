@@ -14,7 +14,7 @@ export default function Hero({title, content, img, imgAlt="", profileImg}: HeroP
   return (
     <section className={styles.hero} style={backgroundImage}>
       <div>
-        {img && (
+        {!!profileImg && (
           <img
             alt={imgAlt}
             className={styles.avatar}
