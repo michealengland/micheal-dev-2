@@ -12,6 +12,9 @@ export interface Props {
 }
 
 const { date, title, lastUpdated, heroImage, heroAlt='' } = Astro.props;
+
+const dateTimeStamp = date && new Date(date)
+const lastUpdatedTimeStamp = lastUpdated && new Date(lastUpdated)
 ---
 
 <header class={styles.postHeader}>
@@ -23,8 +26,8 @@ const { date, title, lastUpdated, heroImage, heroAlt='' } = Astro.props;
   <div class={styles.inner}>
     <Heading className={styles.title} tag="h1">{title}</Heading>
     <PostDate
-      dateTimestamp={new Date(date)}
-      lastUpdatedTimestamp={new Date(lastUpdated)}
+      dateTimestamp={dateTimeStamp}
+      lastUpdatedTimestamp={lastUpdatedTimeStamp}
     />
   </div>
 </header>
