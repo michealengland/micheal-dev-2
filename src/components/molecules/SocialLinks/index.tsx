@@ -27,7 +27,7 @@ export default function SocialLinks({className, socialAccountItems}: SocialLinks
           return (
             <li key={`social-${index}`}>
               <a href={url} target="_blank" rel="noreferrer">
-                <Icon className={styles.icon} icon={icon} title={label} />
+                <Icon className={styles.icon} icon={icon} />
                 <span className={styles.label}>{label}</span>
               </a>
             </li>
