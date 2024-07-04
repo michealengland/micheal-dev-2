@@ -3,9 +3,9 @@ import formatBlogDate from '../../../utilities/formatBlogDate';
 import styles from './PostDate.module.css';
 
 export interface Props {
-	dateTimestamp: string;
+	dateTimestamp: Date;
 	displayLastUpdated?: boolean;
-	lastUpdatedTimestamp: string;
+	lastUpdatedTimestamp?: Date;
 }
 
 const {
@@ -17,10 +17,9 @@ const {
 const formattedDate = dateTimestamp ? formatBlogDate(dateTimestamp) : null
 const formattedLastUpdated = lastUpdatedTimestamp ? formatBlogDate(lastUpdatedTimestamp) : null
 ---
-
 { formattedDate &&
-	<p class={styles.postDate}><time datetime={dateTimestamp} itemprop="dateModified">{formattedDate}</time></p>
+	<p class={styles.postDate}><time datetime={`${dateTimestamp}`} itemprop="dateModified">{`${formattedDate}`}</time></p>
 }
 { displayLastUpdated && formattedLastUpdated && (
-	<p class={styles.lastUpdated}>Updated: <time datetime={lastUpdatedTimestamp} itemprop="dateModified">{formattedLastUpdated}</time></p>
+	<p class={styles.lastUpdated}>Updated: <time datetime={`${lastUpdatedTimestamp}`} itemprop="dateModified">{`${formattedLastUpdated}`}</time></p>
 ) }

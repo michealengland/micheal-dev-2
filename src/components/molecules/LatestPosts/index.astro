@@ -23,8 +23,8 @@ const posts = (await getCollection('blog'))
 				<img src={ data.heroImage } alt={ data.heroAlt } />
 				<PostDate
 					dateTimestamp={ data.pubDate }
-					lastUpdatedTimestamp={ data.lastUpdated }
 					displayLastUpdated={false}
+					lastUpdatedTimestamp={ data.lastUpdated }
 				/>
 				<h3 class={style.title}>{ data.title }</h3>
 			</a>
