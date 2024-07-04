@@ -1,5 +1,5 @@
 ---
-import { type CollectionEntry, getCollection } from 'astro:content';
+import { getCollection } from 'astro:content';
 import BlogPost from '../../layouts/BlogPost.astro';
 import PostContent from '../../components/molecules/PostContent'
 import AuthorBio from '../../components/molecules/AuthorBio'
@@ -9,13 +9,12 @@ export async function getStaticPaths() {
 	const posts = (await getCollection('blog')).filter(post => !isProd || !post.data.isDraft);
 	return posts.map(post => ({ params: { slug: post.slug }, props: post }));
 }
-type Props = CollectionEntry<'blog'>;
 
 const post = Astro.props;
 const { Content } = await post.render();
 ---
 
-<BlogPost {...post.data}>
+<BlogPost {...post}>
 	<PostContent>
 		<Content />
 		<AuthorBio />
