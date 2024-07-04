@@ -6,30 +6,16 @@ import AuthorBio from '../../components/molecules/AuthorBio'
 
 export async function getStaticPaths() {
 	const isProd = import.meta.env.PROD;
-
-	return (await getCollection('blog')).reduce((filteredPosts, post) => {
-		const {isDraft} = post.data;
-
-		// IS not production.
-		// OR is production and not a draft post.
-		if (!isProd || (isProd && !isDraft)) {
-			filteredPosts.push({
-				params: { slug: post.slug },
-				props: post,
-			});
-		}
-
-		return filteredPosts;
-	}, []);
+	const posts = (await getCollection('blog')).filter(post => !isProd || !post.data.isDraft);
+	return posts.map(post => ({ params: { slug: post.slug }, props: post }));
 }
-
 type Props = CollectionEntry<'blog'>;
 
 const post = Astro.props;
 const { Content } = await post.render();
 ---
 
-<BlogPost {...post.data} slug={post.slug}>
+<BlogPost {...post.data}>
 	<PostContent>
 		<Content />
 		<AuthorBio />
