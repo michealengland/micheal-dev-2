@@ -7,7 +7,6 @@ import { getCollection } from 'astro:content';
 import twitterCard from '../../content/assets/mike-in-prague-800x418.jpg'
 
 const isProd = import.meta.env.PROD;
-
 const posts = (await getCollection('blog'))
 	.filter((post) => !isProd || post.data.isDraft !== true)
 	.sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
