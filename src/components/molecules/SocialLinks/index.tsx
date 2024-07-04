@@ -2,26 +2,17 @@
 import styles from './SocialLinks.module.css'
 import Icon from '../../atoms/Icon'
 import cn from 'classnames'
-import PropTypes from 'prop-types'
 
-export default function SocialLinks({className}) {
-  const socialAccounts = [
-    {
-      icon: 'github',
-      label: 'GitHub',
-      url: 'https://github.com/michealengland'
-    },
-    {
-      icon: 'linkedin',
-      label: 'LinkedIn',
-      url: 'https://www.linkedin.com/in/michealengland/'
-    },
-    {
-      icon: 'twitter',
-      label: 'Twitter',
-      url: 'https://twitter.com/mikelikethebike'
-    }
-  ]
+interface SocialLinksProps {
+  className?: string,
+  socialAccountItems?: {
+    icon: 'github' | 'linkedin' | 'twitter',
+    label: string,
+    url: string
+  }[]
+}
+
+export default function SocialLinks({className, socialAccountItems}: SocialLinksProps) {
 
   return (
     <nav
@@ -30,7 +21,7 @@ export default function SocialLinks({className}) {
       aria-label="social links"
     >
       <ul>
-        {socialAccounts.map((account, index) => {
+        {socialAccountItems && socialAccountItems.map((account, index) => {
           const {icon, label, url} = account
 
           return (
@@ -45,8 +36,4 @@ export default function SocialLinks({className}) {
       </ul>
     </nav>
   )
-}
-
-SocialLinks.propTypes = {
-  className: PropTypes.string
 }

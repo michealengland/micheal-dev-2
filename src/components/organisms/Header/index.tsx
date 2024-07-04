@@ -20,7 +20,28 @@ export default function Header() {
             </li>
           </ul>
         </nav>
-        <SocialLinks className={styles.socialLinks} />
+        <SocialLinks
+          className={styles.socialLinks}
+          socialAccountItems={
+            [
+              {
+                icon: 'github',
+                label: 'GitHub',
+                url: 'https://github.com/michealengland'
+              },
+              {
+                icon: 'linkedin',
+                label: 'LinkedIn',
+                url: 'https://www.linkedin.com/in/michealengland/'
+              },
+              {
+                icon: 'twitter',
+                label: 'Twitter',
+                url: 'https://twitter.com/mikelikethebike'
+              }
+            ]
+          }
+        />
       </div>
     </header>
   )
