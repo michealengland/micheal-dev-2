@@ -3,8 +3,21 @@ import TextLink from '../../atoms/TextLink'
 import styles from './Posts.module.css'
 import formatBlogDate from '../../../utilities/formatBlogDate'
 
+interface PostProps {
+  collection: string,
+  slug?: string,
+  data: {
+    pubDate?: string,
+    description?: string,
+    isDraft?: boolean,
+    title?: string,
+    heroImage?: string,
+    heroAlt?: string,
+  }
+}
+
 interface PostsProps {
-  posts: any[]
+  posts: PostProps[]
   title?: string
 }
 
@@ -27,7 +40,7 @@ export default function Posts({posts, title}: PostsProps) {
                 heroImage,
                 heroAlt
               }
-            } = post
+            }: PostProps = post
 
             const url = `/${collection}/${post.slug}/`
 
