@@ -4,14 +4,14 @@ import PostDate from '../../atoms/PostDate/PostDate.astro';
 import styles from './PostHeader.module.css';
 
 export interface Props {
-  title: string;
   date: string;
-  lastUpdated: string;
-  heroImage?: string;
   heroAlt?: string;
+  heroImage?: string;
+  lastUpdated: string;
+  title: string;
 }
 
-const { date, title, lastUpdated, heroImage, heroAlt = "" } = Astro.props;
+const { date, title, lastUpdated, heroImage, heroAlt='' } = Astro.props;
 ---
 
 <header class={styles.postHeader}>
