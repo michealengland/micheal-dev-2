@@ -1,11 +1,19 @@
 import Heading from '../../atoms/Heading'
-import PropTypes from 'prop-types'
 import styles from './ContentCTA.module.css'
 import createMarkup from '../../../utilities/createMarkup'
 import cn from 'classnames'
 import Button from '../../atoms/Button'
 
-export default function ContentCTA({content, img, label, title, titleTag='h2', url}) {
+interface ContentCTAProps {
+  content?: string,
+  img?: string,
+  label?: string,
+  title?: string,
+  titleTag?: 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6'
+  url?: string
+}
+
+export default function ContentCTA({content, img, label, title, titleTag='h2', url}: ContentCTAProps) {
   const hasImgClass = !! img ? styles.hasImg : ''
   const backgroundImage = img && {backgroundImage: `url(${img})`}
 
@@ -16,20 +24,11 @@ export default function ContentCTA({content, img, label, title, titleTag='h2', u
         {content &&
           <>
             {!!img && <hr />}
-            <div className={styles.content} dangerouslySetInnerHTML={createMarkup(content)} />
+            <div className={styles.content} dangerouslySetInnerHTML={createMarkup(content as any)} />
           </>
         }
         {url && <Button className={styles.button} label={label} to={url} />}
       </div>
     </section>
   )
-}
-
-ContentCTA.propTypes = {
-  content: PropTypes.string,
-  img: PropTypes.string,
-  label: PropTypes.string,
-  title: PropTypes.string,
-  titleTag: PropTypes.oneOf(['h1', 'h2', 'h3', 'h4', 'h5', 'h6']),
-  url: PropTypes.string,
 }
