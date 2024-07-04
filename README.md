@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://micheal.dev/">
-    <img alt="Micheal Dev" src="./src/images/icon.png" width="100" />
+    <img alt="Micheal Dev" src="./public/favicon.png" width="100" />
   </a>
 </p>
 
