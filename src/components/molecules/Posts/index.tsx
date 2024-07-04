@@ -2,22 +2,12 @@ import Heading from '../../atoms/Heading'
 import TextLink from '../../atoms/TextLink'
 import styles from './Posts.module.css'
 import formatBlogDate from '../../../utilities/formatBlogDate'
+import { type CollectionEntry } from 'astro:content'
 
-interface PostProps {
-  collection?: string,
-  slug?: string,
-  data: {
-    pubDate?: string,
-    description?: string,
-    isDraft?: boolean,
-    title?: string,
-    heroImage?: string,
-    heroAlt?: string,
-  }
-}
+type MarkdownCollection = CollectionEntry<'blog'> | CollectionEntry<'drift'>;
 
 interface PostsProps {
-  posts: PostProps[]
+  posts: MarkdownCollection[]
   title?: string
 }
 
@@ -40,7 +30,7 @@ export default function Posts({posts, title}: PostsProps) {
                 heroImage,
                 heroAlt
               }
-            }: PostProps = post
+            }: MarkdownCollection = post
 
             const url = `/${collection}/${post.slug}/`
 
