@@ -1,9 +1,13 @@
-import PropTypes from 'prop-types'
+import React from 'react'
 import styles from './Layout.module.css'
 import Header from '../Header'
 import Footer from '../Footer'
 
-const Layout = ({children}) => {
+interface LayoutProps {
+  children: React.ReactNode
+}
+
+const Layout = ({children}: LayoutProps) => {
   return (
     <>
       <Header />
@@ -16,7 +20,3 @@ const Layout = ({children}) => {
 }
 
 export default Layout
-
-Layout.propTypes = {
-  children: PropTypes.node,
-}
