@@ -1,50 +1,30 @@
-# Astro Starter Kit: Blog
+<p align="center">
+  <a href="https://micheal.dev/">
+    <img alt="Micheal Dev" src="./public/favicon.png" width="100" />
+  </a>
+</p>
 
-```sh
-npm create astro@latest -- --template blog
-```
+# Welcome to My Personal Playground! 🎉
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/blog)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/blog)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/blog/devcontainer.json)
+Hey there! I'm Mike, a passionate developer with a love for creating and experimenting with web technologies. This is my personal site, a space where I blend my enthusiasm for JavaScript, TypeScript, and design to build cool stuff. This site is intended to be easy to maintain and update with the power of markdown. 🚀
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+This site was previously migrated from my first personal site, [micheal.dev](https://micheal.dev), which was built with Jekyll.
 
-![blog](https://github.com/withastro/astro/assets/2244813/ff10799f-a816-4703-b967-c78997e8323d)
+## What's Under the Hood?
 
-Features:
+- **Astro.js**: The stellar framework that makes building fast, optimized websites a breeze.
+- **Markdown**: Keeping it simple and readable with Markdown for content creation.
+- **TypeScript**: Adding that extra layer of type safety to my JavaScript adventures.
+- **Tailwind CSS**: Crafting beautiful, responsive designs without breaking a sweat.
+- **Jest**: Ensuring everything works flawlessly with robust testing.
 
-- ✅ Minimal styling (make it your own!)
-- ✅ 100/100 Lighthouse performance
-- ✅ SEO-friendly with canonical URLs and OpenGraph data
-- ✅ Sitemap support
-- ✅ RSS Feed support
-- ✅ Markdown & MDX support
+## Why This Stack?
 
-## 🚀 Project Structure
+I chose this stack because it strikes the perfect balance between simplicity and power. Astro.js and Markdown let me focus on content, while TypeScript and Tailwind ensure my code is maintainable and stylish. And with Jest, I can sleep soundly knowing my tests have got my back.
 
-Inside of your Astro project, you'll see the following folders and files:
+Feel free to clone this and make it your own.
 
-```text
-├── public/
-├── src/
-│   ├── components/
-│   ├── content/
-│   ├── layouts/
-│   └── pages/
-├── astro.config.mjs
-├── README.md
-├── package.json
-└── tsconfig.json
-```
-
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
-
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
-
-The `src/content/` directory contains "collections" of related Markdown and MDX documents. Use `getCollection()` to retrieve posts from `src/content/blog/`, and type-check your frontmatter using an optional schema. See [Astro's Content Collections docs](https://docs.astro.build/en/guides/content-collections/) to learn more.
-
-Any static assets, like images, can be placed in the `public/` directory.
+Happy coding! ✨
 
 ## 🧞 Commands
 
@@ -59,10 +39,6 @@ All commands are run from the root of the project, from a terminal:
 | `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
 | `npm run astro -- --help` | Get help using the Astro CLI                     |
 
-## 👀 Want to learn more?
-
-Check out [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
-
 ## Credit
 
-This theme is based off of the lovely [Bear Blog](https://github.com/HermanMartinus/bearblog/).
+This theme is based on the [Astro Starter Kit: Blog](https://astro.build/themes/details/astro-starter-blog/).
