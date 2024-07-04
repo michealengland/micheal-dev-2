@@ -1,14 +1,15 @@
-import { JSX } from 'react'
+import React from 'react'
 
 interface TextLinkProps {
   activeClassName?: string | null,
-  children: JSX.Element[] | JSX.Element,
+  children?: React.ReactNode,
+  className?: string | null,
   to: string,
 }
 
-export default function TextLink({activeClassName, children, to, ...other}: TextLinkProps) {
+export default function TextLink({activeClassName, className, children, to, ...other}: TextLinkProps) {
   return (
-    <a href={to} {...other}>
+    <a className={className} href={to} {...other}>
       {children}
     </a>
   )
