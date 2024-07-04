@@ -1,8 +1,14 @@
 import TextLink from '../../atoms/TextLink'
-import PropTypes from 'prop-types'
 import styles from './PostNavigation.module.css'
 
-export default function PostNavigation({nextLabel, nextTo, prevLabel, prevTo}) {
+interface PostNavigationProps {
+  nextLabel?: string,
+  nextTo?: string,
+  prevLabel?: string,
+  prevTo?: string
+}
+
+export default function PostNavigation({nextLabel, nextTo, prevLabel, prevTo}: PostNavigationProps) {
   return (
     <nav
       aria-label="Post Navigation"
@@ -27,11 +33,4 @@ export default function PostNavigation({nextLabel, nextTo, prevLabel, prevTo}) {
       </ul>
     </nav>
   )
-}
-
-PostNavigation.propTypes = {
-  nextLabel: PropTypes.string,
-  nextTo: PropTypes.string,
-  prevLabel: PropTypes.string,
-  prevTo: PropTypes.string
 }

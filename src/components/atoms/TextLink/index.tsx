@@ -4,6 +4,7 @@ interface TextLinkProps {
   activeClassName?: string | null,
   children?: React.ReactNode,
   className?: string | null,
+  rel?: string,
   to: string,
 }
 
