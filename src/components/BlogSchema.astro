@@ -8,11 +8,11 @@ import {
 
 export interface Props {
 	content: string
-	heroUrl: string
-	lastUpdated: string
-	pubDate: string
-	title: string
+	heroUrl: string | undefined
+	lastUpdated: Date | undefined
+	pubDate: Date
 	slug: string
+	title: string
 }
 
 const {

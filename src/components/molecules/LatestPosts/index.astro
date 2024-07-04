@@ -22,9 +22,9 @@ const posts = (await getCollection('blog'))
 			<a href={ `/blog/${slug}` }>
 				<img src={ data.heroImage } alt={ data.heroAlt } />
 				<PostDate
-					dateTimestamp={ data.pubDate }
 					displayLastUpdated={false}
-					lastUpdatedTimestamp={ data.lastUpdated }
+					lastUpdated={ data.lastUpdated }
+					pubDate={ data.pubDate }
 				/>
 				<h3 class={style.title}>{ data.title }</h3>
 			</a>
