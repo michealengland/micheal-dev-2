@@ -2,6 +2,11 @@ import TextLink from '../../atoms/TextLink'
 import Logo from '../../atoms/Logo'
 import styles from './Header.module.css'
 import SocialLinks from '../../molecules/SocialLinks'
+import {
+  SOCIAL_GITHUB,
+  SOCIAL_LINKEDIN,
+  SOCIAL_TWITTER,
+} from '../../../consts'
 
 export default function Header() {
   return (
@@ -27,17 +32,17 @@ export default function Header() {
               {
                 icon: 'github',
                 label: 'GitHub',
-                url: 'https://github.com/michealengland'
+                url: SOCIAL_GITHUB
               },
               {
                 icon: 'linkedin',
                 label: 'LinkedIn',
-                url: 'https://www.linkedin.com/in/michealengland/'
+                url: SOCIAL_LINKEDIN
               },
               {
                 icon: 'twitter',
                 label: 'Twitter',
-                url: 'https://twitter.com/mikelikethebike'
+                url: SOCIAL_TWITTER
               }
             ]
           }
