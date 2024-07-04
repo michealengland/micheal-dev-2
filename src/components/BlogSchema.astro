@@ -8,10 +8,7 @@ import {
 
 const {content, heroUrl, lastUpdated, pubDate, title, slug} = Astro.props;
 
-// Note "articleBody": "${content}" has been left off due to challenges
-// importing this data as non-markdown content.
-// ALL CHANGES HERE REQUIRE REVALIDATION
-// SEE https://validator.schema.org/
+// NOTE: All changes should be revalidated with https://validator.schema.org/
 const htmlSchemaMarkup = `<script type="application/ld+json">
 	{
 		"@context": "http://schema.org",
