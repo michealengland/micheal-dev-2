@@ -6,7 +6,23 @@ import {
 	SITE_URL
 } from '../consts';
 
-const {content, heroUrl, lastUpdated, pubDate, title, slug} = Astro.props;
+export interface Props {
+	content: string
+	heroUrl: string
+	lastUpdated: string
+	pubDate: string
+	title: string
+	slug: string
+}
+
+const {
+	content,
+	heroUrl,
+	lastUpdated,
+	pubDate,
+	title,
+	slug
+} = Astro.props as Props;
 
 // NOTE: All changes should be revalidated with https://validator.schema.org/
 const htmlSchemaMarkup = `<script type="application/ld+json">
