@@ -1,7 +1,12 @@
-import PropTypes from 'prop-types'
 import createMarkup from '../../../utilities/createMarkup'
 import Heading from '../../atoms/Heading'
 import styles from './Content.module.css'
+
+interface ContentProps {
+  content?: string,
+  title?: string,
+  titleTag?: 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6'
+}
 
 export default function Content({content, title, titleTag='h2'}) {
   return (
@@ -10,10 +15,4 @@ export default function Content({content, title, titleTag='h2'}) {
       {content && <div dangerouslySetInnerHTML={ createMarkup(content) } className={styles.text} />}
     </section>
   )
-}
-
-Content.propTypes = {
-  content: PropTypes.string,
-  title: PropTypes.string,
-  titleTag: PropTypes.oneOf(['h1', 'h2', 'h3', 'h4', 'h5', 'h6'])
 }
