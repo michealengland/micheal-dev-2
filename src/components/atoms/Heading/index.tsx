@@ -1,13 +1,19 @@
 import React from 'react'
 import createMarkup from '../../../utilities/createMarkup'
-import PropTypes from 'prop-types'
 
-export default function Heading({children, className, id, tag}) {
+interface HeadingProps {
+  children: React.ReactNode,
+  className?: string | null,
+  id?: string | null,
+  tag?: 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6'
+}
+
+export default function Heading({children, className, id, tag = 'h1'}: HeadingProps) {
   if (typeof children === 'string') {
     return React.createElement(tag, {
       className,
       id,
-      dangerouslySetInnerHTML: createMarkup(children)
+      dangerouslySetInnerHTML: createMarkup(children as any)
     })
   } else {
     return React.createElement(
@@ -19,15 +25,4 @@ export default function Heading({children, className, id, tag}) {
       children
     )
   }
-}
-
-Heading.propTypes = {
-  children: PropTypes.oneOfType([PropTypes.node, PropTypes.string]),
-  className: PropTypes.string,
-  id: PropTypes.string,
-  tag: PropTypes.oneOf(['h1', 'h2', 'h3', 'h4', 'h5', 'h6'])
-}
-
-Heading.defaultProps = {
-  tag: 'h1'
 }
