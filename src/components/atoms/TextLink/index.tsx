@@ -1,22 +1,15 @@
-import PropTypes from 'prop-types'
+import { JSX } from 'react'
 
-export default function TextLink({children, to, activeClassName, partiallyActive, ...other}) {
+interface TextLinkProps {
+  activeClassName?: string | null,
+  children: JSX.Element[] | JSX.Element,
+  to: string,
+}
+
+export default function TextLink({activeClassName, children, to, ...other}: TextLinkProps) {
   return (
-    <a
-      // TODO FIX props on this.
-      // activeClassName={activeClassName}
-      // partiallyActive={partiallyActive}
-      href={to}
-      {...other}
-    >
+    <a href={to} {...other}>
       {children}
     </a>
   )
-}
-
-TextLink.propTypes = {
-  activeClassName: PropTypes.string,
-  children: PropTypes.node.isRequired,
-  partiallyActive: PropTypes.bool,
-  to: PropTypes.string.isRequired,
 }
