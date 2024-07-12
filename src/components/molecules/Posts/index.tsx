@@ -4,7 +4,7 @@ import styles from './Posts.module.css'
 import formatBlogDate from '../../../utilities/formatBlogDate'
 import { type CollectionEntry } from 'astro:content'
 
-type MarkdownCollection = CollectionEntry<'blog'> | CollectionEntry<'drift'>;
+type MarkdownCollection = CollectionEntry<'blog'>;
 
 interface PostsProps {
   posts: MarkdownCollection[]

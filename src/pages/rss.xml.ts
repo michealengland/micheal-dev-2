@@ -15,7 +15,6 @@ const isProd = import.meta.env.PROD;
 export async function GET(context) {
 	const posts = [
 		...(await getCollection('blog')),
-		...(await getCollection('drift')),
 	].filter(post => !isProd || !post.data.isDraft)
 	 .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf())
 
