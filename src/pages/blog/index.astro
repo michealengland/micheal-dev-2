@@ -2,7 +2,7 @@
 import BaseHead from '../../components/BaseHead.astro';
 import Layout from '../../components/organisms/Layout'
 import Posts from '../../components/molecules/Posts'
-import { SITE_TITLE, SITE_DESCRIPTION } from '../../consts';
+import { SITE_TITLE, SITE_BLOG_DESCRIPTION } from '../../consts';
 import { getCollection } from 'astro:content';
 import twitterCard from '../../content/assets/mike-in-prague-800x418.jpg'
 
@@ -17,7 +17,7 @@ const posts = (await getCollection('blog'))
 	<head>
 		<BaseHead
 			title={SITE_TITLE}
-			description={SITE_DESCRIPTION}
+			description={SITE_BLOG_DESCRIPTION}
 			image={twitterCard.src}
 			imageAlt="Mike England standing in front of a beautiful Prague cityscape background during a work meetup."
 		/>
