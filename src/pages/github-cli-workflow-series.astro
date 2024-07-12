@@ -1,0 +1,41 @@
+---
+// Components.
+import BaseHead from '../components/BaseHead.astro';
+import ContentCTA from '../components/molecules/ContentCTA'
+import Layout from '../components/organisms/Layout'
+import PageSchema from '../components/PageSchema.astro'
+import Posts from '../components/molecules/Posts'
+import twitterCard from '../content/assets/mike-in-prague-800x418.jpg'
+import { getCollection } from 'astro:content';
+import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
+
+const isProd = import.meta.env.PROD;
+const posts = (await getCollection('blog'))
+	.filter((post) => (!isProd || post.data.isDraft !== true) && post.data?.tags?.includes('gh-cli'))
+	.sort((a, b) => new Date(a.data.pubDate).getTime() - new Date(b.data.pubDate).getTime())
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<BaseHead
+			title={SITE_TITLE}
+			description={SITE_DESCRIPTION}
+			image={twitterCard.src}
+			imageAlt="Mike England"
+		/>
+		<PageSchema />
+	</head>
+	<body>
+		<Layout>
+			<ContentCTA
+				content="<p>Welcome to my eight part GitHub CLI Workflow series! Each article has tips and tricks to help you maximize your workflow with the GitHub CLI regardless of your experience level.</p>"
+				title="GitHub CLI Workflow Series"
+				titleTag='h1'
+			/>
+			<Posts
+				posts={posts}
+			/>
+		</Layout>
+	</body>
+</html>
