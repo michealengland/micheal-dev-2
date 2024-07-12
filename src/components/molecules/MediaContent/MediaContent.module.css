@@ -33,6 +33,15 @@
     word-break: break-word;
   }
 
+  @screen md {
+    &:nth-child(odd) .media {
+      clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 0% 100%);
+    }
+    &:nth-child(even) .media {
+      clip-path: polygon(0 0, 100% 0%, 100% 100%, 25% 100%);
+    }
+  }
+
   & .media {
     @apply block bg-primary-purple1 h-full m-0;
 
@@ -41,15 +50,6 @@
     /* fix issue in Chrome. */
     margin-bottom: -1px;
     height: calc(100% + 1px);
-
-    @screen md {
-      &.clipLeft {
-        clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 0% 100%);
-      }
-      &.clipRight {
-        clip-path: polygon(0 0, 100% 0%, 100% 100%, 25% 100%);
-      }
-    }
 
     & img {
       @apply block h-full m-0 object-cover w-full;
