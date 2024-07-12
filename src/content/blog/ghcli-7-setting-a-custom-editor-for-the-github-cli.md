@@ -4,6 +4,7 @@ description: "Elevate your GitHub CLI skills with expert tips on editor configur
 pubDate: 'Dec 05 2023'
 heroImage: '/ghcli-7-cute-octopus-using-computer-960x480.jpg'
 heroAlt: 'Cute octopus excitedly using the computer'
+tags: [gh-cli]
 ---
 
 In previous articles we discussed everything from [initializing a repo](/blog/ghcli-2-initializing-a-repo-with-the-github-cli/) to [building custom workflows within the GitHub CLI](/blog/ghcli-6-building-custom-github-cli-workflows/). Next we're ready to take the GH CLI to the next level by utilizing a special rule that allows you to choose how documents are edited. For example, users wanting to write a pull request on their machine can specify `code --wait` to write PRs directly in VS Code.

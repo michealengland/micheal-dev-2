@@ -5,6 +5,7 @@ pubDate: 'Nov 28 2023'
 lastUpdated: 'Dec 1 2023'
 heroImage: '/ghcli-5-cute-octopus-in-glasses-writing-book-960x480.jpg'
 heroAlt: 'Cute octopus in glasses writing ideas in notebook'
+tags: [gh-cli]
 ---
 
 When I first began exploring the GitHub CLI, I quickly realized that while some commands were straightforward, others demanded trial and error. To simplify your learning curve, let's walk through a few examples. Building on our previous discussion about the [basics of command building](/blog/ghcli-4-building-custom-github-cli-commands/), this lesson aims to further enhance those skills, making your workflow hacking even more efficient.

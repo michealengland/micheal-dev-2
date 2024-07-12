@@ -4,6 +4,7 @@ description: Explore the benefits of the GitHub CLI with our guide. Learn how it
 pubDate: Nov 15 2023
 heroImage: /ghcli-0-cute-octopus-writing-notes-960x480.jpg
 heroAlt: Cute octopus writing notes
+tags: [gh-cli]
 ---
 
 In my professional journey, there came a moment when I shifted my focus from proficiency in coding to prioritizing workflow efficiency. This change in perspective led me to closely examine how I spent my time on routine tasks, such as pulling down code, reviewing and drafting pull requests (PRs). I soon realized that these tasks, while minor, consumed a significant portion of my day. This change in thought steered me towards exploring solutions that could streamline these processes and enhance productivity.
