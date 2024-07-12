@@ -21,7 +21,7 @@ export default function Header() {
               <TextLink to={'/blog'}>Blog</TextLink>
             </li>
             <li>
-              <TextLink to={'/drift'}>Drift</TextLink>
+              <TextLink to={'/github-cli-workflow-series'}>GH CLI</TextLink>
             </li>
           </ul>
         </nav>
