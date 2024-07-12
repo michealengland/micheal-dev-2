@@ -7,7 +7,6 @@ import PageSchema from '../components/PageSchema.astro'
 import Posts from '../components/molecules/Posts'
 import twitterCard from '../content/assets/mike-in-prague-800x418.jpg'
 import { getCollection } from 'astro:content';
-import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 
 const isProd = import.meta.env.PROD;
 const posts = (await getCollection('blog'))
@@ -19,8 +18,8 @@ const posts = (await getCollection('blog'))
 <html lang="en">
 	<head>
 		<BaseHead
-			title={SITE_TITLE}
-			description={SITE_DESCRIPTION}
+			title="GitHub CLI Workflow Series: Boost Your Efficiency with Minimal Time Investment"
+			description="Discover tips and tricks in our eight-part GitHub CLI Workflow series to enhance your workflow with GitHub CLI. Perfect for all experience levels, with a low time investment for high productivity returns."
 			image={twitterCard.src}
 			imageAlt="Mike England"
 		/>
