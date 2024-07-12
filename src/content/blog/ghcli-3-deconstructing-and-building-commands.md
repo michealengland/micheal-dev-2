@@ -4,6 +4,7 @@ description: "Dive into GitHub CLI: Master command syntax and streamline your de
 pubDate: 'Nov 21 2023'
 heroImage: '/ghcli-3-cute-octopus-playing-with-blocks-960x480.jpg'
 heroAlt: 'Cute octopus playing with building block toys'
+tags: [gh-cli]
 ---
 
 Now that we have a functioning repository from the [previous lesson](/blog/ghcli-2-initializing-a-repo-with-the-github-cli/), we're ready to dive headfirst into the GitHub CLI's commands. The best approach is to first familiarize ourselves with the command structure. At the core of the CLI, all commands follow a basic pattern.

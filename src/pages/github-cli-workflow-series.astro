@@ -1,0 +1,40 @@
+---
+// Components.
+import BaseHead from '../components/BaseHead.astro';
+import ContentCTA from '../components/molecules/ContentCTA'
+import Layout from '../components/organisms/Layout'
+import PageSchema from '../components/PageSchema.astro'
+import Posts from '../components/molecules/Posts'
+import twitterCard from '../content/assets/mike-in-prague-800x418.jpg'
+import { getCollection } from 'astro:content';
+
+const isProd = import.meta.env.PROD;
+const posts = (await getCollection('blog'))
+	.filter((post) => (!isProd || post.data.isDraft !== true) && post.data?.tags?.includes('gh-cli'))
+	.sort((a, b) => new Date(a.data.pubDate).getTime() - new Date(b.data.pubDate).getTime())
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<BaseHead
+			title="GitHub CLI Workflow Series: Boost Your Efficiency with Minimal Time Investment"
+			description="Discover tips and tricks in our eight-part GitHub CLI Workflow series to enhance your workflow with GitHub CLI. Perfect for all experience levels, with a low time investment for high productivity returns."
+			image={twitterCard.src}
+			imageAlt="Mike England"
+		/>
+		<PageSchema />
+	</head>
+	<body>
+		<Layout>
+			<ContentCTA
+				content="<p>Welcome to my eight-part GitHub CLI Workflow series! Each article is packed with tips and tricks to help you maximize your efficiency with the GitHub CLI, regardless of your experience level. Best of all, it's a low time investment with high returns!</p>"
+				title="GitHub CLI Workflow Series"
+				titleTag='h1'
+			/>
+			<Posts
+				posts={posts}
+			/>
+		</Layout>
+	</body>
+</html>

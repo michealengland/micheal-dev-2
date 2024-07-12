@@ -5,6 +5,7 @@ pubDate: 'Nov 20 2023'
 lastUpdated: 'Nov 21 2023'
 heroImage: '/ghcli-2-cute-octopus-learning-command-line-interface-960x480.jpg'
 heroAlt: 'Cute octopus interacting with command line interface'
+tags: [gh-cli]
 ---
 
 In the previous chapter, we successfully installed the [GitHub CLI and authorized your GitHub account](/blog/ghcli-1-installing-and-authorizing-the-githubcli/). Building on that foundation, we're now set to step into the practical use of the CLI.

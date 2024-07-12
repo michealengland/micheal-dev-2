@@ -4,6 +4,7 @@ description: "Step up your GitHub game: Our guide delves into creating effective
 pubDate: 'Nov 30 2023'
 heroImage: '/ghcli-6-cute-octopus-organizing-workflow-960x480.jpg'
 heroAlt: 'Cute octopus organizing ideas into efficient workflows'
+tags: [gh-cli]
 ---
 
 In this lesson, we'll cover how you can start recognize patterns that could be optomized with the GitHub CLI. Now that you understand the [fundamentals of the GitHub CLI](/blog/ghcli-3-deconstructing-and-building-commands/) and how to [create aliases](/blog/ghcli-5-creating-and-managing-github-cli-aliases/), it's time for workflow hacking. Aliases are so powerful that they can sometimes overshadow other parts of the CLI. Here are some guidelines to enhance your workflow, using my own aliases as examples.

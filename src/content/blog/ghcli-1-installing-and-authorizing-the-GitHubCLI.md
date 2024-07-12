@@ -5,6 +5,7 @@ pubDate: 'Nov 16 2023'
 lastUpdated: 'Nov 21 23'
 heroImage: '/ghcli-1-cute-octopus-uploading-data-960x480.jpg'
 heroAlt: 'Cute octopus uploading data repository'
+tags: [gh-cli]
 ---
 
 Before proceeding, you should start with installation based on your device. Checkout the [official instructions](https://github.com/cli/cli#installation) to get started.
