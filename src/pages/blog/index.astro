@@ -4,7 +4,7 @@ import Layout from '../../components/organisms/Layout'
 import Posts from '../../components/molecules/Posts'
 import { SITE_TITLE, SITE_BLOG_DESCRIPTION } from '../../consts';
 import { getCollection } from 'astro:content';
-import twitterCard from '../../content/assets/mike-in-prague-800x418.jpg'
+import twitterCard from '../../content/assets/charlie-walking-across-my-desk-800x418.jpg'
 
 const isProd = import.meta.env.PROD;
 const posts = (await getCollection('blog'))
@@ -19,7 +19,7 @@ const posts = (await getCollection('blog'))
 			title={SITE_TITLE}
 			description={SITE_BLOG_DESCRIPTION}
 			image={twitterCard.src}
-			imageAlt="Mike England standing in front of a beautiful Prague cityscape background during a work meetup."
+			imageAlt="Mike England profile image."
 		/>
 	</head>
 	<body>

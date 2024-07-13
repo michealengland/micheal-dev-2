@@ -1,5 +1,5 @@
 import styles from './AuthorBio.module.css'
-import AuthorImage from '../../../content/assets/mike-in-prague-500x500.jpg'
+import AuthorImage from '../../../content/assets/mike-england-square-profile-800x800.jpg'
 
 export default function AuthorBio() {
   return (
