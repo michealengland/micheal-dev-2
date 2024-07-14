@@ -19,7 +19,7 @@ const Layout = ({children}: LayoutProps) => {
           content="Seeking a skilled JS, Node, or React developer? Connect with me on LinkedIn. Let's discuss how I can contribute to your team's success!"
           img={contentCTAImage.src}
           label="Connect"
-          title="Hire Me"
+          title="Looking for My Next Role"
           url="https://www.linkedin.com/in/michealengland/"
         />
       </main>
