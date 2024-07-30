@@ -8,8 +8,6 @@
 
 Hey there! I'm Mike, a passionate developer with a love for creating and experimenting with web technologies. This is my personal site, a space where I blend my enthusiasm for JavaScript, TypeScript, and design to build cool stuff. This site is intended to be easy to maintain and update with the power of markdown. 🚀
 
-This site was previously migrated from my first personal site, [micheal.dev](https://micheal.dev), which was built with Gatsby.
-
 ## What's Under the Hood?
 
 - **Astro.js**: The stellar framework that makes building fast, optimized websites a breeze.
