@@ -2,7 +2,7 @@
 title: Learn the GitHub CLI Command Basics
 description: "Dive into GitHub CLI: Master command syntax and streamline your development process. Our guide breaks down CLI commands, making them easy to learn and apply."
 pubDate: 'Nov 21 2023'
-heroImage: '/ghcli-3-cute-octopus-playing-with-blocks-960x480.jpg'
+heroImage: /src/content/blog/assets/ghcli-3-cute-octopus-playing-with-blocks-960x480.webp
 heroAlt: 'Cute octopus playing with building block toys'
 tags: [gh-cli]
 ---
@@ -15,7 +15,7 @@ gh <command> <subcommand> --flags
 
 The primary alias for interacting with the GitHub CLI is `gh`. Executing `gh` alone will display a high-level overview of all available commands, as shown in the screenshot below.
 
-![Display of possible commands when using `gh` by itself](./assets/ghcli-3-gh-base-command.jpg)
+![Display of possible commands when using `gh` by itself](./assets/ghcli-3-gh-base-command.webp)
 
 Scrolling down, there’s a useful guide that shows an overview on the command syntax:
 

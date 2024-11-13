@@ -3,7 +3,7 @@ title: Writing Better Pull Requests
 # date: 2021-12-01T17:00:00Z
 description: Learn how to become more thoughtful about the code writing and the merging process by making the review process easier.
 pubDate: Dec 21 2021
-heroImage: '/robot-cat-sleeping-on-laptop-960x480.jpeg'
+heroImage: /src/content/blog/assets/robot-cat-sleeping-on-laptop-960x480.webp
 heroAlt: 'Robot cat sleeping on laptop.'
 ---
 

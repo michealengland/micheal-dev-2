@@ -2,7 +2,7 @@
 title: Enable WordPress Appearance Panel Without Block Theme Conversion
 description: Learn how to workaround the WordPress appearance panel and manage patterns without fully converting to block themes. Practical solutions for hybrid themes and custom sites.
 pubDate: 'Oct 07 2024'
-heroImage: '/forcing-wordpress-appearance-editor-960x480.webp'
+heroImage: '/src/content/blog/assets/forcing-wordpress-appearance-editor-960x480.webp'
 heroAlt: 'WordPress Block Editor Photo by justin_morgan on Unsplash.'
 ---
 

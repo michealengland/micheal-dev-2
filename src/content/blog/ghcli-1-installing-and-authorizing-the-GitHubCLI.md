@@ -3,7 +3,7 @@ title: Installing and Authorizing the GitHub CLI
 description: 'Unlock the full potential of GitHub CLI with easy-to-follow steps on setup, authentication, and efficient use of SSH and HTTPS. Elevate your coding efficiency today.'
 pubDate: 'Nov 16 2023'
 lastUpdated: 'Nov 21 23'
-heroImage: '/ghcli-1-cute-octopus-uploading-data-960x480.jpg'
+heroImage: /src/content/blog/assets/ghcli-1-cute-octopus-uploading-data-960x480.webp
 heroAlt: 'Cute octopus uploading data repository'
 tags: [gh-cli]
 ---
@@ -71,7 +71,7 @@ Select the "Browser" option, and you'll be given a one-time code to use in your 
 ```shell
 ? How would you like to authenticate GitHub CLI? Login with a web browser
 ```
-![Giving access to GitHub CLI.](./assets/ghcli-1-access-auth.jpg)
+![Giving access to GitHub CLI.](./assets/ghcli-1-access-auth.webp)
 
 After hitting "Authorize," your terminal should update, confirming the successful authentication:
 
@@ -118,11 +118,11 @@ After selecting the "Login with a web browser" option, a one-time code will disp
 ? How would you like to authenticate GitHub CLI? Login with a web browser
 ```
 
-![Activating your device with the authorization code in the terminal](./assets/ghcli-1-device-activation.jpg)
+![Activating your device with the authorization code in the terminal](./assets/ghcli-1-device-activation.webp)
 
 Once you've entered the code from the terminal and clicked "Continue," an authorization page will appear.
 
-![Giving access to GitHub CLI.](./assets/ghcli-1-access-auth.jpg)
+![Giving access to GitHub CLI.](./assets/ghcli-1-access-auth.webp)
 
 Click "Authorize" to complete the authentication process.
 

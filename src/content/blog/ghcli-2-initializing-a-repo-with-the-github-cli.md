@@ -3,7 +3,7 @@ title: Initializing a Repository with the GitHub CLI
 description: "Step-by-step guide on initializing a new repository with GitHub CLI. Learn to create and clone your project workspace efficiently for seamless GitHub integration."
 pubDate: 'Nov 20 2023'
 lastUpdated: 'Nov 21 2023'
-heroImage: '/ghcli-2-cute-octopus-learning-command-line-interface-960x480.jpg'
+heroImage: /src/content/blog/assets/ghcli-2-cute-octopus-learning-command-line-interface-960x480.webp
 heroAlt: 'Cute octopus interacting with command line interface'
 tags: [gh-cli]
 ---

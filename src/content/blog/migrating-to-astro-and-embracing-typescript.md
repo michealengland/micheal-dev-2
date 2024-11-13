@@ -2,7 +2,7 @@
 title: My Journey from Gatsby.js to Astro.js and Embracing TypeScript
 pubDate: July 04 2024
 description: Discover my journey from Gatsby.js to Astro.js and how I transitioned my site to TypeScript. Learn about the benefits, process, and key lessons from this migration to enhance your static site development.
-heroImage: /migrating-to-astro-and-embracing-typescript-960x480.jpeg
+heroImage: /src/content/blog/assets/migrating-to-astro-and-embracing-typescript-960x480.webp
 heroAlt: Abstract colorful structure or rgb.
 ---
 
