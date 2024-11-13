@@ -1,3 +1,4 @@
+import { Image } from "astro:assets";
 import Heading from '../../atoms/Heading'
 import TextLink from '../../atoms/TextLink'
 import styles from './Posts.module.css'
@@ -38,7 +39,7 @@ export default function Posts({posts, title}: PostsProps) {
               <article className={styles.post} key={index}>
                 { url && title &&
                   <Heading className={styles.title} tag="h2">
-                    <img width={720} height={360} src={heroImage} alt={heroAlt} />
+                    <img {...heroImage} alt={heroAlt} />
                     {isDraft ? <span className={styles.draftLabel}>DRAFT:</span> : ''}
                     <TextLink to={`${url}`}>
                       {title}
