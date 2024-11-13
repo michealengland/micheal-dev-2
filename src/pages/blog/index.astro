@@ -4,7 +4,7 @@ import Layout from '../../components/organisms/Layout'
 import Posts from '../../components/molecules/Posts'
 import { SITE_TITLE, SITE_BLOG_DESCRIPTION } from '../../consts';
 import { getCollection } from 'astro:content';
-import twitterCard from '../../content/assets/charlie-walking-across-my-desk-800x418.jpg'
+import twitterCard from '../../content/assets/charlie-walking-across-my-desk-800x418.webp'
 
 const isProd = import.meta.env.PROD;
 const posts = (await getCollection('blog'))

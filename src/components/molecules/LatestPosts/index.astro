@@ -20,7 +20,12 @@ const posts = (await getCollection('blog'))
 	{posts.map(({ slug, data }) => (
 		<article role="listitem" tabindex="0">
 			<a href={ `/blog/${slug}` }>
-				<img src={ data.heroImage } alt={ data.heroAlt } />
+				<img
+					src={ data.heroImage }
+					alt={ data.heroAlt }
+					height="480"
+					width="960"
+				/>
 				<PostDate
 					displayLastUpdated={false}
 					lastUpdated={ data.lastUpdated }
