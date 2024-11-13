@@ -3,7 +3,7 @@ title: Mike England, What's new in 2024
 date: 2024-04-06T12:00:00Z
 description: My thoughts and career goals for 2024.
 pubDate: 'Apr 06 2024'
-heroImage: /src/content/blog/assets/sandro-katalina-k1bO_VTiZSs-960x480.webp
+heroImage: "./assets/sandro-katalina-k1bO_VTiZSs-960x480.webp"
 heroAlt: 'Triangular architecture with neon lighting with floor to sky perspective.'
 ---
 

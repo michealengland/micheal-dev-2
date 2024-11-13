@@ -3,7 +3,7 @@ title: Building Custom GitHub CLI Commands
 description: "Unlock GitHub CLI's potential with our in-depth tutorial. Learn to manage PRs, search repos, and streamline your development process with expert tips."
 pubDate: 'Nov 22 2023'
 lastUpdated: 'Nov 28 2023'
-heroImage: /src/content/blog/assets/ghcli-4-cute-octopus-putting-together-models-960x480.webp
+heroImage: "./assets/ghcli-4-cute-octopus-putting-together-models-960x480.webp"
 heroAlt: 'Cute octopus put together model airplain with glue'
 tags: [gh-cli]
 ---

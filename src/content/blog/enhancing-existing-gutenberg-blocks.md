@@ -2,7 +2,7 @@
 title: Enhancing Existing Gutenberg Blocks, A Step-by-Step Guide with React and WordPress
 description: Discover expert tips on harnessing the power of React to extend and customize Gutenberg blocks in WordPress. Elevate your editing capabilities with advanced techniques, empowering you to tailor blocks precisely to your website's needs.
 pubDate: March 01 2024
-heroImage: /src/content/blog/assets/filter-demo-subscribe-banner-injection-editor-example-960x480.webp
+heroImage: "./assets/filter-demo-subscribe-banner-injection-editor-example-960x480.webp"
 heroAlt: Filtering the core/embed block to insert custom HTML markup and controls
 ---
 

@@ -2,7 +2,7 @@
 title: Learn the GitHub CLI Command Basics
 description: "Dive into GitHub CLI: Master command syntax and streamline your development process. Our guide breaks down CLI commands, making them easy to learn and apply."
 pubDate: 'Nov 21 2023'
-heroImage: /src/content/blog/assets/ghcli-3-cute-octopus-playing-with-blocks-960x480.webp
+heroImage: "./assets/ghcli-3-cute-octopus-playing-with-blocks-960x480.webp"
 heroAlt: 'Cute octopus playing with building block toys'
 tags: [gh-cli]
 ---

@@ -2,7 +2,7 @@
 title: Maximizing Your Workflow with the GitHub CLI
 description: Explore the benefits of the GitHub CLI with our guide. Learn how it streamlines coding tasks, enhances efficiency, and is beneficial for developers, team leads, and QA members alike.
 pubDate: Nov 15 2023
-heroImage: /src/content/blog/assets/ghcli-0-cute-octopus-writing-notes-960x480.webp
+heroImage: "./assets/ghcli-0-cute-octopus-writing-notes-960x480.webp"
 heroAlt: Cute octopus writing notes
 tags: [gh-cli]
 ---

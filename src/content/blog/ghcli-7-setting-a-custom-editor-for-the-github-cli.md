@@ -2,7 +2,7 @@
 title: Setting a Custom Editor for the GitHub CLI
 description: "Elevate your GitHub CLI skills with expert tips on editor configurations and interactive prompts. Discover how to tailor the CLI to your workflow for maximum efficiency."
 pubDate: 'Dec 05 2023'
-heroImage: /src/content/blog/assets/ghcli-7-cute-octopus-using-computer-960x480.webp
+heroImage: "./assets/ghcli-7-cute-octopus-using-computer-960x480.webp"
 heroAlt: 'Cute octopus excitedly using the computer'
 tags: [gh-cli]
 ---

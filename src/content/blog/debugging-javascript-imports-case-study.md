@@ -2,7 +2,7 @@
 title: Debugging JavaScript Imports, A Case Study of Unexpected Issues
 pubDate: July 18 2024
 description: Explore a real-world scenario of debugging JavaScript imports after relocating code from a script tag to a `.js` file. Understand the unexpected issues that arose, the troubleshooting process, and key takeaways for avoiding similar problems in your projects.
-heroImage: /src/content/blog/assets/javascript-imports-case-study-960x480.webp
+heroImage: "./assets/javascript-imports-case-study-960x480.webp"
 heroAlt: Photo by <a href="https://unsplash.com/@helloimnik?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Nik</a> on <a href="https://unsplash.com/photos/lego-minifig-head-toy-lot-v8pL84kvTTc?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
 
 ---

@@ -3,7 +3,7 @@ title: Installing and Authorizing the GitHub CLI
 description: 'Unlock the full potential of GitHub CLI with easy-to-follow steps on setup, authentication, and efficient use of SSH and HTTPS. Elevate your coding efficiency today.'
 pubDate: 'Nov 16 2023'
 lastUpdated: 'Nov 21 23'
-heroImage: /src/content/blog/assets/ghcli-1-cute-octopus-uploading-data-960x480.webp
+heroImage: "./assets/ghcli-1-cute-octopus-uploading-data-960x480.webp"
 heroAlt: 'Cute octopus uploading data repository'
 tags: [gh-cli]
 ---
