@@ -2,7 +2,7 @@
 title: From Netflix to the Racetrack, My Journey into the World of Drifting
 description: Join my adventure from watching 'Hyperdrive' to hitting the drift track. Insights on beginner cars and the thrill of drift racing.
 pubDate: 'Dec 3 2023'
-heroImage: '/two-cars-drifting-neon-960x480.jpg'
+heroImage: "./assets/two-cars-drifting-neon-960x480.webp"
 heroAlt: 'Standardized blue cover photo.'
 ---
 

@@ -1,4 +1,5 @@
 ---
+import { Image } from "astro:assets";
 import { getCollection } from 'astro:content';
 import PostDate from '../../atoms/PostDate/PostDate.astro'
 import style from './LatestPosts.module.css';
@@ -20,7 +21,7 @@ const posts = (await getCollection('blog'))
 	{posts.map(({ slug, data }) => (
 		<article role="listitem" tabindex="0">
 			<a href={ `/blog/${slug}` }>
-				<img src={ data.heroImage } alt={ data.heroAlt } />
+				<Image src={ data.heroImage } alt={ data.heroAlt } />
 				<PostDate
 					displayLastUpdated={false}
 					lastUpdated={ data.lastUpdated }

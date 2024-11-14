@@ -3,7 +3,7 @@ title: Markdown the World
 date: 2024-04-08T12:00:00Z
 description: Explore the benefits of Markdown for efficient writing and note-taking. Learn about its versatility, portability, and tips for maximizing productivity. Discover how Markdown can revolutionize your content creation process.
 pubDate: 'Apr 08 2024'
-heroImage: '/sara-Skcr6X_aLjU-unsplash-960x480.jpeg'
+heroImage: "./assets/sara-Skcr6X_aLjU-unsplash-960x480.webp"
 heroAlt: 'Meticulously organized wall of books.'
 ---
 

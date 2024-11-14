@@ -3,7 +3,7 @@ title: Learning the GitHub CLI
 # date: 2021-08-16T12:00:00Z
 description: Here are some of commands I found helpful while getting started. I ended up using a combination of these commands in multiple custom aliases.
 pubDate: 'August 16 2021'
-heroImage: '/robot-kitty-shredding-text-book-960x480.jpeg'
+heroImage: "./assets/robot-kitty-shredding-text-book-960x480.webp"
 heroAlt: 'Robot kitty shredding text book.'
 ---
 

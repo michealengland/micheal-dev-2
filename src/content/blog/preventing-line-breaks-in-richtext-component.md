@@ -3,7 +3,7 @@ title: Preventing line break elements in the RichText component
 # date: 2021-05-13T17:00:00Z
 description: By default the WordPress Gutenberg RichText component will insert `<br>` tags into the block grammar when the "enter" key is used. While this is okay in some circumstances, it may not always be wanted behavior.
 pubDate: 'May 13 2021'
-heroImage: '/robo-doberman-in-computer-tower-960x480.jpeg'
+heroImage: "./assets/robo-doberman-in-computer-tower-960x480.webp"
 heroAlt: 'Robot doberman climbing the computer tower.'
 ---
 

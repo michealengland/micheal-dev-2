@@ -3,7 +3,7 @@ import styles from './Layout.module.css'
 import Header from '../Header'
 import Footer from '../Footer'
 import ContentCTA from '../../molecules/ContentCTA'
-import contentCTAImage from '../../../content/assets/charlie-and-the-mechanical-keyboard-2000x1000.jpg'
+import contentCTAImage from '../../../content/assets/charlie-and-the-mechanical-keyboard-2000x1000.webp'
 
 interface LayoutProps {
   children: React.ReactNode
