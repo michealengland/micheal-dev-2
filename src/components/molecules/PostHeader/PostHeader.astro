@@ -1,8 +1,8 @@
 ---
+import { Image } from "astro:assets";
 import Heading from '../../atoms/Heading';
 import PostDate from '../../atoms/PostDate/PostDate.astro';
 import styles from './PostHeader.module.css';
-
 export interface Props {
   pubDate: Date;
   heroAlt?: string;
@@ -17,7 +17,7 @@ const { pubDate, title, lastUpdated, heroImage, heroAlt='' } = Astro.props;
 <header class={styles.postHeader}>
   {heroImage && (
     <div class={styles.hero}>
-      {heroImage && <img width={1020} height={510} src={heroImage} alt={heroAlt} />}
+      { heroImage && <Image src={heroImage} alt={heroAlt} /> }
     </div>
   )}
   <div class={styles.inner}>
