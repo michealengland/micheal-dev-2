@@ -23,6 +23,9 @@ export default function Header() {
             <li>
               <TextLink to={'/github-cli-workflow-series'}>GH CLI</TextLink>
             </li>
+            <li>
+              <TextLink to={'https://stellarpages.app'}>Stellar Pages</TextLink>
+            </li>
           </ul>
         </nav>
         <SocialLinks
