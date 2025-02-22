@@ -3,7 +3,7 @@ title: React Native Overview Notes
 description: A collection of notes taken while learning React Native basics.
 pubDate: Feb 22 2025
 heroImage: "./assets/react-native-notes-cover-960x480.webp"
-heroAlt: Photo by <a href="https://unsplash.com/@tronle_sg?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Tron Le</a> on <a href="https://unsplash.com/photos/silver-iphone-6-and-space-gray-iphone-6-yPFAAwomTYQ?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+heroAlt: Photo by Tron Lea on Unsplash
 ---
 
 Finding myself unexpectedly looking for a new role I wanted to focus on skills that would help me in a new position. Over the upcoming weeks I'm branching out and building mini-projects on stacks that I've always wanted to try. I decided to start with React Native as it's got a semi-familiar feel for me since I used to work heavily in React.
