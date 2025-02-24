@@ -34,7 +34,7 @@
   & blockquote,
   & p {
     & code {
-      @apply bg-primary-purple1 text-nuetral-white font-mono text-sm rounded-sm px-1 inline-block;
+      @apply bg-slate-100 font-mono text-sm rounded-sm px-1 inline-block;
 
       /* padding: 0.125rem; */
     }
@@ -71,7 +71,7 @@
   }
 
   & blockquote {
-    @apply py-4 px-2 italic border-tertiary-teal text-white bg-gradient-to-r from-primary-purple2 to-primary-purple my-8 shadow-md block relative;
+    @apply pl-4 italic border-l-4 text-primary-purple1 bg-cyan-50 border-tertiary-teal my-8 block relative;
 
     & :last-child {
       @apply mb-0;
