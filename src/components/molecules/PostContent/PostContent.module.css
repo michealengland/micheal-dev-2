@@ -79,7 +79,7 @@
   }
 
   & table {
-    @apply overflow-scroll relative text-xs md:text-sm;
+    @apply block overflow-auto relative text-xs md:text-sm;
 
     thead {
       @apply bg-primary-purple2 text-white text-left;
