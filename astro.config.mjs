@@ -11,6 +11,6 @@ export default defineConfig({
   markdown: {
     shikiConfig: {
       theme: 'rose-pine-moon',
-    },
-  },
+    }
+  }
 });
