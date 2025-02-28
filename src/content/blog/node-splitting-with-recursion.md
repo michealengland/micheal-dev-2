@@ -96,7 +96,7 @@ New Node:
 
 Eventually, I made significant progress on the application, working many nights and weekends. Throughout these sessions, the node splitter was always on my mind. Once I reached a good place it was time to circle back and solve this problem.
 
-My first approach was to enhance the original page spliter by manually checking one level down with a nested loop. If an item met my criteria, I would check for sub-elements and continue until no further split points were found. This worked but with limited success. I mostly did this to rough out the idea I was after.
+My first approach was to enhance the original page splitter by manually checking one level down with a nested loop. If an item met my criteria, I would check for sub-elements and continue until no further split points were found. This worked but with limited success. I mostly did this to rough out the idea I was after.
 
 If you’re thinking, _this sounds like a job for recursion_, you’re right. I thought I had a solid grasp of recursion, but tackling it in a real-world scenario taught me some tough lessons. It didn’t take long before I got stuck.
 
