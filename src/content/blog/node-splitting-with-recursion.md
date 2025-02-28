@@ -10,7 +10,7 @@ Full disclosure: This article discusses a real-world experience with everyone’
 
 During the early days of Stellar Pages, I tackled a particularly challenging problem I had never encountered before. I had a use case where, based on a certain location within a node—such as an unordered list—I needed to split that node in half as-is. This part was relatively straightforward since it involved determining a specific point and moving everything after that point to a new node.
 
-**For example, let's say that we want to split the list at item #2.**
+**For example, we decide to split a flat list at item #2.**
 
 ```markdown
 - List item 1
@@ -33,9 +33,7 @@ New Node:
 - List Item 4
 ```
 
-This initial prototype didn’t take long to build since it was simple and straightforward. Unfortunately, it proved to be a poor longterm solution for a real data structure with nested elements.
-
-**Let's say we have the following list and we want to divide the list at "List Item 2AB".**
+**Next, let's say we have the a nested list and want to divide at "List Item 2AB".**
 
 ```markdown
 - List item 1
@@ -70,7 +68,7 @@ New Node:
 - List Item 4
 ```
 
-**And ideally, we want this to look like this.**
+**Meanwhile, the best solution would retain the original structure.**
 
 Original Node:
 ```markdown
@@ -89,41 +87,22 @@ New Node:
 - List Item 3
 - List Item 4
 ```
-## Initial problem solving
 
-When I first built Stellar Pages, I chose not to tackle this challenge right away because my initial attempts revealed many difficulties. Since the app was still in its early stages, my priority was determining its viability. **So, I left this problem for Future Mike.**
+> While the early prototype was simple it wasn't a great longterm solution, especially for nested element structures. My priority for the app was determining its viability **so, I left this problem for Future Mike.**
 
-The initial prototype had obvious flaws. As shown in the demo below, when a node is split, its entire subtree is moved to the new node.
 
-For example, if we split the list above at "List Item 2AB," we get the following:
 
-Original Node:
-```markdown
-- List item 1
-```
-
-New Node:
-```markdown
-- List item 2
-	- List Item 2A
-	- List Item 2B
-		- List Item 2AA
-		- List Item 2AB
-		- List Item 2AC
-	- List Item 2C
-- List Item 3
-- List Item 4
-```
 ## The Node splitter resurfaces
 
-Over time, I made significant progress on the application, working many nights and weekends. Throughout these sessions, the node splitter was always on my mind. Naturally, I set out to solve it, knowing it would be a major feature for the app.
+Eventually, I made significant progress on the application, working many nights and weekends. Throughout these sessions, the node splitter was always on my mind. Once I reached a good place it was time to circle back and solve this problem.
 
-My first approach was to extend my existing algorithm for splitting parent nodes by manually checking one level down with a new loop on the matched item. If an item met my criteria, I would check for sub-elements and continue until no further split points were found.
+My first approach was to enhance the original page spliter by manually checking one level down with a nested loop. If an item met my criteria, I would check for sub-elements and continue until no further split points were found. This worked but with limited success. I mostly did this to rough out the idea I was after.
 
 If you’re thinking, _this sounds like a job for recursion_, you’re right. I thought I had a solid grasp of recursion, but tackling it in a real-world scenario taught me some tough lessons. It didn’t take long before I got stuck.
-## Determining why I was stuck
 
-Naturally, it didn’t take long before I hit a wall. One of the first challenges I solved was determining the exact point where nodes needed to be split—a big win. However, this success was immediately overshadowed by a much bigger issue: retaining the structure while dividing nodes (_post-recursion_).
+## Determining a path forward
+
+One of the first challenges I solved was determining the exact point where nodes needed to be split which was a big win. However, this success was immediately overshadowed by a much bigger issue: retaining the structure while dividing nodes (_post-recursion_).
 
 Throughout this process, I thought about the problem in terms of two key elements:
 
