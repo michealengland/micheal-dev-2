@@ -3,9 +3,8 @@ title: "Job Search Strategies in 2025 Tools, Platforms & Lessons from My Layoff"
 description: Laid off in 2025? Learn how to navigate the job search with top hiring platforms, application strategies, and key takeaways from my experience. Find the best job boards, networking tips, and resources to stay ahead.
 pubDate: Feb 28 2025
 heroImage: ./assets/getting-hired-in-2025-cover-960x480.webp
-heroAlt: Happy squirrel on a sunny day. Photo by Natalya Letunova on Unsplash."
+heroAlt: 'Cityscape at night by Pawel Nolbert on Unsplash.'
 ---
-
 
 It's February 2025, and my position was eliminated without warning. Back in 2023, I was laid off from a job I loved during a company-wide layoff in which a large portion of the company was let go. The role I took after that layoff seemed promising at first, but I quickly learned it wasn’t what I thought it would be.
 
@@ -41,7 +40,7 @@ In 2023, I was caught off guard because my resume wasn't ready and I didn't have
 - Ease of use
 - Quality of listings
 - Freshness of listings
-- Free VS Paid, I did not pay for for their services at this time.
+- Free VS Paid, I did not pay for their services at this time.
 
 ### Daily Remote (Paid)
 
