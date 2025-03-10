@@ -1,28 +1,6 @@
 ---
-import BaseHead from '../components/BaseHead.astro';
-import Header from '../components/organisms/Header/index'
-import Footer from '../components/organisms/Footer/index'
-import PageSchema from '../components/PageSchema.astro'
-import twitterCard from '../content/assets/mike-england-web-cover-800x418.webp'
-
-import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
+import LandingPage from '../layouts/LandingPage/index.astro';
 ---
-<!doctype html>
-<html lang="en">
-	<head>
-		<BaseHead
-			title={SITE_TITLE}
-			description={SITE_DESCRIPTION}
-			image={twitterCard.src}
-			imageAlt="Mike England"
-		/>
-		<PageSchema />
-	</head>
-	<body>
-		<Header />
-		<main>
-			<h1>Hire me page.</h1>
-		</main>
-		<Footer />
-	</body>
-</html>
+<LandingPage>
+	<h1>Hire me page.</h1>
+</LandingPage>

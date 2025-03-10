@@ -1,0 +1,27 @@
+---
+import style from './LandingPage.module.css'
+import BaseHead from '../../components/BaseHead.astro'
+import Footer from '../../components/organisms/Footer/index'
+import PageSchema from '../../components/PageSchema.astro'
+import twitterCard from '../../content/assets/mike-england-web-cover-800x418.webp'
+
+import { SITE_TITLE, SITE_DESCRIPTION } from '../../consts'
+---
+<!doctype html>
+<html lang="en">
+	<head>
+		<BaseHead
+			title={SITE_TITLE}
+			description={SITE_DESCRIPTION}
+			image={twitterCard.src}
+			imageAlt="Mike England"
+		/>
+		<PageSchema />
+	</head>
+	<body>
+		<main class={style.landingPage}>
+			<slot />
+		</main>
+		<Footer />
+	</body>
+</html>

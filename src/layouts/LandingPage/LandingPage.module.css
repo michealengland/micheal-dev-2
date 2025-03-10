@@ -1,0 +1,3 @@
+.landingPage {
+	@apply bg-black min-h-screen text-white;
+}
