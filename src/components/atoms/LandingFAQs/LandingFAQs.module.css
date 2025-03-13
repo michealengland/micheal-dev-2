@@ -1,0 +1,35 @@
+.landingFAQs {
+	@apply p-4 md:p-8 lg:p-16 max-w-6xl mx-auto;
+
+	h2 {
+		@apply mb-8 text-center;
+	}
+
+	dl {
+		@apply flex flex-col;
+	}
+
+	dt, dd {
+		@apply relative inline-block p-3 md:max-w-md rounded-lg text-rp-base font-semibold leading-relaxed mb-8;
+
+		&::after {
+				@apply absolute block content-[''] w-0 h-0 top-full border-[8px] border-t-0 border-transparent;
+		}
+	}
+
+	dt {
+		@apply bg-rp-foam rounded-bl-none mr-6 sm:mr-auto;
+
+		&::after {
+			@apply left-0 border-l-rp-foam;
+		}
+	}
+
+	dd {
+		@apply bg-rp-iris rounded-br-none ml-6 md:ml-auto;
+
+		&::after {
+			@apply right-0 border-r-rp-iris;
+		}
+	}
+}
