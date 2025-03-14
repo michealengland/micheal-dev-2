@@ -1,16 +1,28 @@
 .landingFAQs {
-	@apply p-4 md:p-8 lg:p-16 max-w-6xl mx-auto;
+	@apply relative p-4 md:p-8 lg:p-16 max-w-6xl mx-auto;
 
 	h2 {
-		@apply mb-8 text-center;
+		@apply mb-16 text-center;
+	}
+
+	a {
+		@apply underline;
+
+		&:hover, focus {
+			@apply underline-offset-2;
+		}
 	}
 
 	dl {
-		@apply flex flex-col;
+		@apply relative flex flex-col overflow-hidden;
+
+		:global(.loaded) {
+			@apply opacity-100 translate-x-0 translate-y-0;
+		}
 	}
 
 	dt, dd {
-		@apply relative inline-block p-3 md:max-w-md rounded-lg text-rp-base font-semibold leading-relaxed mb-8;
+		@apply relative block mb-24 p-3 md:max-w-md rounded-lg text-rp-base text-xl font-semibold leading-relaxed transition-all translate-y-10 opacity-0 duration-[1000ms] delay-[200ms];
 
 		&::after {
 				@apply absolute block content-[''] w-0 h-0 top-full border-[8px] border-t-0 border-transparent;
@@ -18,7 +30,7 @@
 	}
 
 	dt {
-		@apply bg-rp-foam rounded-bl-none mr-6 sm:mr-auto;
+		@apply bg-rp-foam rounded-bl-none ml-0 mr-6 sm:mr-auto -translate-x-20;
 
 		&::after {
 			@apply left-0 border-l-rp-foam;
@@ -26,7 +38,7 @@
 	}
 
 	dd {
-		@apply bg-rp-iris rounded-br-none ml-6 md:ml-auto;
+		@apply bg-rp-iris rounded-br-none ml-6 sm:ml-auto translate-x-20;
 
 		&::after {
 			@apply right-0 border-r-rp-iris;
