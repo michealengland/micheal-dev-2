@@ -1,20 +1,57 @@
 ---
 import style from './LandingFAQs.module.css'
+
+const messages = [
+	{
+		q: `What's a project you're particularly proud of?`,
+		a: `My most recent favorite that I'm super proud of is ✨Stellar Pages!✨ I had an idea to create a custom application that transforms Markdown into stylish PDFs. I greatly enjoyed solving many product decisions on this app including how to split content based on render 📄.`,
+	},
+	{
+		q: `How have you maintained productivity during remote work?`,
+		a: `I'm always refining my workflow! 🚀 This past year, I’ve leveled up with: Neovim + tmux for focus 🎯, LLMs for efficiency 🤖, deeper DS & algorithms study 📚, and using PARA for meticulous notes keeping 📝.`,
+	},
+	{
+		q: `What are some ways that you have ensured that a codebase is well-structured and maintainable?`,
+		a: `Keeping code maintainable is all about structure! 🛠️ My go-to rules: modular files 📁, consistent standards 📏, clear comments 📝, focused functions 🎯, static typing ✅, and smart testing over 100% coverage 🧪.`,
+	},
+	{
+		q: `How do you keep up-to-date with technological advancements in your field?`,
+		a: `I stay sharp by mixing hands-on work with self-learning! 🚀 I reguarly take online courses, read docs, and build mini projects on topics that interest me 🔬.`,
+	},
+	{
+		q: `Thanks for sharing Mike 😉. What's the best way to stay in touch?`,
+		a: `👋 Always glad to share! If you'd like to discuss more, please reach out to me on <a href="https://www.linkedin.com/in/michealengland/" target="blank">LinkedIn.</a>`,
+	},
+]
 ---
 <section class={style.landingFAQs}>
 	<h2>Ask Me Anything</h2>
-
 	<dl>
-		<dt>What's a project you're particularly proud of?</dt>
-		<dd>Worked on some big projects in 2024-25, but super proud of Stellar Pages! 🚀 Started as an Electron app, now a web app for converting Markdown to stylish PDFs. One of the coolest parts? A custom page splitter that smartly breaks docs into pages. 📄✨</p>
-
-		<dt>How have you maintained productivity during remote work?</dt>
-		<dd>Always refining my workflow! 🚀 This past year, I’ve leveled up with: Neovim + tmux for focus 🎯, LLMs for efficiency 🤖, deeper DS & algorithms study 📚, and PARA for meticulous notes 📝.</dd>
-
-		<dt>What are some ways that you have ensured that a codebase is well-structured and maintainable?</dt>
-		<dd>Keeping code maintainable is all about structure! 🛠️ My go-to rules: modular files 📁, consistent standards 📏, clear comments 📝, focused functions 🎯, static typing ✅, and smart testing over 100% coverage 🧪.</p>
-
-		<dt>How do you keep up-to-date with technological advancements in your field?</dt>
-		<dd>I stay sharp by mixing hands-on work with self-learning! 🚀 Online courses, docs, and lots of experimenting 🔬. I love understanding the why, not just the how. Mini projects + structured notes help it all stick! 📝💡</dd>
+		{messages.map(({q, a}) => (
+			<dt>{q}</dt>
+			<dd><Fragment set:html={a} /></dd>
+		))}
 	</dl>
 </section>
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+	const elements = document.querySelectorAll("dl dt, dl dd");
+	let loadedCount = 0;
+
+	const observer = new IntersectionObserver((entries, obs) => {
+		entries.forEach((entry) => {
+			if (entry.isIntersecting) {
+				entry.target.classList.add("loaded");
+				observer.unobserve(entry.target); // Stop observing this element
+				loadedCount++;
+
+				if (loadedCount === elements.length) {
+					obs.disconnect();
+				}
+			}
+		});
+	}, { threshold: 0.8 });
+
+	elements.forEach((el) => observer.observe(el));
+});
+</script>
