@@ -1,0 +1,39 @@
+---
+import style from './Brands.module.css'
+
+const brands = [
+	{
+		title: 'WP Forms',
+		summary: 'I worked on various brand teams at Awesome Motive including WP Forms rebuilding their site with Gutenberg blocks.',
+	},
+	{
+		title: 'Kinsta',
+		summary: 'I worked on the MyKinsta dashboard and became a development team lead.',
+	},
+	{
+		title: 'WSJ',
+		summary: 'As part of an specialized team, we released critical features for the news room authors to write and draft articles at record pace.',
+	},
+	{
+		title: 'MarketWatch',
+		summary: 'I helped the MarketWatch team incorporate custom React components and block features such as a ticker inserter for the content editor.',
+	},
+	{
+		title: 'Bill of Rights',
+		summary: 'On this Next.js project, I helped build headless WordPress site that converted block grammar into a React frontend.',
+	},
+]
+---
+<section class={style.brands}>
+	<h2>Brands I've worked with</h2>
+	<div class={style.brandTiles}>
+		{brands.map(({title, summary}) => (
+			<details>
+			<summary>{title}</summary>
+				<div class={style.content}>
+					<p>{summary}</p>
+				</div>
+			</details>
+		))}
+	</div>
+</section>

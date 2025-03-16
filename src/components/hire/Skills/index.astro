@@ -1,0 +1,39 @@
+---
+import style from './Skills.module.css'
+---
+<section id="skills" class={style.skills}>
+	<h2>Code Skills</h2>
+	<ul>
+		<li>JavaScript</li>
+		<li>TypeScript</li>
+		<li>CSS / Tailwind</li>
+		<li>GraphQL</li>
+		<li>SQL</li>
+		<li>Node</li>
+		<li>React</li>
+		<li>Jest</li>
+		<li>PHP</li>
+	</ul>
+</section>
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+	const entry = document.getElementById('skills');
+
+	if (! entry) {
+		console.error('entry missing')
+		return;
+	}
+
+	const observer:IntersectionObserverCallback = new IntersectionObserver((el:HTMLElement, obs:IntersectionObserverInit):void => {
+		const element = el[0]
+		const isInteresecting = element?.isIntersecting;
+		if (isInteresecting) {
+			entry.classList.add('loaded')
+		} else {
+			entry.classList.remove('loaded')
+		}
+	}, { threshold: 0.7 });
+
+	observer.observe(entry);
+});
+</script>

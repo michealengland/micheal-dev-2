@@ -1,0 +1,26 @@
+---
+import style from './Intro.module.css'
+---
+<section class={style.intro}>
+	<div class={style.inner}>
+		<h1>
+			<span class={style.hc1}>Plan, Code, Iterate</span>
+			<span class={style.hc2}>Let’s Build Something</span >
+			<span id="title-last-line" class={style.hc3}>Great Together</span>
+		</h1>
+		<p class={style.subtitle}>Mike England – Senior Developer crafting high-performance web and software solutions.</p>
+		<p class={style.description}>For nearly a decade, I’ve engineered digital projects, developed pixel perfect websites and crafted custom features for businesses of all scales. I’m on the hunt for my next big challenge—a role where I can dive into frontend and backend development, surrounded by a team of passionate software experts. I thrive in environments that prioritize performant, scalable solutions, working together to hit meaningful milestones.</p>
+	</div>
+</section>
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+	const mainTitle = document.getElementById('title-last-line');
+
+	if (! mainTitle) {
+		console.error('#main-title not located.')
+		return;
+	}
+
+	mainTitle.classList.add('loaded');
+});
+</script>

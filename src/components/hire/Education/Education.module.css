@@ -1,0 +1,46 @@
+.education {
+	@apply p-8 md:py-16 max-w-6xl mx-auto text-left;
+
+	h2 {
+		@apply mb-8;
+	}
+
+	> p {
+		@apply mb-8;
+	}
+
+	li {
+		@apply flex items-center gap-2 bg-rp-base mb-4;
+
+		&:global(.loaded) {
+			.label {
+				@apply text-rp-base font-bold;
+
+				&::after {
+					@apply w-full;
+				}
+			}
+		}
+	}
+
+	.date {
+		@apply block text-4xl font-bold text-rp-love;
+	}
+
+	a {
+		@apply underline;
+
+		&:hover,
+		&:focus {
+			@apply underline-offset-2;
+		}
+	}
+
+	.label {
+		@apply p-1 relative inline text-rp-text transition-all delay-200 z-[2];
+
+		&::after {
+			@apply absolute content-[''] block h-full w-0 bg-rp-text left-0 top-0 transition-all duration-[500ms] -z-1;
+		}
+	}
+}

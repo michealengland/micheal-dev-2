@@ -1,0 +1,16 @@
+.footer {
+  @apply relative bg-rp-base text-rp-text w-full;
+
+  & .inner {
+    @apply mx-auto max-w-2xl p-2 text-center;
+  }
+
+  & a {
+    @apply text-rp-love underline;
+
+    &:hover,
+    &:focus {
+      @apply text-rp-gold;
+    }
+  }
+}

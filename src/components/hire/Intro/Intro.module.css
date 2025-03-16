@@ -1,0 +1,53 @@
+.intro {
+	@apply flex items-center p-8 py-16 max-w-6xl min-h-[60vh] mx-auto text-left;
+
+	h1 {
+		@apply relative text-6xl text-rp-pine leading-tight font-semibold mb-6;
+
+		span {
+			@apply relative block z-1;
+		}
+	}
+
+	.hc3 {
+		@apply inline-block text-rp-text pr-1;
+
+		&::before {
+			@apply block absolute left-0 top-0 content-[''] w-full h-full bg-rp-base transition-all duration-1000;
+		}
+
+		&::after {
+			@apply block absolute left-full top-0 content-[''] w-0.5 h-full bg-rp-iris transition-all opacity-0;
+		}
+
+		&:global(.loaded) {
+			&::before {
+				@apply left-full ml-2 border-l-0 delay-500;
+			}
+
+			&::after {
+				@apply bg-rp-iris duration-1000 -z-1;
+
+				animation: cursor 3s linear 2;
+				animation-delay: 1200ms;
+			}
+		}
+	}
+
+	.subtitle {
+		@apply text-xl font-bold text-rp-gold mb-8;
+	}
+
+	.description {
+		@apply text-lg mb-0 leading-relaxed;
+	}
+}
+
+@keyframes cursor {
+	0% {
+		@apply opacity-0;
+	}
+	50% {
+		@apply opacity-80;
+	}
+}

@@ -1,0 +1,27 @@
+.cta {
+	@apply p-8 min-h-80 text-center;
+
+	h2 {
+		@apply text-3xl mb-8 text-rp-gold;
+	}
+
+	p {
+		@apply mb-8 max-w-lg mx-auto;
+	}
+
+	a {
+		@apply inline-flex items-end gap-2 relative inline-block px-4 py-2 bg-rp-rose border-r-2 border-b-2 border-rp-love text-rp-base rounded font-bold overflow-hidden text-xl z-1;
+
+		img {
+			@apply transition-all;
+		}
+
+		&:hover,
+		&:focus {
+
+			img {
+				@apply translate-x-2;
+			}
+		}
+	}
+}

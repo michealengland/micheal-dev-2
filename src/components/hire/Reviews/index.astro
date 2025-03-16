@@ -1,0 +1,74 @@
+---
+import style from './Reviews.module.css'
+
+const reviews = [
+	{
+		content: '"Mike is a highly skilled front-end engineer with a passion for building scalable applications. His expertise in JavaScript and React was instrumental in our work on MarketWatch at NewsCorp. He’s a collaborative team player, eager to both teach and learn, making a meaningful impact on both colleagues and user."',
+		location: 'Awesome Motive',
+		subtitle: 'Senior Developer',
+		title:'Tom McFarlin',
+		url: 'https://tommcfarlin.com',
+	},
+	{
+		content: '"Mike’s leadership skills are top-notch. As a team lead, he created a productive and supportive work environment that helped us ship faster. His communication and ability to balance technical and business needs make him a rare talent in the industry."',
+		location: 'Awesome Motive',
+		subtitle: 'Product Strategist',
+		title: 'Erick Fogtman',
+		url: 'https://www.linkedin.com/in/erick-fogtman/',
+	},
+	{
+		content: '"Working with Mike was a game-changer. He revamped our Node.js backend, improving performance by 40%. His deep technical knowledge, especially in optimizing API responses, made a massive impact on our product."',
+		location: 'WP Forms',
+		subtitle: 'Product Manager',
+		title: 'Lauren Drew',
+		url: 'https://www.linkedin.com/in/lauren-drew-4b022986/',
+	},
+	{
+		content: `"Mike's ability to pick up new technologies and adapt quickly is outstanding. He jumped into our Go-based project with zero prior experience and within weeks was contributing production-level code. He’s the kind of engineer every team needs."`,
+		location: 'WebDevStudios',
+		subtitle: 'Principal Engineer',
+		title: 'Sal Ferrarello',
+		url: 'https://salferrarello.com/about/',
+	},
+]
+---
+<section class={style.reviews}>
+	<h2>Reviews</h2>
+	<div class={style.reviews}>
+		<ul id="reviews">
+			{reviews.map(({title, subtitle, content, url}) => (
+			<li>
+				<div class={style.cardInner}>
+					<div class={style.cardHeading}>
+						{url && <h3 class={style.title}><a href={url} target="blank">{title}</a></h3>}
+						<p class={style.subtitle}>{subtitle}</p>
+					</div>
+					<p class={style.content}>{content}</p>
+				</div>
+			</li>
+		))}
+		</ul>
+	</div>
+</section>
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+	const elements = document.querySelectorAll("#reviews li");
+	let loadedCount = 0;
+
+	const observer = new IntersectionObserver((entries, obs) => {
+		entries.forEach((entry) => {
+			if (entry.isIntersecting) {
+				entry.target.classList.add("loaded");
+				observer.unobserve(entry.target); // Stop observing this element
+				loadedCount++;
+
+				if (loadedCount === elements.length) {
+					obs.disconnect();
+				}
+			}
+		});
+	}, { threshold: 0.98 });
+
+	elements.forEach((el) => observer.observe(el));
+});
+</script>
