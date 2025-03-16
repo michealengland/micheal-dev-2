@@ -2,13 +2,13 @@
 import style from './Brands.module.css'
 
 interface Tile {
-  title: string;
-  summary: string;
+	title: string;
+	summary: string;
 }
 
 interface Props {
-  title: string;
-  data: Array<Tile>;
+	title: string;
+	data: Array<Tile>;
 }
 
 const { data, title } = Astro.props;
