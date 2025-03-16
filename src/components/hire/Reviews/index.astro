@@ -17,21 +17,19 @@ const { data, title } = Astro.props;
 ---
 <section class={style.reviews}>
 	<h2>{title}</h2>
-	<div class={style.reviews}>
-		<ul id="reviews">
-			{data.map(({title, subtitle, content, url}) => (
-			<li>
-				<div class={style.cardInner}>
-					<div class={style.cardHeading}>
-						{url && <h3 class={style.title}><a href={url} target="blank">{title}</a></h3>}
-						<p class={style.subtitle}>{subtitle}</p>
-					</div>
-					<p class={style.content}>{content}</p>
+	<ul id="reviews">
+		{data.map(({title, subtitle, content, url}) => (
+		<li>
+			<div class={style.cardInner}>
+				<div class={style.cardHeading}>
+					{url && <h3 class={style.title}><a href={url} target="blank">{title}</a></h3>}
+					<p class={style.subtitle}>{subtitle}</p>
 				</div>
-			</li>
-		))}
-		</ul>
-	</div>
+				<p class={style.content}>{content}</p>
+			</div>
+		</li>
+	))}
+	</ul>
 </section>
 <script>
 document.addEventListener("DOMContentLoaded", () => {
