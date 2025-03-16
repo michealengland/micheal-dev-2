@@ -1,15 +1,31 @@
 ---
 import style from './Intro.module.css'
+
+interface Props {
+	description: string;
+	subtitle: string;
+	titleLine1: string;
+	titleLine2: string;
+	titleLine3: string;
+}
+
+const {
+	description,
+	subtitle,
+	titleLine1,
+	titleLine2,
+	titleLine3,
+} = Astro.props;
 ---
 <section class={style.intro}>
 	<div class={style.inner}>
 		<h1>
-			<span class={style.hc1}>Plan, Code, Iterate</span>
-			<span class={style.hc2}>Let’s Build Something</span >
-			<span id="title-last-line" class={style.hc3}>Great Together</span>
+			<span class={style.hc1}>{titleLine1}</span>
+			<span class={style.hc2}>{titleLine2}</span >
+			<span id="title-last-line" class={style.hc3}>{titleLine3}</span>
 		</h1>
-		<p class={style.subtitle}>Mike England – Senior Developer crafting high-performance web and software solutions.</p>
-		<p class={style.description}>For nearly a decade, I’ve engineered digital projects, developed pixel perfect websites and crafted custom features for businesses of all scales. I’m on the hunt for my next big challenge—a role where I can dive into frontend and backend development, surrounded by a team of passionate software experts. I thrive in environments that prioritize performant, scalable solutions, working together to hit meaningful milestones.</p>
+		<p class={style.subtitle}>{subtitle}</p>
+		<p class={style.description}>{description}</p>
 	</div>
 </section>
 <script>
