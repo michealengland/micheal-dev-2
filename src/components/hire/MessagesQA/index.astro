@@ -1,33 +1,24 @@
 ---
+import type { HTMLString } from 'astro/runtime/server/escape.js';
 import style from './MessagesQA.module.css'
 
-const messages = [
-	{
-		q: `What's a project you're particularly proud of?`,
-		a: `My most recent favorite that I'm super proud of is ✨Stellar Pages!✨ I had an idea to create a custom application that transforms Markdown into stylish PDFs. I greatly enjoyed solving many product decisions on this app including how to split content based on render 📄.`,
-	},
-	{
-		q: `How have you maintained productivity during remote work?`,
-		a: `I'm always refining my workflow! 🚀 This past year, I’ve leveled up with: Neovim + tmux for focus 🎯, LLMs for efficiency 🤖, deeper DS & algorithms study 📚, and using PARA for meticulous notes keeping 📝.`,
-	},
-	{
-		q: `What are some ways that you have ensured that a codebase is well-structured and maintainable?`,
-		a: `Keeping code maintainable is all about structure! 🛠️ My go-to rules: modular files 📁, consistent standards 📏, clear comments 📝, focused functions 🎯, static typing ✅, and smart testing over 100% coverage 🧪.`,
-	},
-	{
-		q: `How do you keep up-to-date with technological advancements in your field?`,
-		a: `I stay sharp by mixing hands-on work with self-learning! 🚀 I reguarly take online courses, read docs, and build mini projects on topics that interest me 🔬.`,
-	},
-	{
-		q: `Thanks for sharing Mike 😉. What's the best way to stay in touch?`,
-		a: `👋 Always glad to share! If you'd like to discuss more, please reach out to me on <a href="https://www.linkedin.com/in/michealengland/" target="blank">LinkedIn.</a>`,
-	},
-]
+interface Message {
+	q: string;
+	a: HTMLString;
+}
+
+interface Props {
+	title: string;
+	data: Array<Message>;
+}
+
+const {data, title} = Astro.props;
+console.log(data)
 ---
 <section class={style.messagesQA}>
-	<h2>Ask Me Anything</h2>
+	<h2>{title}</h2>
 	<dl>
-		{messages.map(({q, a}) => (
+		{data.map(({q, a}) => (
 			<dt>{q}</dt>
 			<dd><Fragment set:html={a} /></dd>
 		))}
