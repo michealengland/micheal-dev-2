@@ -8,6 +8,18 @@ import CTA from '../components/hire/CTA/index.astro'
 import Reviews from '../components/hire/Reviews/index.astro'
 import Skills from '../components/hire/Skills/index.astro'
 
+const skills = [
+	'JavaScript',
+	'TypeScript',
+	'CSS / Tailwind',
+	'GraphQL',
+	'SQL',
+	'Node',
+	'React',
+	'Jest',
+	'PHP',
+]
+
 const brands = [
 	{
 		title: 'WP Forms',
@@ -80,6 +92,60 @@ const milestones = [
 		year: 2025,
 	},
 ]
+
+const messages = [
+	{
+		q: `What's a project you're particularly proud of?`,
+		a: `My most recent favorite that I'm super proud of is ✨Stellar Pages!✨ I had an idea to create a custom application that transforms Markdown into stylish PDFs. I greatly enjoyed solving many product decisions on this app including how to split content based on render 📄.`,
+	},
+	{
+		q: `How have you maintained productivity during remote work?`,
+		a: `I'm always refining my workflow! 🚀 This past year, I’ve leveled up with: Neovim + tmux for focus 🎯, LLMs for efficiency 🤖, deeper DS & algorithms study 📚, and using PARA for meticulous notes keeping 📝.`,
+	},
+	{
+		q: `What are some ways that you have ensured that a codebase is well-structured and maintainable?`,
+		a: `Keeping code maintainable is all about structure! 🛠️ My go-to rules: modular files 📁, consistent standards 📏, clear comments 📝, focused functions 🎯, static typing ✅, and smart testing over 100% coverage 🧪.`,
+	},
+	{
+		q: `How do you keep up-to-date with technological advancements in your field?`,
+		a: `I stay sharp by mixing hands-on work with self-learning! 🚀 I reguarly take online courses, read docs, and build mini projects on topics that interest me 🔬.`,
+	},
+	{
+		q: `Thanks for sharing Mike 😉. What's the best way to stay in touch?`,
+		a: `👋 Always glad to share! If you'd like to discuss more, please reach out to me on <a href="https://www.linkedin.com/in/michealengland/" target="blank">LinkedIn.</a>`,
+	},
+]
+
+const reviews = [
+	{
+		content: '"Mike is a highly skilled front-end engineer with a passion for building scalable applications. His expertise in JavaScript and React was instrumental in our work on MarketWatch at NewsCorp. He’s a collaborative team player, eager to both teach and learn, making a meaningful impact on both colleagues and user."',
+		location: 'Awesome Motive',
+		subtitle: 'Senior Developer',
+		title:'Tom McFarlin',
+		url: 'https://tommcfarlin.com',
+	},
+	{
+		content: '"Mike’s leadership skills are top-notch. As a team lead, he created a productive and supportive work environment that helped us ship faster. His communication and ability to balance technical and business needs make him a rare talent in the industry."',
+		location: 'Awesome Motive',
+		subtitle: 'Product Strategist',
+		title: 'Erick Fogtman',
+		url: 'https://www.linkedin.com/in/erick-fogtman/',
+	},
+	{
+		content: '"Working with Mike was a game-changer. He revamped our Node.js backend, improving performance by 40%. His deep technical knowledge, especially in optimizing API responses, made a massive impact on our product."',
+		location: 'WP Forms',
+		subtitle: 'Product Manager',
+		title: 'Lauren Drew',
+		url: 'https://www.linkedin.com/in/lauren-drew-4b022986/',
+	},
+	{
+		content: `"Mike's ability to pick up new technologies and adapt quickly is outstanding. He jumped into our Go-based project with zero prior experience and within weeks was contributing production-level code. He’s the kind of engineer every team needs."`,
+		location: 'WebDevStudios',
+		subtitle: 'Principal Engineer',
+		title: 'Sal Ferrarello',
+		url: 'https://salferrarello.com/about/',
+	},
+]
 ---
 <LandingPage>
 	<Intro
@@ -89,9 +155,15 @@ const milestones = [
 		subtitle="Mike England – Senior Developer crafting high-performance web and software solutions."
 		description="For nearly a decade, I’ve engineered digital projects, developed pixel perfect websites and crafted custom features for businesses of all scales. I’m on the hunt for my next big challenge—a role where I can dive into frontend and backend development, surrounded by a team of passionate software experts. I thrive in environments that prioritize performant, scalable solutions, working together to hit meaningful milestones."
 	/>
-	<Skills />
-	<Reviews />
-	<Brands title="Brands I've worked with" data={brands} />
+	<Skills title="Technical Skills" skills={skills} />
+	<Reviews
+		title="Reviews"
+		data={reviews}
+	/>
+	<Brands
+		title="Brands I've worked with"
+		data={brands}
+	/>
 	<Education
 		title="Education"
 		description="I believe it's important as a developer to continue education. Here's a few of my favorites from over the years."
@@ -103,5 +175,8 @@ const milestones = [
 		url="https://www.linkedin.com/in/michealengland/"
 		label="Message"
 	/>
-	<MessagesQA />
+	<MessagesQA
+		title="Ask Me Anything"
+		data={messages}
+	/>
 </LandingPage>
