@@ -1,61 +1,26 @@
 ---
 import style from './Education.module.css'
 
-const milestones = [
-	{
-		title: 'Graphic Commercial Art Program Certificate',
-		year: 2009
-	},
-	{
-		title: 'Associate of Applied Business Degree in Graphic Design',
-		year: 2014,
-	},
-	{
-		title: 'Git In-depth',
-		url: 'https://frontendmasters.com/courses/git-in-depth/',
-		year: 2019,
-	},
-	{
-		title: 'Webpack 4 Fundamentals',
-		url: 'https://frontendmasters.com/courses/webpack-fundamentals/',
-		year: 2020,
-	},
-	{
-		title: 'React Bootcamp', url: 'https://javascriptforwp.com/bootcamp/react/',
-		year: 2021,
-	},
-	{
-		title: 'A Practical Guide to Algorithms with JavaScript',
-		url: 'https://frontendmasters.com/courses/practical-algorithms/',
-		year: 2021,
-	},
-	{
-		title: 'The Ultimate MySQL Bootcamp: Go from SQL Beginner to Expert',
-		url: 'https://www.udemy.com/course/the-ultimate-mysql-bootcamp-go-from-sql-beginner-to-expert/',
-		year: 2022,
-	},
-	{
-		title: 'Neovim for Newbs',
-		url: 'https://www.youtube.com/playlist?list=PLsz00TDipIffreIaUNk64KxTIkQaGguqn',
-		year: 2024,
-	},
-	{
-		title: 'The Last Algorithms Course You\'ll Need',
-		url: 'https://frontendmasters.com/courses/algorithms/',
-		year: 2025,
-	},
-	{
-		title: 'Boot.dev Learn to Code in Python',
-		url: 'https://www.boot.dev/courses/learn-code-python',
-		year: 2025,
-	},
-]
+interface Milestone {
+  summary: string;
+  title: string;
+  url: string;
+  year: number;
+}
+
+interface Props {
+  data: Array<Milestone>;
+  description: string;
+  title: string;
+}
+
+const { data, description, title } = Astro.props;
 ---
 <section class={style.education}>
-	<h2>Education</h2>
-	<p>I believe it's important as a developer to continue education. Here's a few of my favorites from over the years.</p>
+	<h2>{title}</h2>
+	<p>{description}</p>
 	<ul id="timeline">
-		{milestones.map(({title, url, year}) => (
+		{data.map(({title, url, year}) => (
 			<li>
 				<span class={style.date}>{year}</span>
 				{url && <a class={style.label} href={url} target="blank">{title}</a>}
