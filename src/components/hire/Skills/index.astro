@@ -1,18 +1,19 @@
 ---
 import style from './Skills.module.css'
+
+interface Props {
+	skills: Array<string>;
+	title: string;
+}
+
+const { skills, title } = Astro.props;
 ---
 <section id="skills" class={style.skills}>
-	<h2>Code Skills</h2>
+	<h2>{title}</h2>
 	<ul>
-		<li>JavaScript</li>
-		<li>TypeScript</li>
-		<li>CSS / Tailwind</li>
-		<li>GraphQL</li>
-		<li>SQL</li>
-		<li>Node</li>
-		<li>React</li>
-		<li>Jest</li>
-		<li>PHP</li>
+		{skills.map((skill) => (
+			<li>{skill}</li>
+		))}
 	</ul>
 </section>
 <script>
