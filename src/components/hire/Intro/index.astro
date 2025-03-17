@@ -1,5 +1,12 @@
 ---
 import style from './Intro.module.css'
+import SocialLinks from '../../molecules/SocialLinks'
+import {
+  SOCIAL_GITHUB,
+  SOCIAL_LINKEDIN,
+  SOCIAL_TWITTER,
+} from '../../../consts'
+
 
 interface Props {
 	description: string;
@@ -25,6 +32,28 @@ const {
 			<span id="title-last-line" class={style.hc3}>{titleLine3}</span>
 		</h1>
 		<p class={style.subtitle}>{subtitle}</p>
+		<SocialLinks
+			className={style.socialLinks}
+			socialAccountItems={
+				[
+					{
+						icon: 'github',
+						label: 'GitHub',
+						url: SOCIAL_GITHUB
+					},
+					{
+						icon: 'linkedin',
+						label: 'LinkedIn',
+						url: SOCIAL_LINKEDIN
+					},
+					{
+						icon: 'twitter',
+						label: 'Twitter',
+						url: SOCIAL_TWITTER
+					}
+				]
+			}
+		/>
 		<p class={style.description}>{description}</p>
 	</div>
 </section>

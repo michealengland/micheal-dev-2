@@ -35,7 +35,11 @@
 	}
 
 	.subtitle {
-		@apply text-xl font-bold text-rp-gold mb-8;
+		@apply text-xl font-bold text-rp-gold mb-4;
+	}
+
+	.socialLinks {
+		@apply mb-8;
 	}
 
 	.description {
