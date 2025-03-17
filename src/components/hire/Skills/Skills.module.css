@@ -1,5 +1,5 @@
 .skills {
-	@apply p-4 md:p-8 mb-4 max-w-6xl mx-auto;
+	@apply p-4 md:p-8 mb-4 max-w-6xl mx-auto overflow-hidden;
 
 	h2 {
 		@apply mb-8;
