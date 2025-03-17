@@ -18,7 +18,7 @@
 	}
 
 	details {
-		@apply relative;
+		@apply relative mb-4 lg:mb-0;
 
 		&::after {
 			@apply block absolute content-[''] h-44 w-44 rotate-[22deg] border-2 border-rp-iris z-1 top-0 left-0 right-0 bottom-0 mx-auto rounded-lg transition-all;
@@ -26,6 +26,10 @@
 
 		&:hover {
 			@apply cursor-pointer;
+		}
+
+		&:nth-child(1) {
+			@apply md:col-span-2
 		}
 
 		summary {
