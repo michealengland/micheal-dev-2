@@ -35,8 +35,7 @@
 			&::-webkit-details-marker { @apply hidden; }
 		}
 
-		&:open {
-
+		&[open] {
 			&::after {
 				@apply rotate-0;
 			}
