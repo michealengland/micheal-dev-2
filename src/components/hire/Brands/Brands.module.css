@@ -6,7 +6,7 @@
 	}
 
 	.brandTiles {
-		@apply grid gap-8 sm:grid-cols-2 md:grid-cols-3 items-center justify-stretch md:justify-center w-full;
+		@apply grid gap-6 lg:gap-8 sm:grid-cols-2 lg:grid-cols-3 items-center justify-stretch md:justify-center w-full;
 	}
 
 	.content {
@@ -21,7 +21,7 @@
 		@apply relative;
 
 		&::after {
-			@apply block absolute content-[''] h-40 w-40 rotate-[22deg] border-2 border-rp-iris z-1 top-0 left-0 right-0 bottom-0 mx-auto rounded-lg transition-all;
+			@apply block absolute content-[''] h-44 w-44 rotate-[22deg] border-2 border-rp-iris z-1 top-0 left-0 right-0 bottom-0 mx-auto rounded-lg transition-all;
 		}
 
 		&:hover {
@@ -29,7 +29,7 @@
 		}
 
 		summary {
-			@apply relative p-4 h-40 w-full bg-rp-base border-2 border-rp-pine rounded-lg text-rp-text text-right content-end font-bold
+			@apply relative p-1 lg:p-4 h-44 w-full bg-rp-base border-2 border-rp-pine rounded-lg text-rp-text text-right content-end font-bold
 			transition-all translate-y-0 z-10 list-none;
 
 			&::-webkit-details-marker { @apply hidden; }

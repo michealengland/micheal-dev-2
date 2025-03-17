@@ -22,7 +22,7 @@
 	}
 
 	dt, dd {
-		@apply relative block mb-24 p-3 md:max-w-md rounded-lg text-rp-base text-xl font-semibold leading-relaxed transition-all translate-y-10 opacity-0 duration-[400ms] delay-[200ms];
+		@apply relative block mb-8 md:mb-24 p-3 md:max-w-md rounded-lg text-rp-base text-lg sm:text-xl font-semibold leading-relaxed transition-all translate-y-10 opacity-0 duration-[400ms] delay-[200ms];
 
 		&::after {
 				@apply absolute block content-[''] w-0 h-0 top-full border-[8px] border-t-0 border-transparent;
@@ -30,7 +30,7 @@
 	}
 
 	dt {
-		@apply bg-rp-foam rounded-bl-none ml-0 mr-6 sm:mr-auto -translate-x-20;
+		@apply bg-rp-foam rounded-bl-none ml-0 mr-6 sm:mr-auto md:-translate-x-20;
 
 		&::after {
 			@apply left-0 border-l-rp-foam;
@@ -38,7 +38,7 @@
 	}
 
 	dd {
-		@apply bg-rp-iris rounded-br-none ml-6 sm:ml-auto translate-x-20;
+		@apply bg-rp-iris rounded-br-none ml-6 sm:ml-auto md:translate-x-20;
 
 		&::after {
 			@apply right-0 border-r-rp-iris;

@@ -24,7 +24,7 @@
 	}
 
 	.date {
-		@apply block text-4xl font-bold text-rp-love;
+		@apply block text-2xl md:text-4xl font-bold text-rp-love;
 	}
 
 	a {
