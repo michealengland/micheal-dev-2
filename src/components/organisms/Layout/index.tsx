@@ -20,7 +20,7 @@ const Layout = ({children}: LayoutProps) => {
           img={contentCTAImage.src}
           label="Connect"
           title="Looking for My Next Role"
-          url="https://www.linkedin.com/in/michealengland/"
+          url="/hire"
         />
       </main>
       <Footer />
