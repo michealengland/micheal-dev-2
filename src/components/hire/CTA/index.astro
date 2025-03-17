@@ -1,0 +1,18 @@
+---
+import { Image } from 'astro:assets';
+import style from './CTA.module.css'
+import trendingFlat from './trending-flat.svg'
+
+interface Props {
+  content: string;
+  label: string;
+  title: string;
+  url: string;
+}
+const {content, label, title, url} = Astro.props
+---
+<section class={style.cta}>
+  <h2>{title}</h2>
+  <p>{content}</p>
+  <a href={url}>{label}<Image src={trendingFlat} alt="Arrow icon"/></a>
+</section>

@@ -1,0 +1,24 @@
+---
+import style from './LandingPage.module.css'
+import BaseHead from '../../components/BaseHead.astro'
+import PageSchema from '../../components/PageSchema.astro'
+import twitterCard from '../../content/assets/hire-cover-800x418.webp'
+import Footer from '../../components/hire/Footer'
+---
+<!doctype html>
+<html lang="en">
+	<head>
+		<BaseHead
+			title="Mike England | Senior Developer – Scalable Web & Softwarex"
+			image={twitterCard.src}
+			imageAlt="Mike England"
+		/>
+		<PageSchema />
+	</head>
+	<body>
+		<main class={style.landingPage}>
+			<slot />
+		</main>
+		<Footer />
+	</body>
+</html>

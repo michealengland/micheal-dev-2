@@ -1,0 +1,53 @@
+---
+import style from './Education.module.css'
+
+interface Milestone {
+  summary: string;
+  title: string;
+  url: string;
+  year: number;
+}
+
+interface Props {
+  data: Array<Milestone>;
+  description: string;
+  title: string;
+}
+
+const { data, description, title } = Astro.props;
+---
+<section class={style.education}>
+	<h2>{title}</h2>
+	<p>{description}</p>
+	<ul id="timeline">
+		{data.map(({title, url, year}) => (
+			<li>
+				<span class={style.date}>{year}</span>
+				{url && <a class={style.label} href={url} target="blank">{title}</a>}
+				{! url && <span class={style.label}>{title}</span>}
+			</li>
+		))}
+	</ul>
+</section>
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+	const elements = document.querySelectorAll("#timeline li");
+	let loadedCount = 0;
+
+	const observer = new IntersectionObserver((entries, obs) => {
+		entries.forEach((entry) => {
+			if (entry.isIntersecting) {
+				entry.target.classList.add("loaded");
+				observer.unobserve(entry.target); // Stop observing this element
+				loadedCount++;
+
+				if (loadedCount === elements.length) {
+					obs.disconnect();
+				}
+			}
+		});
+	}, { threshold: 0.8 });
+
+	elements.forEach((el) => observer.observe(el));
+});
+</script>

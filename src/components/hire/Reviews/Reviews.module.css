@@ -1,0 +1,60 @@
+.reviews {
+	@apply relative p-4 md:p-8 lg:py-16 max-w-6xl mx-auto;
+
+	h2 {
+		@apply mb-8;
+	}
+
+	.cardInner {
+		@apply h-full border-b-2 border-rp-iris;
+
+		&::before {
+			@apply content-[''] bg-rp-iris h-1 w-12 absolute right-0 bottom-0;
+		}
+
+		&::after {
+			@apply content-[''] absolute bottom-0 right-12 border-l-4 border-l-transparent border-b-4 border-b-rp-iris;
+		}
+	}
+
+	.cardHeading {
+		@apply relative p-4 text-rp-text w-full overflow-visible;
+	}
+
+	.title {
+		@apply text-xl font-bold text-inherit mb-0;
+
+		a {
+			@apply shadow-none no-underline;
+		}
+	}
+
+	.subtitle {
+		@apply text-base font-thin mb-0 text-rp-foam;
+	}
+
+	.content {
+		@apply text-base leading-relaxed px-4 mb-4;
+	}
+
+	ul {
+		@apply grid items-stretch gap-8 justify-center grid-cols-1 md:grid-cols-2 lg:grid-cols-4 min-h-80;
+	}
+
+	li {
+		@apply block relative overflow-visible z-1;
+
+		&::after {
+			@apply absolute top-0 left-0 right-0 content-[''] block w-full h-full bg-rp-base -z-1 transition-opacity opacity-0 duration-[1500ms] rounded-tl-lg rounded-tr-lg overflow-hidden;
+
+			/* Add glow of rp-love color. */
+			box-shadow: 0px 8px 30px -6px #eb6f9236
+		}
+
+		&:global(.loaded) {
+			&::after {
+				@apply opacity-100;
+			}
+		}
+	}
+}

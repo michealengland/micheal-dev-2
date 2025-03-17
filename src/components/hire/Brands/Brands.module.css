@@ -1,0 +1,55 @@
+.brands {
+	@apply p-8 md:py-16 max-w-6xl mx-auto text-left;
+
+	h2 {
+		@apply mb-16;
+	}
+
+	.brandTiles {
+		@apply grid gap-6 lg:gap-8 sm:grid-cols-2 lg:grid-cols-3 items-center justify-stretch md:justify-center w-full;
+	}
+
+	.content {
+		@apply absolute top-0 left-0 right-0 w-full p-2 italic pointer-events-none z-10;
+
+		p {
+			@apply m-0 text-base;
+		}
+	}
+
+	details {
+		@apply relative;
+
+		&::after {
+			@apply block absolute content-[''] h-44 w-44 rotate-[22deg] border-2 border-rp-iris z-1 top-0 left-0 right-0 bottom-0 mx-auto rounded-lg transition-all;
+		}
+
+		&:hover {
+			@apply cursor-pointer;
+		}
+
+		summary {
+			@apply relative p-1 lg:p-4 h-44 w-full bg-rp-base border-2 border-rp-pine rounded-lg text-rp-text text-right content-end font-bold
+			transition-all translate-y-0 z-10 list-none;
+
+			&::-webkit-details-marker { @apply hidden; }
+		}
+
+		&:open {
+
+			&::after {
+				@apply rotate-0;
+			}
+
+			summary {
+				@apply bg-rp-base text-rp-text border-rp-iris;
+			}
+		}
+
+		&:hover {
+			summary {
+				scale: 1.05;
+			}
+		}
+	}
+}

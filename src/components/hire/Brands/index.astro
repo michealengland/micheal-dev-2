@@ -1,0 +1,28 @@
+---
+import style from './Brands.module.css'
+
+interface Tile {
+	title: string;
+	summary: string;
+}
+
+interface Props {
+	title: string;
+	data: Array<Tile>;
+}
+
+const { data, title } = Astro.props;
+---
+<section class={style.brands}>
+	<h2>{title}</h2>
+	<div class={style.brandTiles}>
+		{data.map(({title, summary}) => (
+			<details>
+			<summary>{title}</summary>
+				<div class={style.content}>
+					<p>{summary}</p>
+				</div>
+			</details>
+		))}
+	</div>
+</section>

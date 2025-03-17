@@ -1,0 +1,47 @@
+---
+import type { HTMLString } from 'astro/runtime/server/escape.js';
+import style from './MessagesQA.module.css'
+
+interface Message {
+	q: string;
+	a: HTMLString;
+}
+
+interface Props {
+	title: string;
+	data: Array<Message>;
+}
+
+const {data, title} = Astro.props;
+---
+<section class={style.messagesQA}>
+	<h2>{title}</h2>
+	<dl>
+		{data.map(({q, a}) => (
+			<dt>{q}</dt>
+			<dd><Fragment set:html={a} /></dd>
+		))}
+	</dl>
+</section>
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+	const elements = document.querySelectorAll("dl dt, dl dd");
+	let loadedCount = 0;
+
+	const observer = new IntersectionObserver((entries, obs) => {
+		entries.forEach((entry) => {
+			if (entry.isIntersecting) {
+				entry.target.classList.add("loaded");
+				observer.unobserve(entry.target); // Stop observing this element
+				loadedCount++;
+
+				if (loadedCount === elements.length) {
+					obs.disconnect();
+				}
+			}
+		});
+	}, { threshold: 0.8 });
+
+	elements.forEach((el) => observer.observe(el));
+});
+</script>

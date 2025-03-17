@@ -1,0 +1,23 @@
+:global(html) {
+	@apply bg-rp-base;
+}
+
+.landingPage {
+	@apply bg-rp-base text-rp-text;
+
+	h1 {
+		@apply text-rp-love font-mono;
+	}
+
+	h2 {
+		@apply text-3xl font-mono font-bold text-rp-gold;
+	}
+
+	h3 {
+		@apply text-xl text-rp-pine;
+	}
+
+	p {
+		@apply text-base mb-4 leading-relaxed;
+	}
+}
