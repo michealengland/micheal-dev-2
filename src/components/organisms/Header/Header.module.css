@@ -1,5 +1,5 @@
 .header {
-  @apply font-sans text-nuetral-white bg-primary-purple1 py-2 px-4 sm:py-4 sm:px-8;
+  @apply font-sans text-white bg-base py-2 px-4 sm:py-4 sm:px-8;
 
   & .inner {
     @apply flex flex-wrap sm:flex-nowrap items-center max-w-7xl mx-auto;
@@ -31,11 +31,11 @@
         @apply m-0 mr-4 list-none;
 
         & a {
-          @apply text-nuetral-white;
+          @apply text-white;
 
           &:hover,
           &:focus {
-            @apply underline text-secondary-pink outline-none;
+            @apply underline text-highlighter outline-none;
           }
         }
 

@@ -3,16 +3,10 @@
 }
 
 .hero {
-  @apply relative flex flex-col items-center justify-center font-sans bg-primary-purple1 text-nuetral-white
+  @apply relative flex flex-col items-center justify-center font-sans bg-base text-white
   text-center h-auto max-h-full max-w-full z-1 p-4 md:py-4 md:px-6 min-h-[80vh] md:min-h-[70vh];
 
   clip-path: polygon(0 0, 100% 0, 100% 88%, 50% 100%, 0 88%, 0% 25%);
-
-  /* Custom pattern background from https://superdesigner.co/tools/css-backgrounds */
-  background: linear-gradient(45deg, #020041 10%, transparent 10%), linear-gradient(135deg, transparent 90%, #2c12be 90%);
-  background-size: 1.05em 1.05em;
-  background-color: #020041;
-  animation: bg-scrolling-reverse 4s linear infinite;
 
   & .avatar {
     @apply w-44 h-44 md:w-56 md:h-56 lg:w-72 lg:h-72 rounded-full mx-auto mb-4 lg:mb-6;
@@ -27,6 +21,6 @@
   }
 
   & .inner-wrap {
-    @apply relative bg-primary-purple2 z-1 my-0 mx-auto text-left w-full py-12 px-5 max-w-2xl lg:p-8;
+    @apply relative bg-surface z-1 my-0 mx-auto text-left w-full py-12 px-5 max-w-2xl lg:p-8;
   }
 }

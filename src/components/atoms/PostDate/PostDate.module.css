@@ -1,7 +1,5 @@
 .postDate {
-	@apply inline-block font-semibold text-primary-purple1 bg-tertiary-teal mt-2 rounded;
-
-	padding: 2px 4px;
+	@apply inline-block font-semibold text-overlay mt-2 rounded;
 }
 
 .lastUpdated {

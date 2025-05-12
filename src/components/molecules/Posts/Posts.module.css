@@ -2,12 +2,12 @@
   @apply text-left block md:max-w-screen-md mx-auto py-8 px-4 ;
 
   h1 {
-    @apply text-xl font-semibold text-nuetral-dark;
+    @apply text-xl font-semibold text-dark;
   }
 }
 
 .posts {
-  @apply text-nuetral-dark bg-nuetral-white;
+  @apply text-dark bg-white;
 
   & .inner {
     @apply p-4 max-w-3xl mx-auto;
@@ -26,10 +26,10 @@
   }
 
   & .title {
-    @apply relative text-primary-purple1 text-2xl md:text-4xl lg:text-5xl mt-10 mb-0;
+    @apply relative text-base text-2xl md:text-4xl lg:text-5xl mt-10 mb-0;
 
     & .draftLabel {
-      @apply absolute inline-block md:block text-white text-sm bg-secondary-pink px-1 rounded -mt-7 ml-0;
+      @apply absolute inline-block md:block text-white text-sm bg-highlighter px-1 rounded -mt-7 ml-0;
     }
 
     & a {
@@ -37,13 +37,13 @@
 
       &:hover,
       &:focus {
-        @apply underline text-secondary-pink;
+        @apply underline text-highlighter;
       }
     }
   }
 
   & .date {
-    @apply inline-block mb-4 font-semibold text-primary-purple1 bg-tertiary-teal mt-2 rounded;
+    @apply inline-block mb-4 font-semibold text-base bg-accent mt-2 rounded;
 
     padding: 2px 4px;
   }

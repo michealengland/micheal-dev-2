@@ -1,5 +1,5 @@
 .postNavigation {
-  @apply bg-primary-purple2 text-nuetral-white p-4 text-lg;
+  @apply bg-surface text-white p-4 text-lg;
 
   & .inner {
     @apply flex justify-between max-w-3xl mx-auto;
@@ -10,11 +10,11 @@
   }
 
   & a {
-    @apply text-nuetral-white no-underline;
+    @apply text-white no-underline;
 
     &:hover,
     &:focus {
-      @apply text-secondary-pink underline;
+      @apply text-highlighter underline;
     }
   }
 }

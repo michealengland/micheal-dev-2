@@ -1,18 +1,8 @@
-@keyframes bg-scrolling-reverse {
-	100% { background-position: 1.05em 1.05em; }
-  }
-
-
 .latestPosts {
-	@apply py-12 p-4;
-
-	background: linear-gradient(45deg, #020041 10%, transparent 10%), linear-gradient(135deg, transparent 90%, #2c12be 90%);
-	background-size: 1.05em 1.05em;
-	background-color: #020041;
-	animation: bg-scrolling-reverse 4s linear infinite;
+	@apply py-12 p-4 bg-base;
 
 	.heading {
-		@apply text-4xl mb-8 text-center font-light text-white;
+		@apply text-4xl mb-8 text-center font-light text-highlighter;
 	}
 
 	.inner {
@@ -36,12 +26,11 @@
 
 		&:hover,
 		&:focus {
-			@apply text-tertiary-teal;
+			@apply text-accent;
 
 			img {
 				@apply shadow-xl;
 			}
-
 		}
 	}
 }

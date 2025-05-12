@@ -1,8 +1,8 @@
 .cta {
-  @apply relative flex flex-col justify-items-center text-center text-tertiary-teal bg-primary-purple1 items-center m-0 mx-auto p-5;
+  @apply relative flex flex-col justify-items-center text-center text-accent bg-base items-center m-0 mx-auto p-5;
 
   &.hasImg {
-    @apply text-nuetral-white md:py-16 lg:py-40 lg:bg-fixed bg-left-top bg-cover bg-no-repeat;
+    @apply text-white md:py-16 lg:py-40 lg:bg-fixed bg-left-top bg-cover bg-no-repeat;
 
     box-sizing: border-box;
 
@@ -11,17 +11,17 @@
     }
 
     &::before {
-      @apply absolute inset-0 z-1 bg-gradient-to-tr from-primary-purple2 to-blue-800 opacity-70;
+      @apply absolute inset-0 z-1 bg-gradient-to-tr from-surface to-blue-800 opacity-70;
 
       content: '';
     }
 
     & .inner {
-      @apply bg-primary-purple1 bg-opacity-40 text-left rounded-md border-2 border-tertiary-teal;
+      @apply bg-base bg-opacity-40 text-left rounded-md border-2 border-accent;
     }
 
     & hr {
-      @apply border-0 my-5 mx-0 bg-tertiary-teal rounded-full w-full;
+      @apply border-0 my-5 mx-0 bg-accent rounded-full w-full;
 
       height: 0.1875rem;
       max-width: 8.75rem;

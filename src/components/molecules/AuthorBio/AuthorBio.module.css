@@ -1,5 +1,5 @@
 .authorBio {
-  @apply flex items-center max-w-xs mr-auto bg-purple-100 text-primary-purple1 rounded-full my-8;
+  @apply flex items-center max-w-xs mr-auto text-base my-8;
 
   & .avatar {
     @apply rounded-full mb-0 mr-4;

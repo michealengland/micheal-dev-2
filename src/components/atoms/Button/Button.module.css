@@ -9,16 +9,14 @@
 }
 
 .button {
-  @apply inline-block relative bg-primary-purple1 rounded-none text-secondary-pink overflow-hidden p-2 text-center uppercase z-1;
+  @apply inline-block relative border-2 border-surface bg-base rounded-none text-highlighter overflow-hidden p-2 text-center uppercase z-1;
 
-  border: 2px solid #170387;
   min-width: 150px;
-  text-decoration: none;
   transition: all 0.7s;
   width: auto;
 
   &::before {
-    @apply block absolute bg-secondary-pink bottom-0 z-behind m-0 mx-auto opacity-0;
+    @apply block absolute bg-highlighter bottom-0 z-behind m-0 mx-auto opacity-0;
 
     border-radius: 45%;
     content: '';
@@ -30,7 +28,7 @@
   }
 
   &::after {
-    @apply block absolute bg-secondary-pink z-behind opacity-0;
+    @apply block absolute bg-highlighter z-behind opacity-0;
 
     border-radius: 55%;
     bottom: 0;
@@ -45,7 +43,7 @@
 
   &:hover,
   &:focus {
-    @apply border-secondary-pink text-nuetral-white;
+    @apply border-highlighter text-white;
 
     border-radius: 5em;
 
