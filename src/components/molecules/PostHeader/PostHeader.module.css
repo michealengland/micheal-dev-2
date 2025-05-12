@@ -3,7 +3,7 @@
     @apply bg-white w-full md:-mb-20;
 
     & img {
-      @apply block mx-auto;
+      @apply block mx-auto max-w-[960px];
     }
   }
 
