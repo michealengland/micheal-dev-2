@@ -11,21 +11,13 @@ export default {
 				mono: ['Fira Code, monospace']
 			},
 			colors: {
-				primary: {
-					purple: '#639',
-					purple1: '#020041',
-					purple2: '#170387'
-				},
-				secondary: {
-					pink: '#ff1ee5'
-				},
-				tertiary: {
-					teal: '#74edf1'
-				},
-				nuetral: {
-					white: '#fff',
-					dark: '#333'
-				},
+				base: '#112358', // Fibonacci Blue
+				white: '#F4F5FA', // White Solid
+				overlay: '#D4EAFF', // Veiling Waterfalls
+				surface: '#004499', // Fight Night
+				accent: '#0192C6', // Dyanmic Blue
+				highlighter: '#F1FF62', // Lemon Pie
+				dark: '#333',
 				rp: {
 					base: '#191724',
 					surface: '#2a273f',
